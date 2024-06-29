@@ -1,0 +1,4 @@
+- run: win + r
+- proxy settings: inetcpl.cpl
+- static ip: ncpl.cpl
+- starup folder: shell:startup

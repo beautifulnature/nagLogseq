@@ -1,0 +1,3 @@
+- [[apps]]
+- [[pc settings]]
+- [[x cuts]]

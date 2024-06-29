@@ -1,0 +1,10 @@
+- [[winget]]
+- [[logseq]]
+- [[notepad++]]
+- [[AutoHotkey]]
+- [[git]]
+- browser
+	- [[arc]]
+	- [[extensions]]
+		- vimium
+		- columncopy
