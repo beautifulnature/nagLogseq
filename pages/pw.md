@@ -7,7 +7,7 @@
 	  SSL
 	  smtp.bhel.in
 	  587
-	  TLS
+	  STARTLS
 - matsearch db
 	- HOST=10.5.12.210 SID=bheldb	USER=matsearch	PSW=y15987
 	- db-interlocking cmca cmca123
