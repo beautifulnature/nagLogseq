@@ -2,7 +2,7 @@
 	- http://intgw-hyd.bhel.in:8080
 	  10.*;*.bhel.in
 - static ip: ncpl.cpl
-	- 10.9.205.8
+	- 10.9.205.8 | 196
 	  255.255.255.0
 	  10.9.205.1
 	  DNS
