@@ -3,6 +3,8 @@
 - [[notepad++]]
 - [[AutoHotkey]]
 - [[git]]
+- editors
+	- [[vscode]]
 - browser
 	- [[arc]]
 	- [[extensions]]

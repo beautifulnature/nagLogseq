@@ -1,0 +1,4 @@
+- Trouble shooting
+	- Non registered transactions
+		- Make an entry in MRTM014_TRANSMITTALINDEX table
+		- Make an entry in MRTM016_APPLICABLEMSTR
