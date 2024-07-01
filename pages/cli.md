@@ -1,0 +1,3 @@
+- ps
+	- Get-History
+	- Clear-History -Id 4 [-Count 10]

@@ -10,3 +10,5 @@
 	- [[extensions]]
 		- vimium
 		- columncopy
+- [[cli]]
+- winscp
