@@ -1,0 +1,2 @@
+- The Sharpe ratio is a measure used to evaluate the risk-adjusted return of an investment portfolio. It is calculated by subtracting the risk-free rate from the portfolio's return and then dividing by the portfolio's standard deviation. This metric is crucial for traders as it helps them understand how much excess return they are receiving for the extra volatility endured by holding a riskier asset.
+  title:: Sharpe ratio

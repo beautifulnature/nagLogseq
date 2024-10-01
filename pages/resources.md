@@ -1,0 +1,3 @@
+- https://learn-anything.xyz/
+- poe - web tool chatting with different ai models
+- perplexity - search engine

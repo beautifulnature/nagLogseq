@@ -1,4 +1,5 @@
 - Trouble shooting
 	- Non registered transactions
-		- Make an entry in MRTM014_TRANSMITTALINDEX table
-		- Make an entry in MRTM016_APPLICABLEMSTR
+		- Make an entry in MTRM014_TRANSMITTALINDEX table
+		- Make an entry in MTRM016_APPLICABLEMSTR
+		- Check for role-2 in MRTM013_PROJECT_ROLE

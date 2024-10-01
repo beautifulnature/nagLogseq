@@ -1,2 +1,5 @@
 - [[software]]
 - [[office]]
+- [[hardware]]
+- [[finance]]
+- [[resources]]

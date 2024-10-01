@@ -1,0 +1,12 @@
+- jdk installation
+	- sdk install java 17.0.7.fx-zulu
+	- sdk default java 17.0.7.fx-zulu
+	- set environment variable for your account
+		- variable: `JAVA_HOME` value: `E:\tools\sdkman\candidates\java\current`
+		- add `%JAVA_HOME%\bin` to `PATH`
+- [[maven]]
+	- installation
+		- sdk install maven 3.9.8
+	- set environment variable for your account
+		- variable: `MVN_HOME` value: `E:\tools\sdkman\candidates\maven\current`
+		- add `%MVN_HOME%\bin` to `PATH`

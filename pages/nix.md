@@ -1,0 +1,2 @@
+- [nix.org](https://search.nixos.org/packages)
+	- search for a package

@@ -1,0 +1,5 @@
+- nix-os installation
+	- wsl --import NixOS $env:USERPROFILE\NixOS\ .\Downloads\nixos-wsl.tar.gz
+	- wsl -d NixOS
+	- sudo nix-channel --update
+	- sudo nixos-rebuild switch

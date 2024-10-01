@@ -1,3 +1,33 @@
 - ps
 	- Get-History
 	- Clear-History -Id 4 [-Count 10]
+- windows terminal
+	- ctrl + tab: to switch tab
+	- ctrl + shift + tab: to switch to previous tab
+- cli tools
+	- age
+		- winget install --id FiloSottile.age -e
+		- age --version
+		- https://github.com/FiloSottile/age
+	- yazi
+		- fast terminal file manager
+		- ya or yazi
+		- file
+			- install from https://github.com/file/file
+		- [ImageMagick](https://imagemagick.org/)
+			- winget install -e --id ImageMagick.ImageMagick
+	- sshs
+		- tui for connecting different servers
+		- choco install sshs
+	- atac
+		- postman cli
+	- portal
+		- https://github.com/SpatiumPortae/portal
+		- file transfer utility
+	- atuin
+		- terminal history fuzzy finder
+- package managers
+	- chocolatey
+	- winget
+	- [[nix]]
+-

@@ -1,0 +1,5 @@
+- Google Gen AI Exchange Hackathon
+- MeitY Startup Hub https://msh.meity.gov.in/
+- Startup India
+- Project Vaani https://vaani.iisc.ac.in/
+- Matt The Farmer

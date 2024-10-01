@@ -1,3 +1,6 @@
 - [[apps]]
 - [[pc settings]]
 - [[x cuts]]
+- [[java]]
+- [[programming]]
+- [[hackathons]]

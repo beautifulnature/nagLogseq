@@ -1,18 +1,16 @@
-- mail settings
-	- Nagaraju Gumpini
-	  nagaraju@bhel.in
-	  IMAP
-	  mail.bhel.in
-	  993
-	  SSL
-	  smtp.bhel.in
-	  587
-	  STARTLS
 - matsearch db
-	- HOST=10.5.12.210 SID=bheldb	USER=matsearch	PSW=y15987
-	- db-interlocking cmca cmca123
+	- `host=10.5.12.210` `sid=bheldb`	`user=matsearch` `password=y15987`
+	- db-interlocking `cmca` `cmca123`
 - cmca
-	- 10.5.4.120/manager tomee cmca
-	- winscp	10.5.4.120	root	Mat#120@cr&d	pps uploading
-- cs-cps	sbe12 sbe@12
+	- `10.5.4.120/manager` `tomee` `tomee`
+	- winscp	`10.5.4.120`	`root`	`Mat#120@120`	pps-uploading
+- cs-cps	`sbe12` `sbe@12`
+- mail
+	- `corporatestandards@bhel.in` `AgmSbe@202512`
+	- `10.5.4.84`	`msearch` `Agmsbe@2024`
+	- `nagaraju@bhel.in` `Ramarao@2512`
+	- addressbook
+		- `ldap.bhel.in` `username: uid=nagaraju,ou=people,dc=bhel,dc=in` `password: mailpassword`
+- rd sharing `10.9.9.99` `bhelrnd` `$bhel#itx`
+- teams `nagaraju@bhel.in` `Gas51469`
 -

@@ -1,0 +1,9 @@
+- 12732 SC - Guntakal 04.15 pm to 10.45 pm
+- 11311 Guntakal - Hasan 1.10 am to 10.56 am
+-
+-
+-
+- pomber
+	- npx create-next-app@latest
+	- npm install @next/mdx @mdx-js/loader
+	- npm install codehike

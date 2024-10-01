@@ -12,3 +12,8 @@
 		- columncopy
 - [[cli]]
 - winscp
+- drawing
+	- drawio
+- [[sdkman]]
+- [[putty]]
+- [[wsl]]
