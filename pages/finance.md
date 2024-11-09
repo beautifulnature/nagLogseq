@@ -1,4 +1,48 @@
 - algorithmic trading
+	- to overcome human limitations
+	  collapsed:: true
+		- emotional reaction
+		- fatigue
+		- cognitive biases (error in judgment)
+	- Algorithmic trading is a method of executing orders using automated pre-programmed trading instructions accounting for variables such as time, price and volume.
+	- Scope
+	  collapsed:: true
+		- Research
+		- Pre Trade Analysis
+		- Trading Signal / Market Timing
+		- Trade Execution
+		- Post Trade Analysis
+		- Risk Management
+		- Alpha Generation
+		- Transaction Cost Reduction
+		- Portfolio Construction
+		- Data (Historical, Sentimental, Live)
+	- Brokers and APIs
+	  collapsed:: true
+		- [[Zerodha]] (Rs 2000 / month) for stocks, future, options, commodities
+		- ICICI direct (free)
+		- BINANCE (coins)
+		- Meta Trader5 for forex currency
+		- Ninja Traders
+		- Interactive Brokers
+		- upstox
+	- API (Application Programming Interface)
+	  collapsed:: true
+		- (http / JSON) API calls
+		  collapsed:: true
+			- python
+			- java
+			- c#
+		- Exchage Server (BSE / NSE) <-> Zerodha Server
+		- Zerodha Server
+		  collapsed:: true
+			- web https://kite.zerodha.com/
+			- API server https://kite.trade/
+				- our strategry
+		- softwares
+			- [[anaconda(https://www.anaconda.com/download)]]
+				- jupyter
+				- spider**
 	- Develop algorithmic trading strategies
 	- Take the first step to profitable trading
 	- Get practical algorithmic trading examples
@@ -142,6 +186,7 @@
 			- github
 				- [je-suis-tm/quant-trading: Python quantitative trading strategies including VIX Calculator, Pattern Recognition, Commodity Trading Advisor, Monte Carlo, Options Straddle, Shooting Star, London Breakout, Heikin-Ashi, Pair Trading, RSI, Bollinger Bands, Parabolic SAR, Dual Thrust, Awesome, MACD (github.com)](https://github.com/je-suis-tm/quant-trading)
 - insurance
+  collapsed:: true
 	- LATER kotak life
 	  :LOGBOOK:
 	  CLOCK: [2024-09-21 Sat 09:50:19]--[2024-09-21 Sat 09:50:19] =>  00:00:00
@@ -150,3 +195,4 @@
 	- Equity
 		- [[shares-research]]
 		- [[fundamentals]]
+		- [[daily]]

@@ -1,0 +1,3 @@
+- Authentication workflow - once per day
+	- App Redirect / Manual Login to API server -> Get temp token from API server (from RedirectURL page optionally save in database) -> Get Access Token from API server using Temp Token (optionally save in database) -> Trade using Access Token for whole day
+	-

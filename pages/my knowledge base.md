@@ -3,3 +3,4 @@
 - [[hardware]]
 - [[finance]]
 - [[resources]]
+- [[every_day_start]]
