@@ -1,0 +1,1 @@
+- https://zerodha.com/varsity/module/technical-analysis/
