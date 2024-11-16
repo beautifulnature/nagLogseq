@@ -1,0 +1,7 @@
+- OpenBB - https://openbb.co/
+- OpenBB Docs - https://docs.openbb.co/
+	- OpenBB Terminal Docs - https://docs.openbb.co/terminal
+	- OpenBB Add-in for Excel Docs - https://docs.openbb.co/excel
+	- [[OpenBB Platform Docs]] - https://docs.openbb.co/platform
+	- [[OpenBB Platform CLI Docs]] - https://docs.openbb.co/cli
+	- [[OpenBB Bot Docs]] - https://docs.openbb.co/bot

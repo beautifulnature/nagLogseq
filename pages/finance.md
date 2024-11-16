@@ -185,6 +185,7 @@
 				- Bollinger Bands Pattern Recognition
 			- github
 				- [je-suis-tm/quant-trading: Python quantitative trading strategies including VIX Calculator, Pattern Recognition, Commodity Trading Advisor, Monte Carlo, Options Straddle, Shooting Star, London Breakout, Heikin-Ashi, Pair Trading, RSI, Bollinger Bands, Parabolic SAR, Dual Thrust, Awesome, MACD (github.com)](https://github.com/je-suis-tm/quant-trading)
+	- [[openBB]]
 - insurance
   collapsed:: true
 	- LATER kotak life
