@@ -186,6 +186,13 @@
 			- github
 				- [je-suis-tm/quant-trading: Python quantitative trading strategies including VIX Calculator, Pattern Recognition, Commodity Trading Advisor, Monte Carlo, Options Straddle, Shooting Star, London Breakout, Heikin-Ashi, Pair Trading, RSI, Bollinger Bands, Parabolic SAR, Dual Thrust, Awesome, MACD (github.com)](https://github.com/je-suis-tm/quant-trading)
 	- [[openBB]]
+	  collapsed:: true
+	- [[Book: Trading Evolved]]
+	- [[Book: Following the Trend]]
+	- [[Book: Stocks on the Move]]
+	- [[Book: Python for Data Analysis (McKinney, 2017)]]
+	- [[Book: Python for Finance (Hilpisch, 2018)]]
+	- [[Book: Systematic Trading (Carver, Systematic Trading, 2015)]]
 - insurance
   collapsed:: true
 	- LATER kotak life
@@ -193,6 +200,7 @@
 	  CLOCK: [2024-09-21 Sat 09:50:19]--[2024-09-21 Sat 09:50:19] =>  00:00:00
 	  :END:
 - shares
+  collapsed:: true
 	- Equity
 		- [[shares-research]]
 		- [[fundamentals]]

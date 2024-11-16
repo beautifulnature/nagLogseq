@@ -1,0 +1,36 @@
+- Scientific Approach
+- Consistent Methodology
+- Developing Trading Models
+	- Trading strategies can be broken down to a set of components (are always part of trading strategy).
+	- For long term trend following model, the exact entry method and timing is not very important.
+	- For short term mean reversal model, the entry approach is critical
+	- Model Purpose
+	  collapsed:: true
+		- A proper trading model needs to start off with a theory about market behavior.
+		- Any trading model is designed for a specific purpose, trading a specific market phenomenon to achieve a specific goal.
+		- A solid model trades a real market phenomenon , aiming for a certain type of return profile.
+		- avoid accidental models mostly developed by non-professionals
+		- 2 common ways of model purpose
+			- first, what you might expect.
+				- start off with a theory of some sort (you have observed in the market or something you read about) -> you formulate mathematical rules to test that hypothesis. This is how most successful trading models start out.
+			- second, based on perceived need or business opportunity.
+	- Rules and Variations
+	  collapsed:: true
+		- aim for as few rules as possible and as few variations as possible
+		- after arriving at a model purpose, you need to figure out how to formulate this purpose in terms of trading rules.
+		- keep things simple.
+		- complexity you want to add to your model needs to have a clear and meaningful benefit and needs to have a real life explanation.
+		- rule needs to fit into the logic of the model purpose and play a clear rule in achieving that purpose not for improving backtest performance.
+		- Once you have arrived at a set of rules for testing your market theory, you probably want to try some variations.
+		- Note that there is a world apart between testing variations and optimization.
+	- Handling Data
+	- Asset Class
+	  collapsed:: true
+		- equities
+		- futures
+		- spot currency
+		- future currency
+	- Investment Universe
+	- Allocation and Risk Level
+	- Entry and Exit Rules
+	- Rebalancing

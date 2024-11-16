@@ -1,0 +1,2 @@
+- Book website www.followingthetrend.com/trading-evolved
+- [[Systematic Trading]]
