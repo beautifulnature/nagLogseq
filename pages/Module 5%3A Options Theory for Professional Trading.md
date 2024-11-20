@@ -1,5 +1,6 @@
 - https://zerodha.com/varsity/module/option-theory/
 - [[Video Series]]
+- [[Live]]
 - [[1. Call Option Basics]]
 - [[2. Basic Option Jargons]]
 - [[3. Buying a Call Option]]

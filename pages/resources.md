@@ -1,3 +1,6 @@
 - https://learn-anything.xyz/
 - poe - web tool chatting with different ai models
 - perplexity - search engine
+- https://www.linkedin.com/learning-login/go/orl
+	- 23132900227764, 23132900227798
+	- 9876
