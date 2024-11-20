@@ -53,6 +53,7 @@ collapsed:: true
 			- It often excludes intangible assets like goodwill, which can undervalue companies with significant intellectual property or brand equity.
 	- In summary, book value is a crucial metric in financial analysis that helps investors gauge a company's worth relative to its market valuation.
 - ## Return on Capital Employed (ROCE)
+  collapsed:: true
 	- ROCE is a financial metric used to assess a company's profitability and the efficiency with which it utilizes its capital. It measures how well a company generates profits from its capital employed, which includes both equity and debt.
 	- ## Key Points about ROCE
 	  collapsed:: true
