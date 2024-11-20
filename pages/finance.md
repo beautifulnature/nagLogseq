@@ -200,7 +200,6 @@
 	  CLOCK: [2024-09-21 Sat 09:50:19]--[2024-09-21 Sat 09:50:19] =>  00:00:00
 	  :END:
 - shares
-  collapsed:: true
 	- Equity
 		- [[shares-research]]
 		- [[fundamentals]]

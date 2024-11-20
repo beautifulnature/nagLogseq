@@ -201,4 +201,6 @@ collapsed:: true
 	- [[Module 1. Introduction to Stock Markets]]
 	- [[Module 2. Technical Analysis]]
 	- [[Module 3. Fundamental Analysis]]
+	- [[Module 4]]
+	- [[Module 5: Options Theory for Professional Trading]]
 	-
