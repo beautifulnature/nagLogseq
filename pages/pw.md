@@ -6,7 +6,7 @@
 	- winscp	`10.5.4.120`	`root`	`Mat#120@120`	pps-uploading
 - cs-cps	`sbe12` `sbe@12`
 - mail
-	- `corporatestandards@bhel.in` `AgmSbe@202512`
+	- `corporatestandards@bhel.in` `AgmSbe@2504`
 	- `10.5.4.84`	`msearch` `Agmsbe@2024`
 	- `nagaraju@bhel.in` `Ramarao@6014755`
 	- addressbook

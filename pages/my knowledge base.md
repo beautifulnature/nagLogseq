@@ -4,3 +4,4 @@
 - [[finance]]
 - [[resources]]
 - [[every_day_start]]
+- [[to read immediately]]

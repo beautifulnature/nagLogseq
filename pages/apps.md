@@ -5,7 +5,9 @@
 - [[git]]
 - editors
 	- [[vscode]]
+	- [[vim]]
 - browser
+  collapsed:: true
 	- [[arc]]
 	- [[extensions]]
 		- vimium
@@ -13,6 +15,7 @@
 - [[cli]]
 - winscp
 - drawing
+  collapsed:: true
 	- drawio
 - [[sdkman]]
 - [[putty]]
