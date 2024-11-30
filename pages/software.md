@@ -4,3 +4,5 @@
 - [[java]]
 - [[programming]]
 - [[hackathons]]
+- [[db]]
+- [[note-taking]]

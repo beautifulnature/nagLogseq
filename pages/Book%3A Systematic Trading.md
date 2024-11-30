@@ -1,0 +1,2 @@
+- Book by Robert Carver
+- A unique new method for designing trading and investing systems

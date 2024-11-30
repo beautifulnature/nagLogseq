@@ -1,4 +1,5 @@
 - algorithmic trading
+  collapsed:: true
 	- to overcome human limitations
 	  collapsed:: true
 		- emotional reaction
@@ -85,7 +86,6 @@
 			- long vs short positions
 	- **reinvest trading profits to achieve financial freedom**
 	- resources
-	  collapsed:: true
 		- PyQuant News
 		  collapsed:: true
 			- run by Jason Strimpel (Co-Founder of Quant Science)
@@ -185,8 +185,13 @@
 				- Bollinger Bands Pattern Recognition
 			- github
 				- [je-suis-tm/quant-trading: Python quantitative trading strategies including VIX Calculator, Pattern Recognition, Commodity Trading Advisor, Monte Carlo, Options Straddle, Shooting Star, London Breakout, Heikin-Ashi, Pair Trading, RSI, Bollinger Bands, Parabolic SAR, Dual Thrust, Awesome, MACD (github.com)](https://github.com/je-suis-tm/quant-trading)
+		- hedge-fund
+		  collapsed:: true
+			- https://github.com/virattt/ai-hedge-fund
+			- [@virattt](https://x.com/virattt)
 	- [[openBB]]
 	  collapsed:: true
+	- [[Book: Systematic Trading]]
 	- [[Book: Trading Evolved]]
 	- [[Book: Following the Trend]]
 	- [[Book: Stocks on the Move]]
@@ -200,7 +205,9 @@
 	  CLOCK: [2024-09-21 Sat 09:50:19]--[2024-09-21 Sat 09:50:19] =>  00:00:00
 	  :END:
 - shares
+  collapsed:: true
 	- Equity
 		- [[shares-research]]
 		- [[fundamentals]]
 		- [[daily]]
+- [[my finance os]]
