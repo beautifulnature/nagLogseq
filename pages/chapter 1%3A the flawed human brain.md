@@ -1,0 +1,27 @@
+- deeply flawed when making financial decisions
+- economic theories about human behaviour
+- systematic trading and investing
+- humans should be great traders, but...
+	- the research that tells us why humans make bad decisions
+	- the death of rational economic man
+	- why we run losses and stop out profits
+	- concept: back-test
+	- gamblers anonymous
+- simple trading rules
+	- the dumb systems that are better at investing and trading than clever humans
+- sticking to the plan
+	- why you must be committed to your systems for them to work
+	- trading systems must be objective
+	- automation - the use of dogs in finance and engineering
+- good system design
+	- avoiding the human failings which can still be dangerous when designing systematic trading strategies
+	- over-fitting
+	- overtrading
+	- over betting
+	- concept: standard deviation
+		- the **standard deviation** is a measure of how dispersed some data is around its average; it's a measure of risk.
+		- a measure of how dispersed some data is around its average value. if your data points are \[x_1, x_2, \ldots, x_n\] then the average \[x^* = \frac{x_1 + x_2 + x_3 + \ldots + x_n}{n}\]. the standard deviation is \[\sqrt{\left( \frac{1}{n-1} \right) \left[ (x_1 - x^*)^2 + (x_2 - x^*)^2 + \ldots + (x_n - x^*)^2 \right]}\]
+		- often applied to daily returns in prices or trading system profits. an approximate way to calculate an annualised standard deviation of returns is to multiply the daily standard deviation by 16 (the square root of 256, approximately the number of trading days in one year).
+		- standard deviations are often used to describe the dispersion of the returns of an asset, or profits from a trading system. I use the term volatility as a shorthand for standard deviation of returns. one unit of standard deviation is also sometimes called a sigma.
+		- we'll usually be dealing with daily returns and using daily volatilities, but it's often useful to think about the annualised standard deviation - how much deviation we expect to see over a year.
+		- standard deviation doesn't increase linearly, but with the square root of time.

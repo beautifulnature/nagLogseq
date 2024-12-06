@@ -1,7 +1,11 @@
-- automation
-	- CNC
-	- programming
-- [[math]]
-- [[finance]]
-- [[fitness]]
-- [[spiritual]]
+- health wealth
+	- [[fitness]]
+	- [[spiritual]]
+- financial wealth
+	- [[finance]]
+- core
+	- automation
+		- CNC
+		- programming
+- academic
+	- [[math]]

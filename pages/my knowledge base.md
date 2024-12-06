@@ -5,6 +5,6 @@
 - [[software]]
 - [[hardware]]
 - [[finance]]
-- [[resources]]
 - [[math]]
+- [[resources]]
 - [[office]]

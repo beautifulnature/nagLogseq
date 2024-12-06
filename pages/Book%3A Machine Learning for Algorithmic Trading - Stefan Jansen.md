@@ -1,0 +1,3 @@
+- [[outline]]
+- [[chapter 1: Machine Learning for Trading - From Idea to Execution]]
+- [[chapter 2: Market and Fundamental Data - Sources and Techniques]]

@@ -1,5 +1,4 @@
 - algorithmic trading
-  collapsed:: true
 	- to overcome human limitations
 	  collapsed:: true
 		- emotional reaction
@@ -198,6 +197,7 @@
 	- [[Book: Python for Data Analysis (McKinney, 2017)]]
 	- [[Book: Python for Finance (Hilpisch, 2018)]]
 	- [[Book: Systematic Trading (Carver, Systematic Trading, 2015)]]
+	- [[Book: Machine Learning for Algorithmic Trading - Stefan Jansen]]
 - insurance
   collapsed:: true
 	- LATER kotak life

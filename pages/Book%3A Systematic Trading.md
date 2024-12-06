@@ -1,2 +1,4 @@
 - Book by Robert Carver
 - A unique new method for designing trading and investing systems
+- [[chapter 1: the flawed human brain]]
+- [[chapter 2: Systematic Trading Rules]]
