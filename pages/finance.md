@@ -85,6 +85,7 @@
 			- long vs short positions
 	- **reinvest trading profits to achieve financial freedom**
 	- resources
+	  collapsed:: true
 		- PyQuant News
 		  collapsed:: true
 			- run by Jason Strimpel (Co-Founder of Quant Science)
@@ -198,6 +199,7 @@
 	- [[Book: Python for Finance (Hilpisch, 2018)]]
 	- [[Book: Systematic Trading (Carver, Systematic Trading, 2015)]]
 	- [[Book: Machine Learning for Algorithmic Trading - Stefan Jansen]]
+	- [[linkedin-algorithmic-trading-and-stocks-essential-training]]
 - insurance
   collapsed:: true
 	- LATER kotak life

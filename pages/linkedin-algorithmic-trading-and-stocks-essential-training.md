@@ -1,0 +1,29 @@
+- stock:
+	- price
+	- market cap = price of stock x no of shares
+	- dividend = share of profit paid-out to share holders
+	- risk = standard deviation or volatility (price of stock fluctuates over time)
+	- price-to-earning ratio: price of share / profit earnings per share
+	- price-to-book ratio: price of the stock / book value per share
+	- bid and ask
+		- bid is the most someone is will to pay
+		- ask is the least someone will sell for
+		- bid-ask spread
+		- liquidity matters a lot for spreads
+	- orders
+		- market orders
+		- limit orders
+- stocks
+- ETFs
+	- exchange-traded funds
+	- group of stocks trading on exchange under a ticker symbol
+- Algo trading
+	- market making
+		- attempt to capitalize on the bid-ask spread typically associated with high-frequency traders
+	- data mining
+		- hedge funds or individuals
+		- trades are based on patterns in data, including stock prices and outside information
+		- look for correlations between stock prices and other data points
+- an algo trading example
+	- Renaissance Technologies (RenTech) most famous hedge funds
+	- better example is supplier-customer relationship. when an under-the-radar small firm reports earnings, it often has implications for other large companies that are customers or suppliers of the small company.
