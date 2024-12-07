@@ -27,3 +27,45 @@
 - an algo trading example
 	- Renaissance Technologies (RenTech) most famous hedge funds
 	- better example is supplier-customer relationship. when an under-the-radar small firm reports earnings, it often has implications for other large companies that are customers or suppliers of the small company.
+	- sebi, rbi and stock market
+		- many factors influence stocks and markets overall
+		- RBI plays a role in the markets on a short-term basis
+		- tylor rule and RBI interference
+			- level of interest rates should be in the economy
+			- if level of inflation is X and economy is growing Y etc. the fair level of interest rate should be 4% in the economy
+- big data in finance
+	- 2 ways of making investment decisions
+		- intuition
+		- data
+	- data -> quantitative - refers to using data try and identify for attractive investment opportunities
+		- smart beta vs fundamental vs technical
+		- data and quantitative metrics for evaluating stocks
+		- why is big data is important?
+			- avoid the HiPPO (in the absence of data, business decisions are often made by the HiPPO - highest-paid person's opinion)
+			- making business decisions is balance - data, time (opinion a.k.a best professional judgement)
+		- 4-steps to developing and designing algorithms
+			- gather and clean data
+			- analyse data
+			- test choices with data
+			- make a decision
+	- regression analysis
+		- regression analysis -> business tool
+		- regressions: y = ax + b
+		- can be used for prediction
+		- a regression predicts the dependent variable (y) based upon values of the independent variables (x)
+		- simple regression -> fits straight line to the data
+		- \begin{equation}
+		  y' = b_0 + b_1 x \pm \epsilon
+		  \end{equation}
+		- b_{0} is the y-intercept
+		- b_{1} = slope = $$\frac{\Delta x}{\Delta y}$$
+		- the $$\epsilon$$ is the gap from fitting line
+		- multiple regression
+		- prediction and errors
+			- steps to prediction
+				- run regression
+				- save coefficients (for example, impact of each inch of insulation)
+				- use coefficients and expected values for the future to get prediction
+				- for each observation, the variation can be described as:
+					- y = y^ + $$ \epsilon $$
+					- actual = prediction + error

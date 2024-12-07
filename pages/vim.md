@@ -1,0 +1,8 @@
+- vim /home/projects/vim_class/nav.txt
+- h - left, j - down, k - up, l - right
+- ctrl + f - forward - page down
+- ctrl + b - backward - page up
+- w - navigate forward by word. punctuation also considered as word
+- b - navigate backward by word. punctuation also considered as word
+- W - navigate forward by word. space treated as word boundaries
+- B - navigate backward by word. space treated as word boundaries
