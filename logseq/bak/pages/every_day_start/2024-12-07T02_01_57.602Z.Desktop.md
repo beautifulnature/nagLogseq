@@ -1,0 +1,7 @@
+- db
+	- eaton
+		- https://notes.eatonphil.com
+- https://learning.google/
+	- https://learning.google.com/experiments/learn-about/
+- https://supermemory.ai/home
+- https://notebooklm.google.com/
