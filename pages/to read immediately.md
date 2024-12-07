@@ -1,2 +1,2 @@
 - ideological successors
--
+- [[Book: How to live an Extraordinary Life]]
