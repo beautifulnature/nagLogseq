@@ -6,3 +6,4 @@
 - b - navigate backward by word. punctuation also considered as word
 - W - navigate forward by word. space treated as word boundaries
 - B - navigate backward by word. space treated as word boundaries
+- https://github.com/vim/vim/blob/master/runtime/doc/
