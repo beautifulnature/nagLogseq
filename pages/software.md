@@ -6,3 +6,4 @@
 - [[hackathons]]
 - [[db]]
 - [[note-taking]]
+- [[cloud]]

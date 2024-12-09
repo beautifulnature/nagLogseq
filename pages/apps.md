@@ -4,6 +4,7 @@
 - [[AutoHotkey]]
 - [[git]]
 - editors
+  collapsed:: true
 	- [[vscode]]
 	- [[vim]]
 - browser
@@ -20,3 +21,5 @@
 - [[sdkman]]
 - [[putty]]
 - [[wsl]]
+- [[googlecolab]]
+- [[utilities]]

@@ -7,10 +7,9 @@
 - cs-cps	`sbe12` `sbe@12`
 - mail
 	- `corporatestandards@bhel.in` `AgmSbe@2504`
-	- `10.5.4.84`	`msearch` `Agmsbe@2024`
+	- `10.5.4.84`	`msearch` `Agmsbe@20241`
 	- `nagaraju@bhel.in` `Ramarao@6014755`
 	- addressbook
 		- `ldap.bhel.in` `username: uid=nagaraju,ou=people,dc=bhel,dc=in` `password: mailpassword`
 - rd sharing `10.9.9.99` `bhelrnd` `$bhel#itx`
 - teams `nagaraju@bhel.in` `Gas51469`
--

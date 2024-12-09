@@ -200,6 +200,7 @@
 	- [[Book: Systematic Trading (Carver, Systematic Trading, 2015)]]
 	- [[Book: Machine Learning for Algorithmic Trading - Stefan Jansen]]
 	- [[linkedin-algorithmic-trading-and-stocks-essential-training]]
+	- [[Udemy - Algorithmic trading from A to Z using Python 2022-3]]
 - insurance
   collapsed:: true
 	- LATER kotak life

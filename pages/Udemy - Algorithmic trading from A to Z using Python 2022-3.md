@@ -1,0 +1,6 @@
+- https://github.com/Quantreo/UDEMY-Algorithmic-trading-from-A-TO-Z-USING-PYTHON
+- https://www.quantreo.com
+- https://www.youtube.com/watch?v=Hmm9Q-T0oTo
+- https://www.amazon.com/gp/product/B09HG18CYL
+- https://discord.gg/wXjNPAc5BH
+-
