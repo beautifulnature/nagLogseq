@@ -1,3 +1,4 @@
+- vim --version
 - vim /home/projects/vim_class/nav.txt
 - h - left, j - down, k - up, l - right
 - ctrl + f - forward - page down
