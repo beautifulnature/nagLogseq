@@ -1,0 +1,19 @@
+- application
+	- os kernel development
+	- device drivers
+	- embedded systems programming
+	- tools and infrastructure code
+	- bit.ly/MarsCuriosityRoverC
+	- fftw.org (fastest fourier transform in the west)
+- basic features of c language syntax
+- compiling c programs, building and debugging using ide
+- creating variables of common data types
+- making decisions and iterating
+- analysing bugs
+- C is case sensitive
+- C is free-form language (different brace styles exist)
+- main function
+- ; to terminate statement
+- C compiler
+	- gnu c compiler - gcc
+	- msvc++ compiler

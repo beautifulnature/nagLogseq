@@ -1,0 +1,2 @@
+- tutorials
+	- [[pluralsight - getting started in C language]]
