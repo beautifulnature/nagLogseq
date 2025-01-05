@@ -1,4 +1,3 @@
-- bash, vim
 - health wealth
 	- [[fitness]]
 	- [[spiritual]]
@@ -6,7 +5,12 @@
 	- [[finance]]
 - core
 	- automation
-		- CNC
 		- programming
-- academic
-	- [[math]]
+			- [[C]]
+			- vim
+			- bash
+		- CNC
+		- ai
+	- academic
+	  collapsed:: true
+		- [[math]]

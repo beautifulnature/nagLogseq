@@ -1,2 +1,26 @@
 - tutorials
 	- [[pluralsight - getting started in C language]]
+- youtube
+	- https://www.youtube.com/@dr-Jonas-Birch
+		- notes
+			- `c` is modular language
+			- `c` has only few built in functions /commands
+			- `libc` library contains `stdin.h` `stdio.h`
+			- `functions`
+				- `main` function where program starts
+				- `printf` function to print message to standard outuput i.e., screen
+					- special / non-printing
+					  collapsed:: true
+						- `\n`: new line character
+				- `scanf` function to get input from user
+					- `%s` for string of characters
+					- `%31s` for string of characters size restricted to 31
+					- `%d` - integer (int)
+					- `%f` - float number
+			- variables
+				- char name[32]
+				- datatype variable_name size_of_variable
+			- data-types
+				- `char` - characters, letters
+				- `int` - number without decimal
+				- `float` - number with decimal

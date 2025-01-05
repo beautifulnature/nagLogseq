@@ -1,3 +1,4 @@
+- Just Do it
 - [[every_day_start]]
 - [[to read immediately]]
 - [[fitness]]
