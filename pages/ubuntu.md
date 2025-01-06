@@ -1,12 +1,9 @@
 - proxy
 	- cntlm
-	  collapsed:: true
 		- sudo apt install cntlm
 		- generate password hashes
-		  collapsed:: true
 			- sudo cntlm -H -u 6014755 -d BHEL
 		- sudo nano /etc/cntlm.conf
-		  collapsed:: true
 			- ```
 			  # Your proxy server address
 			  Proxy intgw-hyd.bhel.in:8080
