@@ -6,9 +6,18 @@
 - core
 	- automation
 		- programming
+		  collapsed:: true
 			- [[C]]
-			- vim
-			- bash
+			- [[vim]]
+			- [[bash]]
+			- [[python]]
+			- [[java]]
+				- se
+				- ee
+			- [[html]]
+			- [[css]]
+			- [[js]]
+			- [[typescript]]
 		- CNC
 		- ai
 	- academic

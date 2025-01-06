@@ -2,6 +2,7 @@
 	- [[pluralsight - getting started in C language]]
 - youtube
 	- https://www.youtube.com/@dr-Jonas-Birch
+	  collapsed:: true
 		- notes
 			- `c` is modular language
 			- `c` has only few built in functions /commands
@@ -75,3 +76,6 @@
 				- `else` statement is optional with only one `if` statement.
 				- `else` is must if at least one `else if` statement used.
 			-
+- resources
+	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
+	- https://beej.us/guide/

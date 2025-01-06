@@ -1,10 +1,8 @@
 - resources
 	- Programming Language Theory
 		- https://steshaw.org/plt/
-	- c
-		- https://cs.brown.edu/courses/csci0300/2021/schedule.html
-		- https://beej.us/guide/
 	- AI
+	  collapsed:: true
 		- sentient - browser controlling agents in 3 lines of code https://github.com/sentient-engineering/sentient
 			- pip install sentient
 		- together.ai
