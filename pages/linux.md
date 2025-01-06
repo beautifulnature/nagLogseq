@@ -1,0 +1,6 @@
+- man 3 rand
+	- man for manual
+	- 1 for build-in commands for linux shell
+	- 2 for system calls - core kernel functions
+	- 3 for library function
+	- 5 for configuration files

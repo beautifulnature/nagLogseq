@@ -8,3 +8,4 @@
 - [[note-taking]]
 - [[cloud]]
 - [[dev-productivity]]
+- [[os]]
