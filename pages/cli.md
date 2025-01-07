@@ -1,6 +1,7 @@
 - ps
 	- Get-History
 	- Clear-History -Id 4 [-Count 10]
+	- del D:\folder -Recurse -Force
 - windows terminal
 	- ctrl + tab: to switch tab
 	- ctrl + shift + tab: to switch to previous tab
