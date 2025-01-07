@@ -2,7 +2,6 @@
 	- [[pluralsight - getting started in C language]]
 - youtube
 	- https://www.youtube.com/@dr-Jonas-Birch
-	  collapsed:: true
 		- notes
 			- `c` is modular language
 			- `c` has only few built in functions /commands
@@ -28,6 +27,11 @@
 					  ```
 				- random values
 					- pseudo random functions i.e. mathematical algorithms that is mimicing true randomness
+					- rand();
+					- srand();
+					- srand(getpid());
+				- `sleep`
+					-
 			- variables
 			  collapsed:: true
 				- char name[32]
