@@ -1,6 +1,5 @@
 - https://gohugo.io/
 - first hugo website
-  collapsed:: true
 	- hugoinaction - https://github.com/hugoinaction/
 	- ![image.png](../assets/image_1736222141063_0.png)
 	- hugo cli
@@ -130,8 +129,11 @@
 		- exampleSite will be available in Hugo themes
 	- continuous deployment pipeline / continuous delivery
 		- https://gohugo.io/hosting-and-deployment/
-		- https://app.netlify.com/signup
-		- https://app.netlify.com/start
+		- netlify
+			- https://app.netlify.com/signup
+			- https://app.netlify.com/start
+		- github
+			- https://github.com/marketplace/actions/hugo-setup
 	- measuring performance and analysing website maintainability
 - create a site
 	- hugo new site acme-corporation --format yaml
