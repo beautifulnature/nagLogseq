@@ -31,7 +31,7 @@
 					- srand();
 					- srand(getpid());
 				- `sleep`
-					-
+					- sleep(2) -> freezes runtime for a brief period
 			- variables
 			  collapsed:: true
 				- char name[32]
@@ -79,7 +79,17 @@
 				- first one should start with `if` statement, as many as `else if` statements optional, only one `else`.
 				- `else` statement is optional with only one `if` statement.
 				- `else` is must if at least one `else if` statement used.
-			-
+				- after `if`, `elseif`, `else` follows block of code in `{}`. if only one statement to execute `{}` can be omitted.
+			- `break;` statement exits the loop
+			- `continue;` breaks the statements below it, but continue the loop.
+			- short syntax
+			  collapsed:: true
+				- number = number - 1;
+				- number -= 1;
+				- number--;
+				- number = number + 1;
+				- number += 1;
+				- number++;
 - resources
 	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
 	- https://beej.us/guide/
