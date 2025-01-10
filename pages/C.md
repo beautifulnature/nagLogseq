@@ -7,6 +7,7 @@
 			- `c` has only few built in functions /commands
 			- `libc` library contains `stdin.h` `stdio.h`
 			- `functions`
+			  collapsed:: true
 				- `main` function where program starts
 				- `printf` function to print message to standard outuput i.e., screen
 				  collapsed:: true
@@ -19,13 +20,16 @@
 					- `%31s` for string of characters size restricted to 31
 					- `%d` - integer (int)
 					- `%f` - float number
+				- `strncpy(birch.title, "doctor", 7)` to copy string into variable
 				- custom functions
+				  collapsed:: true
 					- ```
 					  int custom_fun(int arg1, int arg2){
 					  	return arg1 + arg2;
 					  }
 					  ```
 				- random values
+				  collapsed:: true
 					- pseudo random functions i.e. mathematical algorithms that is mimicing true randomness
 					- rand();
 					- srand();
@@ -90,6 +94,65 @@
 				- number = number + 1;
 				- number += 1;
 				- number++;
+			- structures - struct
+			  collapsed:: true
+				- composite variable
+				- struct variable is created outside of `main()` and will be used in `main()`
+				- `struct` ends with `;`
+				- ```
+				  struct person {
+				  	char title[8];
+				      char lastname[32];
+				  	int age;
+				  };
+				  ```
+			- switch
+			  collapsed:: true
+				- switch followed by case.
+				- every case statement has break
+				- end will have default statement
+				- ```
+				  switch input is char, int
+				  switch(x){
+				  	case 1:
+				      	printf("apples\n");
+				          break;
+				      case 2:
+				      	printf("pears\n");
+				          break;
+				      case 3:
+				      	printf("bananas\n");
+				          break;
+				      default:
+				      	printf("something else\n");
+				  }
+				  ```
+			- pointers
+			  collapsed:: true
+				- is a variable stores address of the another variable
+				- ```
+				  int x = 10;
+				  char y = 'a';
+				  int *p = &x;
+				  char *c = &y;
+				  ```
+				- dereferencing a pointer is to refer to the data
+				- ```
+				  printf("%d\n", *p);
+				  ```
+			- for loops
+			  collapsed:: true
+				- ```
+				  for(initiation; condition; increment){
+				  	// body of the loop 
+				  }
+				  ```
+			- assert(condition) if assert condition is true the rest of the program executes otherwise it will exits the program
+			- `#define` we can also define our own shortcuts alias or macro at the top of the program
+			  collapsed:: true
+				- ```
+				  #define F fflush(stdout)
+				  ```
 - resources
 	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
 	- https://beej.us/guide/
