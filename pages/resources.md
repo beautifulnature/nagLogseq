@@ -4,4 +4,6 @@
 - https://www.linkedin.com/learning-login/go/orl
 	- 23132900227764, 23132900227798
 	- 9876
-	-
+- writing tools
+	- https://github.com/benweidig/writing-tools
+	- https://belief-driven-design.com/
