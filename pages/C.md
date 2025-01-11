@@ -128,7 +128,6 @@
 				  }
 				  ```
 			- pointers
-			  collapsed:: true
 				- is a variable stores address of the another variable
 				- ```
 				  int x = 10;
@@ -140,6 +139,7 @@
 				- ```
 				  printf("%d\n", *p);
 				  ```
+				- `&` pass by reference
 			- for loops
 			  collapsed:: true
 				- ```
@@ -153,6 +153,12 @@
 				- ```
 				  #define F fflush(stdout)
 				  ```
+			- FILE *fd
+				- File descriptor
+				- fopen("test.text", "a");
+				- fprint(fd, "%d\", x);
+				- fclose(fd);
+			-
 - resources
 	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
 	- https://beej.us/guide/
