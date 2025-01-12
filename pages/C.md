@@ -35,7 +35,50 @@
 					- srand();
 					- srand(getpid());
 				- `sleep`
+				  collapsed:: true
 					- sleep(2) -> freezes runtime for a brief period
+				- `fork()`
+				  collapsed:: true
+					- creates 2 instances of the program to run the programs parallelly
+					- x = fork();
+				- `ncurses`
+				  collapsed:: true
+					- based on window -> entire screen
+					- there can be number of screens can be initiated
+					- `initscr()` -> initiate screen
+					- each screen can have specific functions
+					- `printw()`
+					- `refresh()`
+					- letter = getch()
+					- ```
+					  char letter;
+					  
+					  initscr(); // initiate screen
+					  printw("press any key"); // print function of ncurses
+					  refresh(); // to view the fresh screen
+					  
+					  letter = getch(); // getchar fuction of ncurses
+					  clear();
+					  
+					  printw("you pushed: %c", letter);
+					  refresh();
+					  
+					  getch();
+					  endwin();
+					  ```
+					- compile with library ncurses
+						- gcc ncurses.c -lncurses -o ncurses
+					- getyx(stdscn, y, x);
+					- move(y, x);
+					- keypad(stdscr, TRUE);
+					- noecho();
+				- `malloc`
+					- dynamic memory
+					- x = malloc(32);
+					- free(x) // at the end of program
+				- `getchar()` -> to get character from standard input
+				- `memset(x, 0, sizeof(int));`
+				- `strcmp(searchstr, str)`
 			- variables
 			  collapsed:: true
 				- char name[32]
@@ -49,6 +92,10 @@
 			  collapsed:: true
 				- errors: it won't compile
 				- warning: it will be compiled but expected behaviour is unsure.
+				- sudo apt install ltrace strace
+				- `ltrace` for library calls
+					- ltrace -f books1.c
+				- `strace` for sys calls
 			- while loops
 			  collapsed:: true
 				- ```
@@ -106,6 +153,8 @@
 				  	int age;
 				  };
 				  ```
+				- struct elements can be referenced with `dot(.)` operator like `person.title`
+				- if it is struct pointer `*person` `person -> title`
 			- switch
 			  collapsed:: true
 				- switch followed by case.
@@ -140,6 +189,18 @@
 				  printf("%d\n", *p);
 				  ```
 				- `&` pass by reference
+				- `function pointers`
+					- ```
+					  void multiplication(int *target, int x, int y){
+					  	*target = x * y;
+					  }
+					  
+					  int main(){
+					  	void (*fp)(*int, int, int);
+					  	fp = multiplication;
+					      (fp)(&result, a, b)
+					  }
+					  ```
 			- for loops
 			  collapsed:: true
 				- ```
@@ -154,10 +215,14 @@
 				  #define F fflush(stdout)
 				  ```
 			- FILE *fd
+			  collapsed:: true
 				- File descriptor
 				- fopen("test.text", "a");
 				- fprint(fd, "%d\", x);
 				- fclose(fd);
+			- typefef struct s_book Book;
+			  collapsed:: true
+				- shortens the typing now `Book` can be used in place of `struct s_book`
 			-
 - resources
 	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
