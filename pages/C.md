@@ -7,7 +7,6 @@
 			- `c` has only few built in functions /commands
 			- `libc` library contains `stdin.h` `stdio.h`
 			- `functions`
-			  collapsed:: true
 				- `main` function where program starts
 				- `printf` function to print message to standard outuput i.e., screen
 				  collapsed:: true
@@ -79,6 +78,7 @@
 				- `getchar()` -> to get character from standard input
 				- `memset(x, 0, sizeof(int));`
 				- `strcmp(searchstr, str)`
+				- `select()`
 			- variables
 			  collapsed:: true
 				- char name[32]
@@ -177,6 +177,7 @@
 				  }
 				  ```
 			- pointers
+			  collapsed:: true
 				- is a variable stores address of the another variable
 				- ```
 				  int x = 10;
