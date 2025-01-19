@@ -1,0 +1,27 @@
+- Basic tools and building blocks
+	- the rise of robo-advisors
+	  collapsed:: true
+		- what are robo-advisors?
+			- key features of robo-advisors
+			- comparison of robo-advisors
+			- things robo-advisors don't do
+		- advantages of robo-advisors
+			- low fees
+			- tax savings
+			- avoiding behvioral biases
+			- saving time
+		- example: social security benefits
+		- python and robo-advising
+		- who might be interested in learning about robo-advising?
+		- summary
+	- an introduction to portfolio construction
+		- intro
+			- one of the primary functions of a robo-advisor is to construct a well-diversified portfolio of assets.
+			- Harry Markowitz approach
+		- a simple example with 3 assets
+		- computing portfolio's expected return and standard deviation
+		- an illustration with random weights
+		- introducing a risk-free asset
+		- risk tolerance
+		- summary
+-

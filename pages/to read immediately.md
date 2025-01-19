@@ -1,2 +1,3 @@
 - ideological successors
+- [[Book: Robo Advisior]]
 - [[Book: How to live an Extraordinary Life]]

@@ -5,19 +5,17 @@
 	- [[finance]]
 - core
 	- automation
+	  collapsed:: true
 		- programming
-		  collapsed:: true
-			- [[C]]
-			- [[vim]]
-			- [[bash]]
-			- [[python]]
+			- [[vim]] >> [[bash]]
+			- [[python]] >> [[C]]
 			- [[java]]
 				- se
 				- ee
+			- [[typescript]]
+			- [[js]]
 			- [[html]]
 			- [[css]]
-			- [[js]]
-			- [[typescript]]
 		- CNC
 		- ai
 	- academic

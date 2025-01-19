@@ -191,6 +191,7 @@
 			- [@virattt](https://x.com/virattt)
 	- [[openBB]]
 	  collapsed:: true
+	- [[Book: Robo Advisior]]
 	- [[Book: Systematic Trading]]
 	- [[Book: Trading Evolved]]
 	- [[Book: Following the Trend]]
