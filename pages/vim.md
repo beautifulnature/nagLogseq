@@ -8,3 +8,19 @@
 - W - navigate forward by word. space treated as word boundaries
 - B - navigate backward by word. space treated as word boundaries
 - https://github.com/vim/vim/blob/master/runtime/doc/
+- ctrl + o - to go to back in the section you visited
+- ctrl + i - to go forward in the section you visited
+- manual
+	- :help
+	- :help dd
+	- :help linewise
+	- place the cursor on the word and hit ctrl + ] to get help about
+	- :help :q[uit]
+	- :help :h[elp]
+	- :h count
+	- Ctrl + w, Ctrl + w to switch between windows
+	- command line completion :h  :qu<Ctrl+D> to get list of commands starting with :qu. type the command or cycle trough using tab.
+	- :h :q<Ctrl+D>
+	- :set nowildmenu
+		- :h wildmenu
+		- tab to cycle through menu items
