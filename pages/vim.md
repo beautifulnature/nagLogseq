@@ -1,5 +1,12 @@
 - vim --version
-- vim /home/projects/vim_class/nav.txt
+- to enter vim type `vim` at command line
+- how to exit: type `:q!`
+- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
+- to write a file
+	- go to insert mode by pressing `i` and write the content
+	- to save (write) the file press `:w` to write
+	- to save (write) and quit press `:wq`
+- to open a file: ``
 - h - left, j - down, k - up, l - right
 - ctrl + f - forward - page down
 - ctrl + b - backward - page up
@@ -8,3 +15,13 @@
 - W - navigate forward by word. space treated as word boundaries
 - B - navigate backward by word. space treated as word boundaries
 - https://github.com/vim/vim/blob/master/runtime/doc/
+- modes
+	- normal mode or command mode
+	- insert mode
+		- press `i` to enter insert mode
+		- to leave insert mode press `esc`
+	- line mode or last line mode or command line mode
+		- press `:` to enter into command mode
+		- key in the command followed by pressing `Enter` to execute the command and go to normal mode
+		- if you want to abandon the command mode press `Esc` to go to normal mode
+- commands are case sensitive

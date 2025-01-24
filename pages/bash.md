@@ -1,0 +1,1 @@
+- unzip -d vimclass vimclass.zip # unzip vimclass.zip to directory vimclass
