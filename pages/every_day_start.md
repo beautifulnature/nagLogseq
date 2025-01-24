@@ -5,7 +5,6 @@
 	- [[finance]]
 - core
 	- automation
-	  collapsed:: true
 		- programming
 			- [[vim]] >> [[bash]]
 			- [[python]] >> [[C]]
@@ -16,6 +15,7 @@
 			- [[js]]
 			- [[html]]
 			- [[css]]
+			- [[nix-os]]
 		- CNC
 		- ai
 	- academic
