@@ -107,8 +107,7 @@
 				- lazy evaluation and purity
 				- evaluation environments
 				- debugging and tracing evaluations
-		- collapsed:: true
-		  3. setting up nix environment
+		- 3. setting up nix environment
 			- 3.1 installing nix on your system
 			- 3.2 configuring the nix environment
 			- 3.3 basic nix commands
