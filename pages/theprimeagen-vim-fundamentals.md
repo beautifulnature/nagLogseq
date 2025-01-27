@@ -1,0 +1,41 @@
+- introduction
+	- introduction
+	- the terminology
+	- are you ready?
+- basics
+	- opening vim
+	- using vim
+- the vimrc
+	- vim my way
+	- color my pencils
+- navigation
+	- files and navigations
+	- files and navigations - NetRW
+	- files and navigations - Remaps part 1
+	- files and navigations - Remaps part 2
+	- files and navigations - edit
+	- files and navigations - marks
+	- files and navigations - recap
+- recap
+	- pit stop
+- plugins
+	- plugins
+- advanced text manipulation
+	- search and replace
+	- macros
+	- registers
+	- pit stop
+	- advanced motions
+- your first plugin
+	- first plugin
+- my pontifications about vim
+	- my ideal setup
+- misc content
+	- hjkl-x
+	- dyp
+	- insert
+	- search and replace
+	- some javascript
+	- macros
+	- registers
+	- advanced motions
