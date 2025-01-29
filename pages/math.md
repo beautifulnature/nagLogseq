@@ -3,3 +3,5 @@
 		- https://www.youtube.com/watch?v=MO-AExWdl4Q&t=6337s
 - mathigon
 - geogebra
+- resource
+	- https://math.libretexts.org/Bookshelves/Applied_Mathematics
