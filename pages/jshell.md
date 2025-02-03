@@ -1,0 +1,4 @@
+- started from java9
+- $ jshell --version
+- jshell $ /help
+- jshell $ /exit
