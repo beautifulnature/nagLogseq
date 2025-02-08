@@ -1,0 +1,5 @@
+- `<alt> + <enter>`: suggestion fixing
+- `<ctrl> + <f8>`: to put a break point
+- `<shift> + <f9>`: debugging
+- `<shift> + <f10>`: run the code
+-
