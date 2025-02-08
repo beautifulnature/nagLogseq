@@ -54,6 +54,7 @@
 - `.` dot to repeat previous command
 - manual
 	- `:help`
+	- :h usr<tab>
 	- `:help dd`
 	- `:help linewise`
 	- to view help only type `:only`
