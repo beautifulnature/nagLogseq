@@ -53,6 +53,7 @@
 - `ctrl + i` - to go forward in the section you visited
 - `.` dot to repeat previous command
 - manual
+  collapsed:: true
 	- `:help`
 	- :h usr<tab>
 	- `:help dd`
@@ -70,6 +71,7 @@
 		- `:h wildmenu`
 		- tab to cycle through menu items
 - regular expressions
+  collapsed:: true
 	- in normal mode `/` for going forward in file, `?` for going backward in file
 	- search text followed by `<ENTER>`
 	- next word type `n` to go forward, `N` to go backward
@@ -78,7 +80,27 @@
 	- shortcut for `*`, place the cursor word you want search press `#` to go backward
 - registers
 	- `"a` followed by operation like `yy` to copy line
+	- `"Ayy` to append to the `a` register
+	- `:reg [register(s)]`
+		- `:reg`
+		- `:reg a`
+		- `:reg 1a`
+	- repeating with registers
+		- [count][register]operator
+		  or
+		  [register][count]operator
+	- cut-copy-paste=delete-yank-put
+	- registers are storage locations
+	- "" contains last operated on text
+	- numbered registers: "0 ... "9
+		- last yanked will be in "0
+		- last deleted will be in "1
+	- named registers: "a ... "z
+		- you can append to registers by using upper case of register. for example to append to register `a` use `"A`
+	- black hole register
+		- `"_dd` to delete text safely to black hole
 - replace
+  collapsed:: true
 	- `r` to replace the character with new typed one
 	- `:%s/foo/bar/g` replace `foo` with `bar` `globally` in the file. omit `g` if it is at one place only. omit `%` if it is on the same line.
 - mark
@@ -88,6 +110,7 @@
 	- delete a mark `:delmark m`
 	- to delete content from cursor upto mark type `d'a`
 - undo type `u`
+- redo type `<CTRL> + r`
 - go to last edit place `'.`
 - buffers
 	- to view list of buffers type `:buffers` or `:ls`
