@@ -30,12 +30,80 @@
 - to change the text type `c` followed by `w` - word, `)` - line, regular expression
 - `a` append next to cursor and put it in insert mode
 - `A` append at the end of line and put it in insert mode
+- `o` to insert a new line below the current line. `O` to insert a new line above the current line.
+- repeat commands
+	- 80operation<symbol><Esc>
+	- 80i#<Esc>
+- replace mode <Shift><r>
+	- it will replace what ever you type
+	- lower case <r> will replace only one character
+- change mode
+	- c+motion
+	- cw
+	- cw can be put into register like this `"acw`
+	- `c$` to change line from current cursor position to last of the line. shorcut `C`
+	- `cc` to change the entire line
+	- swap case of the character by `~`, word `g~w`, line `g~$` or `g~~`
+	- swap a word to upper case `gUw`
+	- swap a word to lower case `guw`
+	- swap a line to upper case `gUU`
+	- swap a line to lower case `guu`
+- joinng two lines <shift>+<j> (capital J)
+	- if line ends with `.` it will add two spaces
+	- if space are not required then `gJ`
+	- to join 3 lines use `3<Shift><j>`
+- search
+	- search forward
+		- f{char}
+		- forward till search: letter before the search character type `t{char}`
+		- to repeat the same search type `;`
+	- search backwar
+		- F{char}
+		- Reverse till search: letter before the search character in backward direction type `T{char}`
+		- to repeat the same seach type `,`
+	- using forward slash `/{search word}`<Enter>.
+		- to go to next occurrence in forward direction type `n`.
+		- to go to next occurrence in reverse direction type `N`.
+	- incremental search (is)
+		- view (`incsearch` | `noincsearch`)by `:set is?`
+		- turn on by `:set is` turn off by `:set nois`
+	- highlight search (hls / hlsearch)
+		- view by :set hls?
+		- turn on by `:set hls` turn off by `:set nohls`
+	- backward search
+		- `?{pattern}<ENTER>`
+		- type `n` for next occurrence, `N` for next occurrence in reverse direction
+	- assertick (*) / pound (#)
+		- put cursor at the word start and press `*`<Enter> for forward search, `#<Enter>` for backward search
+		- type `n` for next occurrence, `N` for next occurrence in reverse direction
+	- substitute
+		- :[range]s/{pattern-search}/{string-to-replace}/[flags]
+			- to substitute old with new in the current line for the first occurrence
+			- range default is current line
+			- :1,5s/for/FOR/
+			- g flag for global
+			- `$` represents last line
+			- `.` represents current line
+			- `%` represents total file
+			- /Global/,/Local/s/net/org/g
+				- /Global/, /Local/ are pattern
+			- :%s/\/var\/spool/\/usr\/local/g
+			- :%s#/var/spool#/usr/local#g
+		- global substitution
+			- %s/{pattern}/{string}/g
+	- line numbers
+		- :set nu
+		- :set nonu
+		- :set nu!
 - https://github.com/vim/vim/blob/master/runtime/doc/
 - modes
+  collapsed:: true
 	- normal mode or command mode
 	- insert mode
 		- press `i` to enter insert mode
 		- to leave insert mode press `esc`
+		- `I` (capital I) to move to first non blank character of the line and put it in insert mode.
+		- `A` (capital A) to move to the last and append i.e. go to insert mode.
 	- line mode or last line mode or command line mode
 		- press `:` to enter into command mode
 		- key in the command followed by pressing `<Enter>` to execute the command and go to normal mode
@@ -79,6 +147,7 @@
 	- shortcut for `/`, place the cursor word you want to search press `*` to go forward
 	- shortcut for `*`, place the cursor word you want search press `#` to go backward
 - registers
+  collapsed:: true
 	- `"a` followed by operation like `yy` to copy line
 	- `"Ayy` to append to the `a` register
 	- `:reg [register(s)]`
@@ -104,6 +173,7 @@
 	- `r` to replace the character with new typed one
 	- `:%s/foo/bar/g` replace `foo` with `bar` `globally` in the file. omit `g` if it is at one place only. omit `%` if it is on the same line.
 - mark
+  collapsed:: true
 	- to mark `ma`
 	- go to the mark line type `'a`. go to marked place type `a
 	- to view marks `:marks`
@@ -113,6 +183,7 @@
 - redo type `<CTRL> + r`
 - go to last edit place `'.`
 - buffers
+  collapsed:: true
 	- to view list of buffers type `:buffers` or `:ls`
 	- `%a` indicates current buffer
 	- to go to previous buffer `:bp`, `#` indicates previous buffer
@@ -120,17 +191,22 @@
 	- go to specific buffer `:b4`
 	- buffer delete `:bd`
 - find and edit files
+  collapsed:: true
 	- `:e <tab>`
 	- `:e he<tab>`
 	- `:e .` to list all files in current directory
 - read command
+  collapsed:: true
 	- `:r file.txt` - to place the text of `file.txt` in the current file
 - abbreviation
+  collapsed:: true
 	- in `.vimrc` add `abbr _ak vim course`
 	- use in insert mode type `_ak<SPACE>`
 - to execute commands inside vim
+  collapsed:: true
 	- `:!ls -la`
 - `+` sign
+  collapsed:: true
 	- $ vim test.txt +8 # to go to 8th line
 	- $ vim test.txt /little # to go to first occurrence of little
 - to expand the file type `go`
