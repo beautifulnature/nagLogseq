@@ -210,6 +210,55 @@
 	- $ vim test.txt +8 # to go to 8th line
 	- $ vim test.txt /little # to go to first occurrence of little
 - to expand the file type `go`
+- text objects
+	- {operatore}{a|i}{object}
+	- example:
+		- daw: Delete a word (including space)
+		- ciw: change inner word
+		- das: delete a sentence
+		- dis: delete inner sentence
+		- dap: delete a paragraph
+		- dip: delete a inner paragraph
+		- ci]: change inner brackets
+		- da]: delete text object including brackets
+		- da(, di(, dap, dip
+		- `a<` = `a>`, `i<` = `i>`
+		- `cit` change inside tags `<p>`Header`</p>`
+		- `a{` = `a}`, `i{` = `i}`, `aB`, `iB`
+		- `ca"`, `ci"`, `a'`, `i'`, a`, i`
+- macros
+	- macros are recorded series of keystrokes
+	- macros use registers
+	- process
+		- start recording: `q{REGISTER}`
+		- finish by `q`
+		- play back: `@{REGISTER}`
+		- repeat last typed macro `@@`
+	- macro best practices
+		- normalise the cursor position: 0
+		- perform edits and operations
+		- position you cursor to enable easy replays: j
+		- new commands can be appended also type `qC` followed by recording and stopping by `q`
+	- 50@c to apply macro in register c to 50 lines
+	- [range]normal @c
+		- 27,35normal @c
+		- .,$normal @c
+	- to edit a macro: edit the registry
+		- example registry a:
+			- paste by: "ap
+			- make changes and copy again with "ay$
+	- saving macros
+		- viminfo file
+			- .viminfo or _viminfo
+			- stores history and non-empty registers
+			- read when vim starts
+			- can easily overwrite registers
+		- vimrc file
+			- .vimrc or _vimrc
+			- let @d = ''0jDkPa jdd'
+			- if you want to type special literal symbols type `<CTRL>+v` followed by <ESCAPE>
+			- if it has any single quotes (') you can surround with double quotes (")
+- Ctrl + g: to get line count
 - resources
 	- https://theprimeagen.github.io/vim-fundamentals/
 		- [[theprimeagen-vim-fundamentals]]
