@@ -1,11 +1,13 @@
 - vim --version
 - to enter vim type `vim` at command line
 - how to exit: type `:q!`, `qa!` to exit all buffers.
+  collapsed:: true
 	- `q` for quit
 	- `a` for all buffers
 	- `!` for force
 - to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
 - to write a file
+  collapsed:: true
 	- go to insert mode by pressing `i` and write the content
 	- to save (write) the file press `:w` to write
 	- to save (write) and quit press `:wq`
@@ -24,6 +26,13 @@
 - `{` - navigate to previous paragraph
 - `]]` - navigate to end of file
 - `[[` - navigate to starting of file
+- >> - to move the text to right
+- << - to move the text to left
+- shiftwidth
+	- :set shiftwidht?
+	- :set tabstop?
+	- :set expandtab?
+- >i{ - to move text in brackets to the right
 - copy - `y` followed by noun like `w` - word, `)` - line, regular expression
 - `yy` copy the line
 - paste (put) - `p`
@@ -32,12 +41,15 @@
 - `A` append at the end of line and put it in insert mode
 - `o` to insert a new line below the current line. `O` to insert a new line above the current line.
 - repeat commands
+  collapsed:: true
 	- 80operation<symbol><Esc>
 	- 80i#<Esc>
 - replace mode <Shift><r>
+  collapsed:: true
 	- it will replace what ever you type
 	- lower case <r> will replace only one character
 - change mode
+  collapsed:: true
 	- c+motion
 	- cw
 	- cw can be put into register like this `"acw`
@@ -49,10 +61,12 @@
 	- swap a line to upper case `gUU`
 	- swap a line to lower case `guu`
 - joinng two lines <shift>+<j> (capital J)
+  collapsed:: true
 	- if line ends with `.` it will add two spaces
 	- if space are not required then `gJ`
 	- to join 3 lines use `3<Shift><j>`
 - search
+  collapsed:: true
 	- search forward
 		- f{char}
 		- forward till search: letter before the search character type `t{char}`
@@ -97,7 +111,6 @@
 		- :set nu!
 - https://github.com/vim/vim/blob/master/runtime/doc/
 - modes
-  collapsed:: true
 	- normal mode or command mode
 	- insert mode
 		- press `i` to enter insert mode
@@ -108,8 +121,25 @@
 		- press `:` to enter into command mode
 		- key in the command followed by pressing `<Enter>` to execute the command and go to normal mode
 		- if you want to abandon the command mode press `Esc` to go to normal mode
-	- visual line mode: `v`
-	- visual block mode: `Ctrl + v`
+	- visual mode
+		- characterwise visual mode: v
+			- to highlight and go in two directions use `o` to switch highlight
+		- linwise visual mode: V
+		- block wise visual mode: `Ctrl + v`
+			- use `o` to go to other end of the block
+			- use `O` to go to other end of the line in the block
+			- to append text highlight the block using $ and use A and type text and press <ESCAPE>
+			- to prepend text use I
+		- `gv` to go to last visual mode with highlighted text
+		- > - shift right
+		- < - shift left
+		- operations on selected area
+			- select the area and type :
+			- and do the operations on it like substitute s
+		- centering (ce), left (le), rigtht (ri)
+			- select the area
+			- :ce 40 (means centre align 40 width)
+			- :le 5 (left align 5 width)
 	- diff mode
 		- vim -d file1.txt file2.txt
 		- :set noscrollbind
@@ -211,6 +241,7 @@
 	- $ vim test.txt /little # to go to first occurrence of little
 - to expand the file type `go`
 - text objects
+  collapsed:: true
 	- {operatore}{a|i}{object}
 	- example:
 		- daw: Delete a word (including space)
@@ -227,6 +258,7 @@
 		- `a{` = `a}`, `i{` = `i}`, `aB`, `iB`
 		- `ca"`, `ci"`, `a'`, `i'`, a`, i`
 - macros
+  collapsed:: true
 	- macros are recorded series of keystrokes
 	- macros use registers
 	- process
@@ -260,5 +292,6 @@
 			- if it has any single quotes (') you can surround with double quotes (")
 - Ctrl + g: to get line count
 - resources
+  collapsed:: true
 	- https://theprimeagen.github.io/vim-fundamentals/
 		- [[theprimeagen-vim-fundamentals]]
