@@ -29,6 +29,7 @@
 - >> - to move the text to right
 - << - to move the text to left
 - shiftwidth
+  collapsed:: true
 	- :set shiftwidht?
 	- :set tabstop?
 	- :set expandtab?
@@ -111,6 +112,7 @@
 		- :set nu!
 - https://github.com/vim/vim/blob/master/runtime/doc/
 - modes
+  collapsed:: true
 	- normal mode or command mode
 	- insert mode
 		- press `i` to enter insert mode
@@ -291,6 +293,76 @@
 			- if you want to type special literal symbols type `<CTRL>+v` followed by <ESCAPE>
 			- if it has any single quotes (') you can surround with double quotes (")
 - Ctrl + g: to get line count
+- vimrc
+	- rc = run commands
+	- ~/.vimcr, $HOME/_vimrc
+	- each line is executed as a command
+		- set ruler = :set ruler
+		- if it it boolean, we can toggle by adding !
+		- if it is numeric, new value can be set
+		- :h history<CTRL>+<D> to list items with history
+		- :h 'history'
+		- :set history=500
+		- partial command search
+			- :h h<up-arrow> #this can give commands with h from history of commands
+		- default value can be set by append & :set history&
+		- :set #this command shows values other than default values
+		- 1<CTRL>+<g> to display file path
+		- :h option-list # to view list of settings
+		- :options # to view list of options available
+		- " for comments
+		- set history=1000 # keep 1000 items in the history
+		- set ruler # show the cursor position
+		- set showcmd # show incomplete commands
+		- set wildmenu # shows a menu when using tab completion
+		- set scrolloff=5 # set the screen by scrolling to top above it 5 lines will be there
+		- set backup # for file backup
+		- set bex=SOMETHING # for backup extension
+		- set lbr # for line break wrap
+		- set ai # auto indent
+		- set si # for smart indent useful for programming
+		- set bg=light # to tell vim about the background color so that it can set other font colors
+		- color slate
+		- map KEY KEYSTROKES
+			- example
+				- map <F2> iNagaraju Gumpini<CR>
+			- Keys
+			  collapsed:: true
+				- <BS> BackSpace
+				- <CR> Enter
+				- <Enter> Enter
+				- <Return> Enter
+				- <Esc> Escape
+				- <Space> Space
+				- <Up> Up arrow
+				- <Down> Down arrow
+				- <Left> Left arrow
+				- <Right> Right arrow
+				- <Insert> Insert
+				- <Del> Delete
+				- <Home> Home
+				- <End> End
+				- <PageUp> Page-Up
+				- <PageDown> Page-Down
+				- <Tab> Tab
+				- <bar> '|'
+				- <C-X> Ctrl+X
+				- <F1>-<F12> Function Keys
+			- :source ~/.vimrc
+			- leader key (space bar)
+				- this way of mapping will not interfere with other vim mappings
+				- you can remap leader key by
+					- let mapleader=","
+				- map <leader>w :w!<CR>
+			- :h mapping
+			- mkvimrc testvimrc
+			- mkvimrc! (to overwrite ~/.vimrc file)
+			- :h modeline
+				- will be at bottom or top
+				- " vim: set ft=vim :
+				- tells vim this file is vimrc file
+			- to get help about correct documentation
+				- :h 'ruler'<ENTER>
 - resources
   collapsed:: true
 	- https://theprimeagen.github.io/vim-fundamentals/
