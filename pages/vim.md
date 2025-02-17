@@ -462,6 +462,7 @@
 					- Ctrl-s (suspends screen updating) can be resumed by Ctrl-q (but in some terminals may not work)
 				- :h windows
 - plugins
+  collapsed:: true
 	- for vim version 7 and below
 	  collapsed:: true
 		- third party plugin managers
@@ -470,7 +471,7 @@
 			- NeoBundle
 			- Pathogen
 	- vim version 8 has built-in plugin manager
-		- google.com, vimawesome.com
+		- google.com, vimawesome.com:
 		- how to install plugins
 			- know vim plugin directory
 			- :set packpath
@@ -519,6 +520,35 @@
 				- :Git blame
 			- remove plugin
 				- rm -rf vim-fugitive
+- menu
+  collapsed:: true
+	- :help menu
+	- :set so=5 (so scroll off 5 lines above)
+	- in gvim
+	  collapsed:: true
+		- `"+` register
+			- contains text copied with Ctrl+c from clip board
+			- text in register will be available to other application via Ctrl+v
+			- to use vim for system clip board both ways `:set clipboard=unnamedplus`
+		- `"*` register selected text with mouse
+		- `P` put the copied text and places the cursor on the last character
+		- `gP` puts the copied text and places the cursor on the next character if available
+		- ~/.gvimrc or ~/_gvimrc
+			- after opening gvim first .vimrc file will be read and after taht .gvimrc file will be read
+		- menu.vim also available at `$VIMRUNTIME/menu.vim`
+		- can check above locations with `:version`
+		- fonts in gvim
+		  collapsed:: true
+			- :set gfn=*<ENTER> (gfn=GUI font)
+			- view by :set gfn?
+			- put this in `.gvimrc`
+			- if any spaces escape them with `\` (back slash)
+			- :set gfn=Monospace\ Regular:h14
+			- :h gui
+- terminal apps
+  collapsed:: true
+	- gnu screen
+	- tmux
 - resources
   collapsed:: true
 	- https://theprimeagen.github.io/vim-fundamentals/
