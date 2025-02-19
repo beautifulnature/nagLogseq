@@ -283,5 +283,11 @@
 		- arrays are zero index
 		- accessing elements
 			- ids[0];
+	- Strings
+		- Strings under the hood are array of characters
+		- Strings are NULL terminated
+		- strcopy(dest, src);
+		- strncopy(dest, src, n); // n bytes
+		- strcmp(str, otherstr)
 	- functions
 	- format strings
