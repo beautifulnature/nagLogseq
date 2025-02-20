@@ -1,18 +1,18 @@
 - vim --version
 - to enter vim type `vim` at command line
-- how to exit: type `:q!`, `qa!` to exit all buffers.
-  collapsed:: true
-	- `q` for quit
-	- `a` for all buffers
-	- `!` for force
-- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
-- to write a file
-  collapsed:: true
-	- go to insert mode by pressing `i` and write the content
-	- to save (write) the file press `:w` to write
-	- to save (write) and quit press `:wq`
-	- to save (write) with previous state with no write `:e!`
-- to open a file: `e file.txt`
+- basics
+	- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
+	- to open a file: `e file.txt`
+	- how to exit: type `:q!`, `qa!` to exit all buffers.
+		- `:q` for quit
+		- `a` for all buffers
+		- `!` for force
+	- to write a file
+		- go to insert mode by pressing `i` and write the content
+		- to save (write) the file press `:w` to write or `:x`
+		- to save (write) and quit press `:wq` or `ZZ`
+		- to save (write) with previous state with no write `:e!`
+		- `:sav newfile.txt` save as new file
 - `h` - left, `j` - down, `k` - up, `l` - right
 - `ctrl + f` - forward - page down
 - `ctrl + b` - backward - page up
