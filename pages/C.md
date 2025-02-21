@@ -237,6 +237,7 @@
 		- https://www.sublimetext.com/docs/linux_repositories.html#apt
 	- $ subl
 - c-language
+  collapsed:: true
 	- ISO 9899
 	- programming langauge
 		- compiled / interpreted
@@ -291,3 +292,5 @@
 		- strcmp(str, otherstr)
 	- functions
 	- format strings
+- Yale N. Patt_ Sanjay J. Patel - Introduction to Computing Systems_ From Bits & Gates to C & Beyond-McGraw-Hill Education (2003)
+- Jens Gustedt - Modern C-Manning Publications (2019)
