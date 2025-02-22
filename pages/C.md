@@ -230,33 +230,86 @@
 - resources
 	- https://cs.brown.edu/courses/csci0300/2021/schedule.html
 	- https://beej.us/guide/
+	- http://www.cplusplus.com/reference/clibrary/
 - tools
 	- sudo apt update
 	- sudo apt install gcc build-essential
-	- sublime-text editor
-		- https://www.sublimetext.com/docs/linux_repositories.html#apt
-	- $ subl
+	- ide
+		- sublime-text editor
+			- https://www.sublimetext.com/docs/linux_repositories.html#apt
+			- $ subl
+		- visual studio
+		- visual studio code
+		- Eclipse CDT
+		- Code::Blocks
+		- Code Lite
 - c-language
-  collapsed:: true
 	- ISO 9899
 	- programming langauge
+	  collapsed:: true
 		- compiled / interpreted
 		- garbage collector
 		- strongly typed or not
 		- memory safe?
 	- variables
+		- variables are used for storing data during program execution
+		- Data Types
+			- simple or primitive types (4 integer types, 3 floating-point types, 1 char type)
+			- |Data Type|Size (Byte)|Description|Range|
+			  |char|1 (8 bits)|Integer or character|-128 to +127|
+			  |short|2 (16 bits)|Ineger|-32768 to +32767|
+			  |int|4 (16 bits)||-2^31 to +2^31-1|
+			  |long|4 or 8 (32 bits)||-2^31 to +2^31-1|
+			  |long long|8 (64 bits)||-2^63 to +2^63-1|
+			  |float|4|Floating-point number||
+			  |double|8|||
+			  |long double|8 or 16|||
+			- modern compilers make int 32 bits means 4 bytes.
+			- `sizeof` operator returns the number of bytes that a type occupies. The type returned is `size_t`, which is an alias for an integer type. Specifier %zu (%Iu) to format this type with printf.
+			- integers can also be assigned by using octal or hexadecimal notation in addition to decimal  notation.
 		- variable declaration
-			- type name = initial_value;
-			- name should be descriptive for readability
-		- int
-		- float
-		- char
-	- variable scope
-		- local scope
-			- only available to the function locally
-		- global scope
-			- declared outside of the function and available to all functions
+		  collapsed:: true
+			- identifier can consist of letters, numbers, and underscores, but cannot start with a number. cannot contain spaces or special characters and must not be a reserved keyword.
+			- identifier should be descriptive for readability
+			- C is case-sensitive
+			- variable declaration
+				- data_type identifier;
+			- initialisation (by `=` sign)
+				- identifier = initial_value;
+			- declaration and assignment can be combined
+				- data_type identifier = initial_value;
+			- assignment (by `=` sign) or assignment operator
+				- identifier can be reassigned with a value
+				- identifier = initial_value;
+			- when a variable is assigned a value it then becomes defined.
+			- short hand for declaring more than one variable of same type using comma operator (,)
+				- int x = 1, y = 2, z;
+			- a variable value can be reassigned to another variable
+				- int a = x;
+		- variable scope
+		  collapsed:: true
+			- local scope
+				- only available to the function locally
+			- global scope
+				- declared outside of the function and available to all functions
+		- printing variables using `printf()`
+		  collapsed:: true
+			- format specifier must be matched by corresponding argument of the correct type
+			- |Specifier|Output|
+			  |%d or %i|char, short, or int|
+			  |%c|char|
+			  |%s|string of characters|
+			  |%f|float or double|
+			  |%Lf|long double|
+			  |%ld|long int|
+			  |%lld|long long int|
+			  |%u|unsigned char, short or int|
+			  |%lu|unsigned long int|
+			  |%llu|unsigned long long int|
+			  |%p|pointer address|
+		- Integer Types
 	- pre-processor
+	  collapsed:: true
 		- starts with `#`
 		- `#include <stdio.h>` to bring in the code from libraries
 		- `#define` to define constants
@@ -273,11 +326,13 @@
 		- In case of no DEBUG declarative, the above can be accomplished using gcc
 			- gcc variables.c -o variables -DDEBUG
 	- compilation process
+	  collapsed:: true
 		- preprocessor
 		- compilation
 		- assembling
 		- linking
 	- arrays
+	  collapsed:: true
 		- syntax
 			- int ids[] = {1, 2, 3};
 			- int ids[32] = {1, 2, 3};
@@ -285,6 +340,7 @@
 		- accessing elements
 			- ids[0];
 	- Strings
+	  collapsed:: true
 		- Strings under the hood are array of characters
 		- Strings are NULL terminated
 		- strcopy(dest, src);
@@ -292,5 +348,20 @@
 		- strcmp(str, otherstr)
 	- functions
 	- format strings
+	- Comments
+	  collapsed:: true
+		- comments are used to insert notes into the source code.
+		- multi-line comment
+			- ```
+			  /* 	multi-line
+			  	comment */
+			  ```
+		- single line comment
+			- ```
+			  // single-line comment
+			  ```
+	- Whitespace
+	  collapsed:: true
+		- white space characters like comments, spaces, and tabs are generally ignored by the compiler.
 - Yale N. Patt_ Sanjay J. Patel - Introduction to Computing Systems_ From Bits & Gates to C & Beyond-McGraw-Hill Education (2003)
 - Jens Gustedt - Modern C-Manning Publications (2019)
