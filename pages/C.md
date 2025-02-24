@@ -235,6 +235,7 @@
 	- sudo apt update
 	- sudo apt install gcc build-essential
 	- ide
+	  collapsed:: true
 		- sublime-text editor
 			- https://www.sublimetext.com/docs/linux_repositories.html#apt
 			- $ subl
@@ -252,6 +253,7 @@
 		- strongly typed or not
 		- memory safe?
 	- variables
+	  collapsed:: true
 		- variables are used for storing data during program execution
 		- Data Types
 			- simple or primitive types (4 integer types, 3 floating-point types, 1 char type)
@@ -267,6 +269,103 @@
 			- modern compilers make int 32 bits means 4 bytes.
 			- `sizeof` operator returns the number of bytes that a type occupies. The type returned is `size_t`, which is an alias for an integer type. Specifier %zu (%Iu) to format this type with printf.
 			- integers can also be assigned by using octal or hexadecimal notation in addition to decimal  notation.
+			- By default, all integer types are signed. This can be explicitly specified by using the `signed` keyword.
+			  collapsed:: true
+				- |data type|range|
+				  |signed char|-128 to +127|
+				  |signed short|-32768 to +32767|
+				  |signed int|-2^31 to +2^31-1|
+				  |signed long|-2^31 to +2^31-1|
+				  |signed log long|-2^63 to +2^63-1|
+				- If only positive values need to be stored, can be declared as `unsigned`
+					- |data type|range|
+					  |unsigned char|0 to 255|
+					  |unsigned short|0 to 65535|
+					  |unsigned int|0 to 2^32-1|
+					  |unsigned long|0 to +2^32-1|
+					  |unsigned log long|0 to +2^64-1|
+				- when an unsigned value is printed, the specifier %u is used for the unsigned char, short, and int types.
+				- unsigned long type is specified with %lu and unsigned long long is specified with %llu
+				- |abbreviations|full syntax|
+				  |unsigned|unsigned int|
+				  |signed|signed int|
+				  |short|short int|
+				  |long|long int|
+			- Sized Integers
+			  collapsed:: true
+				- exact-width integer types can be enabled by including `stdint.h` header file
+					- ```
+					  #include <stdint.h>
+					  
+					  /* signed exact-width integers */
+					  int8_t iSmall; /* 8 bits */
+					  int16_t iMedium; /* 16 bits */
+					  int32_t iLarge; /* 32 bits */
+					  int64_t iHuge; /* 64 bits */
+					  ```
+				- unsigned versions of these types are available as well.
+					- ```
+					  /* unsigned exact-width integers */
+					  uint8_t uSmall; /* 8 bits */
+					  uint16_t uMedium; /* 16 bits */
+					  uint32_t uLarge; /* 32 bits */
+					  uint64_t uHuge; /* 64 bits */
+					  ```
+				- C99 prior, Microsoft C has implemented with different type names
+					- ```
+					  /* visual studio signed exact-width integers */
+					  __int8 iSmall; /* 8 bits */
+					  __int16 iMedium; /* 16 bits */
+					  __int32 iLarge; /* 32 bits */
+					  __int64 iHuge; /* 64 bits */
+					  ```
+			- Floating-Point Types
+			  collapsed:: true
+				- floating-point types can store real numbers with different levels of precision.
+				  collapsed:: true
+					- |type|precision|
+					  |float|7 digits|
+					  |double|15 digits|
+					  |long|same as double|
+				- when printing a floating-point number you can limit the decimal places
+				  collapsed:: true
+					- printf("%.2f", myFloat);
+				- Floating-point numbers can be expressed using decimal, exponential, or hexadecimal notation.
+				  collapsed:: true
+					- ```
+					  double fDec = 1.23;
+					  double fExp = 3e2; /* 3*10^2 = 300 */
+					  double fHex = 0xAp2 /* 10*2^2 = 40 */
+					  ```
+					- exponential (scientific) notation is used by adding E or e followed by decimal exponent.
+					- hexadecimal floating-point notation uses P or p to specify binary exponent.
+			- Literal Suffixes
+			  collapsed:: true
+				- `U` for unsigned, `L` for long, `LL` for long long type
+				- ```
+				  int i = 10;
+				  long l = 10L;
+				  unsigned long ul = 10UL;
+				  ```
+				- floating-point literal is treated as double. `F` or `f` suffix can be used. `l` or `L` suffix specifies `long double`
+					- ```
+					  float f = 1.23F;
+					  double d = 1.23;
+					  long double ld = 1.23L;
+					  ```
+				- The compiler implicitly converts literals to whichever type is necessary, so this type distinction for literals is usually not necessary.
+				- If the F suffix is left out when assigning to float variable, the compiler may give a warning since the conversion from double to float involves a loss of precision.
+			- Char Type
+			  collapsed:: true
+				- `char` type is commonly used to represent ASCII characters. Character constants are enclosed in single quotes and can be stored in a variable of `char` type.
+				- `%c` used to display char
+				- `%d` used to display numerical value
+			- Bool Type
+			  collapsed:: true
+				- `_Bool` type which is a value that can only be either 1 (true) or 0 (false)
+				- _Bool b = 0; /* false value */
+				- standard header `stdbool.h`, `_Bool` is accessed via name `bool`. macros `true` and `false` are defined for 1 and 0.
+				- there is no format specifier for bool. `%d` will print int value 1 or 0.
 		- variable declaration
 		  collapsed:: true
 			- identifier can consist of letters, numbers, and underscores, but cannot start with a number. cannot contain spaces or special characters and must not be a reserved keyword.
@@ -292,6 +391,35 @@
 				- only available to the function locally
 			- global scope
 				- declared outside of the function and available to all functions
+			- ```
+			  int globalVar; /* global varaible */
+			  
+			  int main(void){
+			  	int localVar; /* local variable */
+			  }
+			  ```
+			- global variables are automatically initialised to zero by the compiler, whereas local variables are not initialised at all. Uninitialized local variables will therefore contain whatever garbage is already present in that memory location.
+				- ```
+				  int globalVar; /* initialised to 0 */
+				  
+				  int main(void){
+				  	int localVar; /* uninitialised */
+				  }
+				  ```
+			- Using uninitailsed variables is a common programming mistake that can produce unexpected results. It is therefore a good idea to always give your local variables initial values when they are declared.
+				- ```
+				  int main(void){
+				  	int locarVar = 0; /* initialesed to  */
+				  }
+				  ```
+			- variables can be declared anywhere within a function's scope.
+				- ```
+				  int main(void){
+				  	int var1;
+				      /* other statements */
+				      int var2;
+				  }
+				  ```
 		- printing variables using `printf()`
 		  collapsed:: true
 			- format specifier must be matched by corresponding argument of the correct type
@@ -307,7 +435,6 @@
 			  |%lu|unsigned long int|
 			  |%llu|unsigned long long int|
 			  |%p|pointer address|
-		- Integer Types
 	- pre-processor
 	  collapsed:: true
 		- starts with `#`
@@ -346,6 +473,33 @@
 		- strcopy(dest, src);
 		- strncopy(dest, src, n); // n bytes
 		- strcmp(str, otherstr)
+	- Operators
+		- numerical operator is a symbol that makes the program perform a specific mathematical or logical manipulation
+		- arithmetic operators
+		  collapsed:: true
+			- |operation|symbol|
+			  |+|addition|
+			  |-|subtraction|
+			  |*|multiplication|
+			  |/|division|
+			  |%|modulus|
+			- Note: division gives incorrect result, if it operates on integers, one must be converted to float explicitly. If it operates on float no truncation happens.
+			- increment and decrement opeators
+				- increment (++) decrement (--)
+					- x++; /* x = x + 1; */
+					- x--; /* x = x - 1; */
+				- x++; /* post-increment */
+				- x--; /* post-decrement */
+				- ++x; /* pre-increment */
+				- --x; /* pre-decrement */
+		- comparison operators
+			- |operator|symbol|
+			  |equal to|==|
+			  |not equal to|!=|
+			  |greater than|>|
+			  |less than|<|
+			  |greater than or equal to|>=|
+			  |less than or equal to|<=|
 	- functions
 	- format strings
 	- Comments
