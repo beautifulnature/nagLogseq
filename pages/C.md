@@ -492,7 +492,8 @@
 				- x--; /* post-decrement */
 				- ++x; /* pre-increment */
 				- --x; /* pre-decrement */
-		- comparison operators
+		- comparison operators (returns 1 or 0 i.e true or false)
+		  collapsed:: true
 			- |operator|symbol|
 			  |equal to|==|
 			  |not equal to|!=|
@@ -500,6 +501,70 @@
 			  |less than|<|
 			  |greater than or equal to|>=|
 			  |less than or equal to|<=|
+		- logical operators
+		  collapsed:: true
+			- logical operators are used together with comparison operators
+			- logical and (&&) evaluates to true if both left and right sides are true.
+			- logical or (||) is true if left or right side is true.
+			- for inverting boolean result use logical not (!) operator.
+			- for `logical and` and `logical or` the right side will not be evaluated if the result is already determined by the left side
+		- bitwise operators
+		  collapsed:: true
+			- bitwise operators can manipulate individual bits inside an integer.
+			- bitwise left shift operator (<<) moves all bits to the left with specified number of steps.
+			- `bitwise and` `&`
+				- x = 5 & 4; /* 101 & 100 = 100 (4) */
+			- `bitwise or` `|`
+				- x = 5 | 4; /* 101 | 100 = 101 (5) */
+			- `bitwise xor` `^` exclusive or
+				- x = 5 ^ 4; /* 101 ^ 100 = 001 (1) */
+			- `bitwise leftshift` `<<`
+				- x = 4 << 1; /* 100 << 1 = 1000 (8) */
+			- `bitwise rightshift` `>>`
+				- x = 4 >> 1; /* 100 >> 1 = 10 (2) */
+			- `bitwise inver` `~`
+				- x = ~4;
+				- ```
+				  ~00000100 = 11111011 (-5)
+				  MSB - Most significant bit is 1 means -ve 0 means +ve
+				  flip the bits 00000100 add 1 results 00000101 is 2^2+2^0 = 5.
+				  negate the result -5
+				  ```
+			- bitwise operations also have combined assignment operations
+				- ```
+				  int x = 5; x &= 4;
+				  	x = 5; x |= 4;
+				      x = 5; x ^= 4;
+				      x = 4; x <<= 1;
+				      x = 4; x >>= 1;
+				  ```
+		- operator precedence
+			- expressions evaluated from left to right
+			- operator with lowest precedence will be evaluated first
+			- |precedence|operator|
+			  |1|`()``[]` `.` `->` `x++` `x--`|
+			  |2|`!` `~` `++x` `--x` `(type)` `sizeof` `*` `&`|
+			  |3|`*` `/` `%`|
+			  |4|`+` `-`|
+			  |5|`<<` `>>`|
+			  |6|`<` `<=` `>` `>=`|
+			  |7|`==` `!=`|
+			  |8|`&`|
+			  |9|`^`|
+			  |10|`|`|
+			  |11|`&&`|
+			  |12|`||`|
+			  |13|`=` `op=`|
+			  |14|`,`|
+			- use brackets `()` to give  better understanding
+	- pointers
+		- pointer is a variable that contains the memory address of another variable called the pointee.
+		- creating pointer
+			- int* p; /* pointer to an integer */
+			- int *q; /* alternative syntax */
+			- address-of operator `&` to retrieve the address and assign to pointer variable.
+			- int i = 10;
+			- p = &i;
 	- functions
 	- format strings
 	- Comments
