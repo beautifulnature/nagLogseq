@@ -460,20 +460,101 @@
 		- linking
 	- arrays
 	  collapsed:: true
+		- an array is a data structure used to store a collection of values that all have the same data type.
 		- syntax
-			- int ids[] = {1, 2, 3};
 			- int ids[32] = {1, 2, 3};
+			- int ids[] = {1, 2, 3}; /* alternative - array size can be left out to let the array size be decided by the number of values assigned */
 		- arrays are zero index
+		- assignment
+			- ids[0] = 2;
 		- accessing elements
 			- ids[0];
+		- multi-dimensional arrays
+		  collapsed:: true
+			- ```
+			  int myArray[2][2] = { {0, 1}, {2, 3}};
+			  int my2Array[2][2] = { 0, 1, 2, 3}; /* inside curly braces are optional. but including them is good practice to understand the code easier */
+			  myArray[0][0] = 0;
+			  myArray[0][1] = 1;
+			  ```
+		- Arrays and Pointers
+		  collapsed:: true
+			- An array in C can be treated as a constant pointer that points to the first element in the array.
+			- array elements can referenced with pointer arithmetic.
+			- by incrementing the pointer by one, you move to the next element in the array, because changes to a pointer's address are implicitly multiplied by the size of the pointer's data type.
+			- ```
+			  int myArray[3] = {13, 12, 31};
+			  *myArray = 10; /* myArray[0] = 10; changes first element 13 and assigns 10 to it */
+			  *(myArray+1) = 25; /* myArray[1] = 25; changes second element 12 and assigns 25 to it */
+			  ```
+			- four pointer airthmetics
+				- `+`, `-`, `++`, `--`
+				- ```
+				  int* ptr = &myArray;
+				  printf("Address of myArray[0] = %d is %p\n", *ptr, ptr);
+				  ptr++;
+				  printf("Address of myArray[1] = %d is %p\n", *ptr, ptr);
+				  ptr++;
+				  printf("Address of myArray[2] = %d is %p\n", *ptr, ptr);
+				  ```
+			- Array size
+				- sizeof() - to determine length of an array in bytes
+				- number of elements x size of data type
+				- ```
+				  int myArray[2] = {1, 2};
+				  myArray[2] = 3; /* out of bounds */
+				  ```
 	- Strings
-	  collapsed:: true
-		- Strings under the hood are array of characters
-		- Strings are NULL terminated
-		- strcopy(dest, src);
-		- strncopy(dest, src, n); // n bytes
-		- strcmp(str, otherstr)
+		- Strings under the hood are array of characters. delimited by "".
+			- char myString[] = "Hi";
+		- Strings are NULL terminated, `\0`, null character, which is used to know where the string ends.
+		- null character added automatically by the compiler
+			- char myString[3] = { 'H', 'i', '\0' };
+		- %s is the string formatter with printf function
+		- character pointer
+		  collapsed:: true
+			- string pointer location is read-only block unlike char array characters in string cannot be changed.
+			- ```
+			  char* ptrs = "Hi";
+			  printf("%s\n", ptrs);
+			  ```
+		- escape characters
+		  collapsed:: true
+			- |character|meaning|
+			  |\\n|newline|
+			  |\\t|horizontal tab|
+			  |\\v|vertical tab|
+			  |\\b|backspace|
+			  |\\r|carriage return|
+			  |\\0|null character|
+			  |\\000|octal number(1-3 digits)|
+			  |\\f|form feed|
+			  |\\a|alert sound|
+			  |\\'|single quote|
+			  |\\"|double quote|
+			  |\\\|backslash|
+			  |\\?|question mark|
+			  |\\xhh|hexadecimal number|
+			- ```
+			  char line = '\n'; /* escape code */
+			  line = '\012'; /* octal notation */
+			  line = '\x0A'; /* hexadecimal notation */
+			  ```
+			- supersede `\` to ASCII characters
+		- common string operations functions are included in `string.h`
+			- destination is large enough to hold the entire string
+			- `strcat(dest, src)` string concatenation
+			- strcat(s1, s2); /* append s2 to s1 */
+			- strcmp(str, otherstr)
+				- if all matches returns zero
+			- strcpy
+				- strcpy(dest, src); destination content will be replaced by source
+				- strncpy(dest, src, n); // n bytes
+			- strlen (excluding null char)
+			- sizeof
+				- to get size in bytes or to get allocated size
 	- Operators
+	  collapsed:: true
 		- numerical operator is a symbol that makes the program perform a specific mathematical or logical manipulation
 		- arithmetic operators
 		  collapsed:: true
@@ -558,13 +639,38 @@
 			  |14|`,`|
 			- use brackets `()` to give  better understanding
 	- pointers
+	  collapsed:: true
 		- pointer is a variable that contains the memory address of another variable called the pointee.
 		- creating pointer
 			- int* p; /* pointer to an integer */
 			- int *q; /* alternative syntax */
 			- address-of operator `&` to retrieve the address and assign to pointer variable.
 			- int i = 10;
-			- p = &i;
+			- p = &i; /* address of i assigned to p */
+		- dereferencing pointers
+			- pointer contains the memory address of the variable. referencing the pointer will retrieve this address. to obtain the actual value stored in that address, the pointer must be prefixed with an asterisk, known as the dereference operator (*).
+			- \*p = 20; /* value of i changed through p */
+			- if a second pointer is created and assigned the value of the first pointer, it will the get a copy of the first pointer's memory address.
+				- int* p2 = p; /* copy address stored in p */
+		- pointing to a pointer
+			- ```
+			  int  i = 10;
+			  int* firstPointer = &i;
+			  int** secondPointer = &firstPointer;
+			  
+			  printf("Address of first pointer: %p through second pointer\n", secondPointer);
+			  printf("Address of i: %p through *second pointer\n", *secondPointer);
+			  printf("Value of i: %d through **secon pointer", **secondPointer);
+			  ```
+		- Null Pointer
+			- A pointer should be set to zero when it is not assigned to a valid address. such a pointer is called a _null pointer_. Doing this allows you to check whether the pointer can be safely dereferenced, because a valid pointer will never be zero.
+			- The constant _NULL_ can also be used to signify a null pointer. _NULL_ is typically defined as zero in C (defined in stdio.h, stddef.h)
+			- ```
+			  #include <stdio.h>
+			  
+			  int* p = NULL; /* null pointer */
+			  int* p2 = 0; /* null pointer */
+			  ```
 	- functions
 	- format strings
 	- Comments
