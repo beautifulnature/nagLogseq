@@ -699,6 +699,7 @@
 			  }
 			  ```
 		- parameters
+		  collapsed:: true
 			- function parameters, passing arguments
 			  collapsed:: true
 				- in function definition function parameters are defined within parenthesis.
@@ -715,12 +716,32 @@
 					  vod bar(){}
 					  ```
 			- variable paramerter lists
+			  collapsed:: true
 				- function can be defined to accept a variable number of arguments.
+				- first parameter is number of arguments, followed by argument list
 				- prameter list must end with ellipsis (...)
 				- int parmeter is typically incuded to let the function know the number of extra arguments that are passed to it.
 				- to access arguments includ stdarg.h header file.
-					- this header defines new type called va_list
-					-
+					- this header defines new type called `va_list`
+					- 3 functions that operate on variables of this type: `va_start`, `va_arg`, `va_end`
+					- ```
+					  #include <stdio.h>
+					  #include <stdarg.h>
+					  int sum(int num, ...) {
+					  	va_list args; /* variable argument list */
+					  	int sum = 0, i = 0;
+					  	va_start(args, num); /* initialize argument list */
+					  	for (i = 0; i < num; i++) /* loop through arguments */
+					  		sum += va_arg(args, int); /* get next argument */
+					  	va_end(args); /* free memory */
+					  	return sum;
+					  }
+					  	
+					  int main(void) {
+					  	printf("Sum of 1+2+3 = %d", sum(3,1,2,3)); /* 6 */
+					  }
+					  ```
+			- C does not allow function overloading or default parameter values
 		- return statement
 		- forward declaration
 		  collapsed:: true
@@ -739,6 +760,70 @@
 						  
 						  void myFunction(int a){}
 						  ```
+		- pass by value
+		  collapsed:: true
+			- variables by default passed by value. this means only a copy of the value is passed to the function. therefore, changing the parameter in any way will not affect the original value.
+			- ```
+			  #include <stdio.h>
+			  
+			  void set(int i) { i = 1; }
+			  
+			  int main(void){
+			  	int x = 0;
+			      set(x); /* copy of vale of x is passed. but x can't be changed by set() function */
+			      printf("%d\n", x);
+			  }
+			  ```
+		- pass by address
+		  collapsed:: true
+			- alternative to pass by value is to use pointer syntax to pass the variable by address.
+			- when an argument is passed by address, the parameter can be changed to replaced, and the change will affect the original variable.
+			- ```
+			  void set(int* i) { *i = 1; }
+			  int main(void) {
+			  	int x = 0;
+			  	set(&x);
+			  	printf("%d", x); /* "1" */
+			  }
+			  ```
+			- arrays can be treated as pointers. they will automatically passed by address.
+				- ```
+				  void set(int a[]) { a[0] = 1; }
+				  int main(void) {
+				  	int x[] = { 0 };
+				  	set(x);
+				  	printf("%d", x[0]); /* "1" */
+				  }
+				  ```
+		- return by value or address
+		  collapsed:: true
+			- by default a function returns by value
+			- return by address, function return type is a pointer.
+			- function should not return an expression or literal, it should return a variable.
+			- the variable returned should never be a local variable.
+			- return by address is commonly used to return an argument that has been passed to the function by address.
+			- ```
+			  int* byAdr(int* i) { (*i)++; return i; }
+			  int main(void) {
+			  	int a = 10;
+			  	int *p = byAdr(&a);
+			  	printf("%d", *p); /* "11" */
+			  }
+			  ```
+		- inline functions
+			- to improve performance, the programmer can recommend that the compiler inlines the calls to a specific function by using the `inline` function modifier.
+			- ```
+			  inline int increment(int a) { return a + 10; }
+			  
+			  int main(void) {
+			  	int i;
+			      for(i = 0; i < 100;){
+			      	i = increment(i);
+			          printf("%d\n", i);
+			      }
+			  }
+			  ```
+			- note that the `inline` keyword is only a recommendation. the compiler may choose to ignore this recommendation and it may also inline functions that dont have the `inline` modifier.
 	- comments
 	  collapsed:: true
 		- comments are used to insert notes into the source code.
