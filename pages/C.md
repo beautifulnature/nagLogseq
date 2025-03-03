@@ -1123,7 +1123,7 @@
 			  ```
 			- Bit fields are packed as compactly as possible, while keeping in mind that the size of an object needs to be a multiple of the size of the largest type it contains.
 			- in the above case the needed 12 bits will require 16 bits (2 bytes) to be reserved for the object (size of unsigned short 16 bits). if bit fields not been used, 3 shorts and the struct would occupy 48 bits.
-	- unions
+	- union
 	  collapsed:: true
 		- union type is identical to struct type, except that all fields share the same memory location. therefore, the size of a union is the size of the largest field it contains.
 		- ```
@@ -1156,7 +1156,14 @@
 		  m.c[1];				/* 						11110000			 */
 		  m.c[0];				/* 									00001111 */
 		  ```
-	- type conversions
+	- type casting or type conversion
+		- converting an expression from one type to another is known as type casting or type conversion. this can be done either implicitly by the compiler or explicitly with code.
+		- implicit conversions
+			- an implicit conversion is performed automatically by the compiler when an expression needs to be converted into one of its compatible types.
+			- implicit conversions of primitive types are 2 kinds: promotion and demotion.
+				- promotion occurs when an expression gets implicitly converted into a larger type.
+				- demotion occurs when converting an expression to a smaller type.
+				-
 	- storage classes
 	- constants
 	- preprocessor
