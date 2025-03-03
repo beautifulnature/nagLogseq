@@ -678,6 +678,7 @@
 			  int* p2 = 0; /* null pointer */
 			  ```
 	- functions
+	  collapsed:: true
 		- defining functions
 		  collapsed:: true
 			- ```
@@ -947,5 +948,221 @@
 			  /* ... */
 			  myLabel: /* label declaration */
 			  ```
+	- typedefs
+	  collapsed:: true
+		- an alias of a type can be created using `typedef` keyword followed by the type and alias name. by convention, uppercase letters are commonly used.
+			- ```
+			  typedef unsigned char BYTE;
+			  ```
+		- once defined, the alias can be used as a synonym for its specified type.
+			- ```
+			  BYTE b; /* unsigned char */
+			  ```
+			- ```
+			  typedef struct {int point;} score;
+			  score a, b, c;
+			  a.points = 10;
+			  ```
+	- enums
+	  collapsed:: true
+		- an enum is a user-defined type consisting of fixed list of named constants.
+		- ```
+		  enum color {RED, GREEN, BLUE};
+		  
+		  int main(void){
+		  	enum color c = RED;
+		  }
+		  ```
+		- enum variables may also be declared when enum is defined, by placing the variable names before semicolon. this position is known as the declaration list.
+		- ```
+		  enum color {RED, GREEN, BLUE} c, d;
+		  printf("%d\n", c);
+		  ```
+		- enumerated constants are of the int type. enum will give the ordinal value starts with 0. these default values can be overridden by assigning values to the constants. values can be computed and do not have to be unique.
+			- ```
+			  enum color {
+			  	RED = 5,
+			      SCARLET = RED,
+			      BLUE = RED + 2,
+			  }
+			  ```
+		- enums in C are not typesafe because enums are essentially integers.
+			- ```
+			  enum Color {
+			      RED,
+			      GREEN,
+			      BLUE
+			  };
+			  
+			  enum Shape {
+			      CIRCLE,
+			      SQUARE,
+			      TRIANGLE
+			  };
+			  
+			  enum Color c = RED;
+			  bool flag = (c >= TRIANGLE); // This comparison is allowed
+			  ```
+		- enum a way to group a set of integer constants. enum identifier is not strictly necessary and may optionally omitte.
+			- enum {RED, GREEN, BLUE} c;
+		- enum conversions
+			- ```
+			  int i = RED;
+			  enum color c = (enum color) i;
+			  ```
+		- enum scope
+			- ```
+			  /* Global enum */
+			  enum speed { SLOW, NORMAL, FAST };
+			  
+			  int main(void){
+			  	/* Local enum */
+			      enum color { RED, GREEN, BLUE };
+			  }
+			  ```
+	- structs
+	  collapsed:: true
+		- a `struct` or structure is a user-defined type used for grouping a collection of related variables under a single name.
+		- structs allow data items of different kinds to be combined.
+		- structs may contain  variables, pointers, arrays or other user-defined types. may not contain functions.
+		- ```.syntax
+		  struct identifier{
+		  	/* code block */
+		  }
+		  
+		  /* example: */
+		  struct point {
+		  	int x, y;
+		  }
+		  ```
+		- struct objects
+		  collapsed:: true
+			- to declare a variable of struct type, the `struct` keyword is followed by the type name and variable identifier. variables of struct type are commonly referred to as objects or instances.
+			- ```
+			  int main(void){
+			  	struct poin p; /* object (instance) declaration */
+			  }
+			  ```
+			- objects may also be created when the struct is defined by placing the object names before the final semicolon. This position is called the declaration list.
+			- if the optional struct identifier is left out, this becomes the only way to create objects of the struct type. such a struct is called unnamed struct and provides a way for programmers to prevent any more instances of the type from being created.
+			  collapsed:: true
+				- ```
+				  struct /* unnamed struct */
+				  {
+				  	int x, y;
+				  } a, b; /* object declarations */
+				  ```
+			- it is common in C to use `typedef` when defining structures.
+			  collapsed:: true
+				- ```
+				  typedef struct point point;
+				  
+				  stuct point {
+				  	int x, y;
+				  }
+				  
+				  int main(void){
+				  	point p; /* struct omitted */
+				  }
+				  ```
+			- member access
+			  collapsed:: true
+				- variables of a struct type are called fields or members.
+				- these fields are accessed using the member of operator (.) prefixed by the object name.
+				- fields of an object are by default undefined, so it is important to assign them a value before they are used.
+				- ```
+				  int main(void){
+				  	point p;
+				      p.x = 1;
+				      p.y = 2;
+				  }
+				  ```
+				- similar to an array, struct objects may also be initialize when they are declared by enclosing values in curly brackets. the values are then assigned in order based on the corresponding members of the struct. this way of assigning values to a composite type is known as aggregate initialization.
+					- ```
+					  struct point{
+					  	int x, y;
+					  } r = {1, 2}; /* assigns x and y */
+					  
+					  int main(void) {
+					  	point p;
+					  }
+					  ```
+		- struct pointers
+		  collapsed:: true
+			- a struct is a value type not a reference type
+				- ```
+				  int main(void){
+				  	point p = { 1, 2 };
+				      point r = p; /* copies field values */
+				  }
+				  ```
+			- for large structures, it is common to use pointers when passing objects to functions for performance. the pointer must be dereferenced before the member of the operator can be used  used to access the fields. shortcut infix operator (`->`).
+				- ```
+				  void init_struct(point* a){
+				  	(*a).x = 1;
+				      (*a).y = 2;
+				  }
+				  
+				  int main(void){
+				  	point p;
+				      init_struct(&p);
+				      point* r = &p;
+				      r->x = 3;
+				      printf("%d\n", p.x);
+				  }
+				  ```
+		- bit fileds
+			- within struct type memory optimised by specifying bit length of integer fields.
+			- such a field is called a bit field and its length is set by placing `:` after filed name followed by the number of bits. the length must be less than or equal to the bit length of the specified type.
+			- ```
+			  struct my_bits{
+			  	unsigned short f1 : 1,
+			      unsigned short f2 : 1;
+			      unsigned short id : 10;
+			  } a;
+			  ```
+			- Bit fields are packed as compactly as possible, while keeping in mind that the size of an object needs to be a multiple of the size of the largest type it contains.
+			- in the above case the needed 12 bits will require 16 bits (2 bytes) to be reserved for the object (size of unsigned short 16 bits). if bit fields not been used, 3 shorts and the struct would occupy 48 bits.
+	- unions
+	  collapsed:: true
+		- union type is identical to struct type, except that all fields share the same memory location. therefore, the size of a union is the size of the largest field it contains.
+		- ```
+		  union mix {
+		  	char c; /* 1 byte */
+		      short s; /* 2 bytes */
+		      int i; /* 4 bytes */
+		  }
+		  ```
+		- given this memory sharing, the union type only be used to store one value at a time, because changing one field will overwrite the value of the others.
+		- ```
+		  int main(void){
+		  	union mix m;
+		      m.c = 0xFF; /* set first 8 bits to 11111111 */
+		      m.s = 0; /* reset first 16 bits to 0 including the bits in the previous step */
+		  }
+		  ```
+		- ```
+		  union mix2 {
+		  	char c[4]; /* 4 bytes */
+		      struct { short hi, lo; } s; /* 4 bytes */
+		      int i; /* 4 bytes */
+		  } m;
+		  
+		  m.i = 0xFF00F00F;	/* 11111111	00000000	11110000	00001111 */
+		  m.s.lo;				/* 11111111 00000000						 */
+		  m.s.hi;				/* 						11110000	00001111 */
+		  m.c[3];				/* 11111111									 */
+		  m.c[2];				/* 			00000000						 */
+		  m.c[1];				/* 						11110000			 */
+		  m.c[0];				/* 									00001111 */
+		  ```
+	- type conversions
+	- storage classes
+	- constants
+	- preprocessor
+	- memory management
+	- input handling
+	- headers
+	- strings and numbers
 - Yale N. Patt_ Sanjay J. Patel - Introduction to Computing Systems_ From Bits & Gates to C & Beyond-McGraw-Hill Education (2003)
 - Jens Gustedt - Modern C-Manning Publications (2019)
