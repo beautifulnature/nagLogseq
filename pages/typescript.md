@@ -1,0 +1,5 @@
+- resources
+	- videos
+		- total typescript
+	- books
+		- tackling typescript

@@ -1,0 +1,2 @@
+- resources
+	- coursera-the-full-stack

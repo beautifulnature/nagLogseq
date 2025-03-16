@@ -1,23 +1,44 @@
-- health wealth
-	- [[fitness]]
-	- [[spiritual]]
-- financial wealth
-	- [[finance]]
+- zero_start
+  collapsed:: true
+	- ssg
+	- youtube
+	- host
 - core
+  collapsed:: true
+	- academic
+		- [[math]]
+		- [[physics]]
+		- [[chemistry]]
+	- arts
+		- dance
+			- kuchipudi
+		- drawing
 	- automation
-		- programming
-			- [[vim]] >> [[bash]]
-			- [[python]] >> [[C]]
+	  collapsed:: true
+		- software-engineering
+			- graphics
+			  collapsed:: true
+				- [[krita]]
+				- [[blender]]
+			- [[vim]]
+			- [[linux]]
+				- [[bash]]
+			- [[python]]
+			- [[C]] >> [[assembly]]
 			- [[java]]
-				- se
-				- ee
 			- [[typescript]]
 			- [[js]]
 			- [[html]]
 			- [[css]]
 			- [[nix-os]]
-		- CNC
-		- ai
-	- academic
+			- [[ai]]
+		- engineering
+			- [[CNC]]
+- wealth
+  collapsed:: true
+	- wellness
+		- [[fitness]]
+		- [[spiritual]]
+	- financial
 	  collapsed:: true
-		- [[math]]
+		- [[finance]]

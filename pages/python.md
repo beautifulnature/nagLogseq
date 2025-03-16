@@ -149,20 +149,29 @@
 				  ['h', 'e', 'l', 'l', 'o']
 				  ```
 - python
+  collapsed:: true
 	- indentation is important in python (white space, tabs before statements)
 - IDE: pycharm
 - keyword
 - function
+  collapsed:: true
 	- print()
 - data types
+  collapsed:: true
 	- Strings
 		- string literal are surrounded by doble quotes ("")
 		- new line character `\n`
 		- concatenation `+`
 - errors
+  collapsed:: true
 	- syntax error
 	- indentation error
 - comments
+  collapsed:: true
 	- starts with `#` (short cut `ctrl` + `/`)
 - resources
 	- Thonny
+	- videos
+		- Udemy_100_Days_of_Code_The_Complete_Python_Pro_Bootcamp_2024_8
+	- books
+		- learn python

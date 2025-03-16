@@ -1,10 +1,12 @@
 - man 3 rand
+  collapsed:: true
 	- man for manual
 	- 1 for build-in commands for linux shell
 	- 2 for system calls - core kernel functions
 	- 3 for library function
 	- 5 for configuration files
 - unix
+  collapsed:: true
 	- unix was an os developed at AT&T Bell Labs in the 1960s through 1980s.
 	- https://www.youtube.com/watch?v=tc4ROCJYbm0
 	- GNU/Linux, MacOSX and Android are all based on ideas and specifications created by UNIX
@@ -87,3 +89,6 @@
 				- `~` means home directory
 			- head
 				- to display file top lines
+- resources
+	- video
+		- Udemy_Learn_Linux_in_5_Days_and_Level_Up_Your_Career_2024_5

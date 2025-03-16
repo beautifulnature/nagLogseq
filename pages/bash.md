@@ -1,1 +1,4 @@
 - unzip -d vimclass vimclass.zip # unzip vimclass.zip to directory vimclass
+- resources
+	- video
+		- Introduction to Bash, VIM & Regex
