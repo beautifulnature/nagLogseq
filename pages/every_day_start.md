@@ -4,7 +4,6 @@
 	- youtube
 	- host
 - core
-  collapsed:: true
 	- academic
 		- [[math]]
 		- [[physics]]
@@ -14,10 +13,8 @@
 			- kuchipudi
 		- drawing
 	- automation
-	  collapsed:: true
 		- software-engineering
 			- graphics
-			  collapsed:: true
 				- [[krita]]
 				- [[blender]]
 			- [[vim]]
