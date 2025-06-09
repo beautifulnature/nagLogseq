@@ -12,11 +12,13 @@
 				- se
 				- ee
 			- [[typescript]]
-			- [[js]]
-			- [[html]]
-			- [[css]]
+			- [[web]]
+				- [[html]]
+				- [[js]]
+				- [[css]]
+				- [[ssg]]
 			- [[nix-os]]
-		- CNC
+		- [[CNC]]
 		- ai
 	- academic
 	  collapsed:: true

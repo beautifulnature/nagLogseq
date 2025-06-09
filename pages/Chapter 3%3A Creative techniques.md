@@ -1,0 +1,26 @@
+- 3.1 Introduction
+	- 3.1.1 Word options
+	- 3.1.2 Start and close Word
+	- 3.1.3 Character and paragraph formats
+	- 3.1.4 Special characters in Word
+	- 3.1.5 Edit texts
+	- 3.1.6 Formulas
+	- 3.1.7 Word Tables
+	- 3.1.8 FreeMind
+	- 3.1.9 Working with FreeMind
+	- 3.1.10 OneNote
+- 3.2 To-Do-List
+	- 3.2.1 List with FreeMind
+	- 3.2.1 List with Word
+	- 3.2.2 List with Excel
+	- 3.2.3 List with OneNote
+- 3.3 Reverse method
+- 3.4 Forecasts
+	- 3.4.1 Scenario Manager
+	- 3.4.2 Target value search
+	- 3.4.3 Data table
+	- 3.4.4 Forecast Sheet
+- 3.5 Morphological matrix
+- 3.6 Visual Thinking
+- 3.7 Old solutions
+- 3.8 Heuristics

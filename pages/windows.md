@@ -3,6 +3,7 @@
 - static ip: ncpl.cpl
 - starup folder: shell:startup
 - windows
+  collapsed:: true
 	- alt + tab: to scroll through open windows
 	- ctrl + win: go to next desktop
 	- win + ->: take current window to right
@@ -11,6 +12,7 @@
 	- win + downarrow: manimise current window
 	- win + e: open explorer
 - browser
+  collapsed:: true
 	- alt + d: go to addressbar
 	- ctrl + d: make bookmark
 	- alt + <-: back
@@ -18,3 +20,6 @@
 	- @favorite: to search in favorites
 	- ctrl + t: to open new tab
 	- ctrl + tab: to scroll through open tabs
+- resources
+	- books
+		- [[Skills + Tools]]

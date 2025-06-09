@@ -3,18 +3,20 @@
 	- hugoinaction - https://github.com/hugoinaction/
 	- ![image.png](../assets/image_1736222141063_0.png)
 	- hugo cli
-	  collapsed:: true
 		- commands
+		  collapsed:: true
 			- hugo -> to build the site (default command to build the site)
 			- hugo new -> to create new things (default to create new contents pages)
 			- hugo new site -> to generate a skeleton folder
 			- hugo new theme -> to generate a theme
 		- flags (cli parameters)
+		  collapsed:: true
 			- provide configuration to command
 			- ex: hugo new site --format yaml -> changes the metadata format from the default TOML to YAML
 			- yaml https://yaml.org/
 			- toml https://toml.io
 		- learning hugo commands is to use `--help`
+		  collapsed:: true
 			- hugo --help
 			- hugo new --help
 			- hugo gen man -> to generate documentation in man format like in UNIX
@@ -55,7 +57,6 @@
 			- .github folder and netlify.toml files
 			- api folder
 	- adding a theme
-	  collapsed:: true
 		- multiple ways to get a theme
 		  collapsed:: true
 			- use hugo modules to integrate the theme
@@ -142,3 +143,4 @@
 		- site -> sub command
 		- --format yaml -> parameters to pass to the command
 	- vector creation www.freepik.com
+-

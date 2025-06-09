@@ -1,0 +1,7 @@
+- content management systems [cms]
+	- wordpress
+	- drupal
+	- joomla
+	- umbraco
+- static site generators [[ssg]]
+- [[browser]]

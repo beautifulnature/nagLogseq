@@ -1,3 +1,6 @@
+- install
+	- https://git-for-windows.github.io
+	- git --version
 - git config
 	- git config --global core.autocrlf true -> to handle line endings LF to CRLF when check out and CRLF to LF when commiting
 	- git proxy settings
@@ -10,6 +13,7 @@
 - git commit -m "create website skeleton" -> checks in the files to version control with a commit message
 - git status -> to check the git status
 - git branch
+  collapsed:: true
 	- git branch -> to list branches in local
 	- git branch -r -> to list branches at remote
 	- git branch -a -> to list branches in local & remote
@@ -18,3 +22,6 @@
 	- git switch -c new-branch -> similar to above
 	- git branch new-branch -> creates new-branch but not switch
 	- git checkout new-branch -> git checksout to new-branch
+- resources
+	- linkedin learning
+		- Learning Git and Github by Ray Villalobos
