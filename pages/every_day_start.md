@@ -14,6 +14,7 @@
 		- drawing
 	- automation
 		- software-engineering
+			- [[programming]]
 			- graphics
 				- [[krita]]
 				- [[blender]]

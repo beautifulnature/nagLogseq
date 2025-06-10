@@ -1,3 +1,46 @@
+- devops
+	- installation
+		- py --version
+	- ide: vscode, vscode extensions: pylance, python, python debuuger
+	- google colab
+	- github codespaces
+	- python interpreter
+		- REPL - Read Evaluate Print Loop
+	- python cli
+		- python3
+		- `exit()` or `Ctrl + Z`
+- python
+	- is interpreted language
+	- is dynamically typed language
+- Data Types
+	- numeric
+	  collapsed:: true
+		- int
+		- float
+	- string
+	  collapsed:: true
+		- "cat"
+	- boolean
+		- True or False
+	- compound
+		- sequence
+			- lists
+				- mylist = [0, 1, "two", 3.2, false]
+			- tuples
+		- dictionary
+	- Mapping Type
+	- Set Type
+	- None Type
+	- Binary Types
+	- Custom Types
+	- exercise
+	  collapsed:: true
+		- type(12)
+		- isinstance(12, int)
+		- 5 + 1.0 = 6.0 (int + float = float)
+		- int(6.0) converts float to int
+		- float(6) converts int to float
+		- type(True) bool (boolean)
 - Arithmetic operations
   collapsed:: true
 	- 10 + 5
@@ -38,26 +81,6 @@
 	- parenthesis (), exponentiation **, (* , /), (+, -) left to right
 	- and, or
 	- (2 > 1) or (10 < 8) and (not True)
-- Data Types
-  collapsed:: true
-	- python is dynamically typed language
-	- Numeric Types
-	- Sequence Types
-	- Mapping Type
-	- Set Type
-	- Boolean Type
-	- None Type
-	- Binary Types
-	- Custom Types
-	- exercise
-		- type(12)
-		- isinstance(12, int)
-		- 5 + 1.0 = 6.0 (int + float = float)
-		- int(6.0) converts float to int
-		- float(6) converts int to float
-		- type(True) bool (boolean)
-	- String str
-		- "cat"
 - `pass` is null operation
 - if a function is executed it will give return
   collapsed:: true
