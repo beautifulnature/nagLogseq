@@ -25,6 +25,7 @@
 	- compound
 		- sequence
 			- lists []
+			  collapsed:: true
 				- lists are mutable
 				- mylist = [0, 1, "two", 3.2, false]
 				- append `+`
@@ -41,9 +42,26 @@
 				- tuples are immutable
 				- mytuple = (0, 1, 2, "three")
 			- set {}
+			  collapsed:: true
 				- contains only unique values
-				- do not
+			- sets, tuples don't support indexing
+			- membership with `in` operator
+			  collapsed:: true
+				- ```
+				  print(1 in mylist)
+				  print(1 in mytuple)
+				  print(1 in myset)
+				  ```
 		- dictionary
+			- key-value data structure
+			- keys have to be immutable datatypes like strings, numbers
+			- key in a dictionary has to be unique in the dictionary
+			- dictionaries are accessed via keys
+			- set the dictionary data by creating a new key
+			- accessing non-existent with `[]`will give KeyError, better version is with `in` operator will return `True` or `False`
+			- to get all keys use `keys()` function
+			- to get all values use `values()` function
+			- to iterate over the members of dictionary use `items()` function to get member as tuple.
 	- Mapping Type
 	- None Type
 	- Binary Types
