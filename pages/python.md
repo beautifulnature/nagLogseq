@@ -32,7 +32,9 @@
 					- mylist[2]
 				- slice
 					- mylist[1:4:2]
-						- starting, ending, step
+						- starting, ending (not inclusive), step
+					- reverse the sequence
+						- mylist[::-1]
 				- Strings are also sequece but unmutable
 			- tuples
 		- dictionary
