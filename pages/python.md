@@ -26,6 +26,14 @@
 		- sequence
 			- lists
 				- mylist = [0, 1, "two", 3.2, false]
+				- append `+`
+					- mylist + another_list
+				- access by index
+					- mylist[2]
+				- slice
+					- mylist[1:4:2]
+						- starting, ending, step
+				- Strings are also sequece but unmutable
 			- tuples
 		- dictionary
 	- Mapping Type
