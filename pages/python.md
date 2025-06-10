@@ -24,7 +24,8 @@
 		- True or False
 	- compound
 		- sequence
-			- lists
+			- lists []
+				- lists are mutable
 				- mylist = [0, 1, "two", 3.2, false]
 				- append `+`
 					- mylist + another_list
@@ -36,10 +37,14 @@
 					- reverse the sequence
 						- mylist[::-1]
 				- Strings are also sequece but unmutable
-			- tuples
+			- tuples ()
+				- tuples are immutable
+				- mytuple = (0, 1, 2, "three")
+			- set {}
+				- contains only unique values
+				- do not
 		- dictionary
 	- Mapping Type
-	- Set Type
 	- None Type
 	- Binary Types
 	- Custom Types
