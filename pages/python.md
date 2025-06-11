@@ -1,5 +1,6 @@
 - devops
 	- installation
+	  collapsed:: true
 		- py --version
 	- ide: vscode, vscode extensions: pylance, python, python debuuger
 	- google colab
@@ -7,12 +8,14 @@
 	- python interpreter
 		- REPL - Read Evaluate Print Loop
 	- python cli
+	  collapsed:: true
 		- python3
 		- `exit()` or `Ctrl + Z`
 - python
 	- is interpreted language
 	- is dynamically typed language
 - Data Types
+  collapsed:: true
 	- numeric
 	  collapsed:: true
 		- int
@@ -21,9 +24,12 @@
 	  collapsed:: true
 		- "cat"
 	- boolean
+	  collapsed:: true
 		- True or False
 	- compound
+	  collapsed:: true
 		- sequence
+		  collapsed:: true
 			- lists []
 			  collapsed:: true
 				- lists are mutable
@@ -53,6 +59,7 @@
 				  print(1 in myset)
 				  ```
 		- dictionary
+		  collapsed:: true
 			- key-value data structure
 			- keys have to be immutable datatypes like strings, numbers
 			- key in a dictionary has to be unique in the dictionary
@@ -74,7 +81,7 @@
 		- int(6.0) converts float to int
 		- float(6) converts int to float
 		- type(True) bool (boolean)
-- Arithmetic operations
+- arithmetic operations
   collapsed:: true
 	- 10 + 5
 	- 10 - 5
@@ -84,6 +91,23 @@
 	- 10 ** 3 = 1000 (exponential)
 	- 2 + 3 * 5 ** 2 = 77
 	- 100 % 75 = 25 (modulus % to get the reminder)
+	- operator precedence
+	  collapsed:: true
+		- parenthesis (), exponentiation **, (* , /), (+, -) left to right
+		- and, or
+		- (2 > 1) or (10 < 8) and (not True)
+- conditional and logical operators
+  collapsed:: true
+	- indentation is important, python uses white space indentation to group together sets of statements for execution identified after `:`
+	- `>`, `<`, `>=`, `<=`, `==`, `!=`
+	- not True is False
+	- not False is True
+	- and
+		- (2 > 1) and (10 > 11)
+	- or
+		- (2 > 1) or (10 > 11)
+	- 22 == 20 + 2 (first arithmetic followed by logical)
+	- result = "x is less than y" if (x < y) else "x is greater than or equal to y"
 - python core library math functions
   collapsed:: true
 	- abs(-30)
@@ -99,21 +123,6 @@
 	- math.pi
 	- math.floor(2.5) round down
 	- math.ceil(2.1) round up
-- logical operators
-  collapsed:: true
-	- `>`, `<`, `>=`, `<=`, `==`, `!=`
-	- not True is False
-	- not False is True
-	- and
-		- (2 > 1) and (10 > 11)
-	- or
-		- (2 > 1) or (10 > 11)
-	- 22 == 20 + 2 (first arithmetic followed by logical)
-- operator precedence
-  collapsed:: true
-	- parenthesis (), exponentiation **, (* , /), (+, -) left to right
-	- and, or
-	- (2 > 1) or (10 < 8) and (not True)
 - `pass` is null operation
 - if a function is executed it will give return
   collapsed:: true
@@ -225,7 +234,48 @@
 - comments
   collapsed:: true
 	- starts with `#` (short cut `ctrl` + `/`)
+- loops
+	- while
+		- used to read data continuously from data source
+		- ```
+		  answer = input("Should I stop?")
+		  while answer != "yes":
+		    print(answer)
+		    answer = input("Should I stop?")
+		  ```
+		- developer should make sure to have loop terminating statement
+	- for
+		- ```
+		  days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+		  for d in days:
+		    print(d)
+		  ```
+		- use `for` over `while` for a collection
+	- `break`
+		- `break` statement used to break out of the loop
+		- ```
+		  days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+		  for d in days:
+		    if (d == "Wed"):
+		      break
+		    print(d)
+		  ```
+	- `continue`
+		- `continue` statement used to break current iteration and continue with next iteration in the loop
+		- ```
+		  days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+		  for d in days:
+		    if (d == "Wed"):
+		      continue
+		    print(d)
+		  ```
+	- using the `enumerate()` function to get an index and an item. return a tuple using the function.
+		- ```
+		  for i, d in enumerate(days):
+		    print(i, d)
+		  ```
 - resources
+  collapsed:: true
 	- Thonny
 	- videos
 		- Udemy_100_Days_of_Code_The_Complete_Python_Pro_Bootcamp_2024_8
