@@ -242,6 +242,7 @@
 		    print(i, d)
 		  ```
 - function
+  collapsed:: true
 	- larger programs are organised into reusable blocks of code known as functions.
 	- if a function is executed it will give return
 	  collapsed:: true
@@ -364,10 +365,14 @@
   collapsed:: true
 	- syntax error
 	- indentation error
+- classes
+	- encapsulating functionality and data together and reused as complete module in other projects
+	-
 - resources
   collapsed:: true
 	- Thonny
 	- videos
 		- Udemy_100_Days_of_Code_The_Complete_Python_Pro_Bootcamp_2024_8
+		- linked in object oriented programming python
 	- books
 		- learn python
