@@ -309,6 +309,7 @@
 		  ```
 		- var arg should come as the last parameter
 	- core library
+	  collapsed:: true
 		- ```
 		  # LinkedIn Learning Python course by Joe Marini
 		  # Example file for using built-in functions
@@ -345,6 +346,18 @@
 		  
 		  print(f"{greeting} you are vistor number {count}")
 		  ```
+- `pass` is null operation
+- errors
+  collapsed:: true
+	- syntax error
+	- indentation error
+- classes
+  collapsed:: true
+	- encapsulating functionality and data together and reused as complete module in other projects
+	-
+	-
+- modules
+	- library module can be imported
 	- math library
 	  collapsed:: true
 		- ```
@@ -360,14 +373,8 @@
 		  abs(-30)
 		  round(233.234, 1) #(default decimal places is 0)
 		  ```
-- `pass` is null operation
-- errors
-  collapsed:: true
-	- syntax error
-	- indentation error
-- classes
-	- encapsulating functionality and data together and reused as complete module in other projects
-	-
+	- tabulate
+		- https://pypi.org/project/tabulate
 - resources
   collapsed:: true
 	- Thonny
