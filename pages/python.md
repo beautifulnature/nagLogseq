@@ -485,7 +485,13 @@
   collapsed:: true
 	- Thonny
 	- videos
+	  collapsed:: true
+		- linked python standard library essential training
+		- linked python: working with data
+		- linked python: data engineering basics
+		- linked python in excel: getting started with data analysis
+		- linked python object oriented programming
+		- linked advanced python
 		- Udemy_100_Days_of_Code_The_Complete_Python_Pro_Bootcamp_2024_8
-		- linked in object oriented programming python
 	- books
 		- learn python
