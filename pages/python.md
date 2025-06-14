@@ -309,43 +309,60 @@
 		  ```
 		- var arg should come as the last parameter
 	- core library
-	  collapsed:: true
-		- ```
-		  # LinkedIn Learning Python course by Joe Marini
-		  # Example file for using built-in functions
-		  #
-		  
-		  mystring = "The quick, brown fox jumped over the lazy dog!"
-		  mynumbers = [1,3,5,6,9,12,14,17,20,30]
-		  
-		  # the len() function calculates the length of a sequence
-		  print(len(mystring))
-		  print(len(mynumbers))
-		  
-		  # the max() and min() functions will find the largest and smallest value in a sequence
-		  print(max(mystring))
-		  print(min(mynumbers))
-		  
-		  # the str() function will return a string version of an object
-		  prefix = "result: "
-		  result = 5
-		  print(prefix + str(result))
-		  
-		  # range(start, stop, step) will create a range of numbers 
-		  # You can use ranges along with loops 
-		  for i in range(5, 15, 2):
-		    print(i)
-		  
-		  for i in range(5, len(mystring), 2):
-		    print(mystring[i])
-		  
-		  # string interpolation
-		  # the print function itself is pretty flexible - you can embed variables directly in it
-		  greeting = "Hello!"
-		  count = 10
-		  
-		  print(f"{greeting} you are vistor number {count}")
-		  ```
+		- example
+		  collapsed:: true
+			- ```
+			  # LinkedIn Learning Python course by Joe Marini
+			  # Example file for using built-in functions
+			  #
+			  
+			  mystring = "The quick, brown fox jumped over the lazy dog!"
+			  mynumbers = [1,3,5,6,9,12,14,17,20,30]
+			  
+			  # the len() function calculates the length of a sequence
+			  print(len(mystring))
+			  print(len(mynumbers))
+			  
+			  # the max() and min() functions will find the largest and smallest value in a sequence
+			  print(max(mystring))
+			  print(min(mynumbers))
+			  
+			  # the str() function will return a string version of an object
+			  prefix = "result: "
+			  result = 5
+			  print(prefix + str(result))
+			  
+			  # range(start, stop, step) will create a range of numbers 
+			  # You can use ranges along with loops 
+			  for i in range(5, 15, 2):
+			    print(i)
+			  
+			  for i in range(5, len(mystring), 2):
+			    print(mystring[i])
+			  
+			  # string interpolation
+			  # the print function itself is pretty flexible - you can embed variables directly in it
+			  greeting = "Hello!"
+			  count = 10
+			  
+			  print(f"{greeting} you are vistor number {count}")
+			  ```
+		- datetime
+		  collapsed:: true
+			- https://docs.python.org/3/library/datetime.html#strftime-strftime-behavior
+			- https://www.strfti.me
+			- datetime
+			- date
+			- timedelta
+		- files
+		  collapsed:: true
+			- writing files
+			- reading files
+		- `with` local scope or context manager will handle all context related things
+			- ```
+			   with ZipFile("testzip.zip", "w") as newzip:
+			          newzip.write("textfile.txt")
+			  ```
 - `pass` is null operation
 - errors
   collapsed:: true
@@ -357,7 +374,14 @@
 	-
 	-
 - modules
+  collapsed:: true
 	- library module can be imported
+	  collapsed:: true
+		- ```
+		  import math
+		  from math import pi
+		  import random as r
+		  ```
 	- math library
 	  collapsed:: true
 		- ```
@@ -375,6 +399,88 @@
 		  ```
 	- tabulate
 		- https://pypi.org/project/tabulate
+	- example
+	  collapsed:: true
+		- ```
+		  # LinkedIn Learning Python course by Joe Marini
+		  # Working with modules of code
+		  
+		  # import the math module, which contains features for working with mathematics
+		  import math
+		  
+		  print("the square root of 4 is", math.sqrt(4))
+		  
+		  # import a specific part of the module so you can refer to it more easily
+		  from math import pi
+		  
+		  print("pi is", pi)
+		  
+		  # import a module and give it a different name
+		  import random as r
+		  
+		  # the math module contains lots of pre-built functions
+		  
+		  
+		  # in addition to functions, some modules contain useful constants 
+		  
+		  
+		  # Generate a random number between 100 and 200
+		  print(r.randint(100, 200))
+		  
+		  # try some of the math functions for yourself here:
+		  
+		  # Use the 3rd party tabulate module to print tabulated data:
+		  
+		  # Sample data
+		  from tabulate import tabulate
+		  
+		  data = [
+		    ["Product", "Price", "Stock"],
+		    ["Laptop", 999.99, 45],
+		    ["Mouse", 24.99, 128],
+		    ["Keyboard", 59.99, 89]
+		  ]
+		  
+		  # Create a formatted table
+		  print(tabulate(data, headers="firstrow", tablefmt="fancy_grid"))
+		  print(tabulate(data, headers="firstrow", tablefmt="double_outline"))
+		  ```
+- execptions
+  collapsed:: true
+	- try except finally
+	- example
+	  collapsed:: true
+		- ```
+		  # LinkedIn Learning Python course by Joe Marini
+		  # Example file for working with Exceptions
+		  #
+		  
+		  # Errors can happen in programs, and we need a clean way to handle them
+		  # This code will cause an error because you can't divide by zero:
+		  
+		  # x = 10 / 0
+		  
+		  # Exceptions provide a way of catching errors and then handling them in 
+		  # a separate section of the code to group them together
+		  
+		  # try:
+		  #   x = 10 / 0
+		  # except:
+		  #   print("well that didn't work ")
+		  
+		  # You can also catch specific exceptions
+		  try:
+		    answer = input("what should I divide 10 by?")
+		    num = int(answer)
+		    print(10/num)
+		  except ZeroDivisionError as e:
+		    print("you can't divide by zero")
+		  except ValueError as e:
+		    print("you didn't give me a valid number")
+		    print(e)
+		  finally:
+		    print("finally always runs")
+		  ```
 - resources
   collapsed:: true
 	- Thonny
