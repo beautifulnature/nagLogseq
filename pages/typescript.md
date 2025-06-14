@@ -1,4 +1,5 @@
 - devops
+  collapsed:: true
 	- typescriptlang.org/play
 	- npm install typescript -g
 	- compiler: tsc
@@ -13,8 +14,20 @@
 	- types are tests
 	- safer refactoring
 	- make it impossible
-- primitive types
-- arrays and tuples
+- tsconfig
+  collapsed:: true
+	- tsc --init
+	- tsc -p path/to/tsconfig.json
+- types
+	- primitive types (string, number etc)
+	- arrays and tuples
+	- objects
+	- any and unknown
+		- ts has 2 top types
+			- any
+			- unknown
+	- never
+	- unions
 - enums
 - interfaces
 - functions

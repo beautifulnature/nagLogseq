@@ -13,3 +13,8 @@
 		- `ldap.bhel.in` `username: uid=nagaraju,ou=people,dc=bhel,dc=in` `password: mailpassword`
 - rd sharing `10.9.9.99` `bhelrnd` `$bhel#itx`
 - teams `nagaraju@bhel.in` `Gas51469`
+- proxy
+	- Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' | Select-Object ProxyServer, ProxyEnable
+	  ProxyServer            ProxyEnable
+	  -----------            -----------
+	  intgw-hyd.bhel.in:8080           0
