@@ -1,19 +1,23 @@
 - zero_start
-  collapsed:: true
 	- ssg
 	- youtube
 	- host
 - core
 	- academic
+	  collapsed:: true
 		- [[math]]
 		- [[physics]]
 		- [[chemistry]]
 	- arts
+	  collapsed:: true
 		- dance
+		  collapsed:: true
 			- kuchipudi
 		- drawing
 	- automation
+	  collapsed:: true
 		- software-engineering
+		  collapsed:: true
 			- [[programming]]
 			- graphics
 				- [[krita]]
@@ -34,5 +38,4 @@
 		- [[CNC]]
 		- ai
 	- academic
-	  collapsed:: true
 		- [[finance]]
