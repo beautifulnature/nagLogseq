@@ -1,555 +1,563 @@
-- vim --version
-- to enter vim type `vim` at command line
-- basics
-	- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
-	- to open a file: `e file.txt`
-	- how to exit: type `:q!`, `qa!` to exit all buffers.
-		- `:q` for quit
-		- `a` for all buffers
-		- `!` for force
-	- to write a file
-		- go to insert mode by pressing `i` and write the content
-		- to save (write) the file press `:w` to write or `:x`
-		- to save (write) and quit press `:wq` or `ZZ`
-		- to save (write) with previous state with no write `:e!`
-		- `:sav newfile.txt` save as new file
-- `h` - left, `j` - down, `k` - up, `l` - right
-- `ctrl + f` - forward - page down
-- `ctrl + b` - backward - page up
-- `w` - navigate forward by word. punctuation also considered as word
-- `b` - navigate backward by word. punctuation also considered as word
-- `W` - navigate forward by word. space treated as word boundaries
-- `B` - navigate backward by word. space treated as word boundaries
-- `)` - navigate to next sentence.
-- `(` - navigate to previous sentence.
-- `}` - navigate to next paragraph
-- `{` - navigate to previous paragraph
-- `]]` - navigate to end of file
-- `[[` - navigate to starting of file
-- >> - to move the text to right
-- << - to move the text to left
-- shiftwidth
+- notes
   collapsed:: true
-	- :set shiftwidht?
-	- :set tabstop?
-	- :set expandtab?
-- >i{ - to move text in brackets to the right
-- copy - `y` followed by noun like `w` - word, `)` - line, regular expression
-- `yy` copy the line
-- paste (put) - `p`
-- to change the text type `c` followed by `w` - word, `)` - line, regular expression
-- `a` append next to cursor and put it in insert mode
-- `A` append at the end of line and put it in insert mode
-- `o` to insert a new line below the current line. `O` to insert a new line above the current line.
-- repeat commands
-  collapsed:: true
-	- 80operation<symbol><Esc>
-	- 80i#<Esc>
-- replace mode <Shift><r>
-  collapsed:: true
-	- it will replace what ever you type
-	- lower case <r> will replace only one character
-- change mode
-  collapsed:: true
-	- c+motion
-	- cw
-	- cw can be put into register like this `"acw`
-	- `c$` to change line from current cursor position to last of the line. shorcut `C`
-	- `cc` to change the entire line
-	- swap case of the character by `~`, word `g~w`, line `g~$` or `g~~`
-	- swap a word to upper case `gUw`
-	- swap a word to lower case `guw`
-	- swap a line to upper case `gUU`
-	- swap a line to lower case `guu`
-- joinng two lines <shift>+<j> (capital J)
-  collapsed:: true
-	- if line ends with `.` it will add two spaces
-	- if space are not required then `gJ`
-	- to join 3 lines use `3<Shift><j>`
-- search
-  collapsed:: true
-	- search forward
-		- f{char}
-		- forward till search: letter before the search character type `t{char}`
-		- to repeat the same search type `;`
-	- search backwar
-		- F{char}
-		- Reverse till search: letter before the search character in backward direction type `T{char}`
-		- to repeat the same seach type `,`
-	- using forward slash `/{search word}`<Enter>.
-		- to go to next occurrence in forward direction type `n`.
-		- to go to next occurrence in reverse direction type `N`.
-	- incremental search (is)
-		- view (`incsearch` | `noincsearch`)by `:set is?`
-		- turn on by `:set is` turn off by `:set nois`
-	- highlight search (hls / hlsearch)
-		- view by :set hls?
-		- turn on by `:set hls` turn off by `:set nohls`
-	- backward search
-		- `?{pattern}<ENTER>`
-		- type `n` for next occurrence, `N` for next occurrence in reverse direction
-	- assertick (*) / pound (#)
-		- put cursor at the word start and press `*`<Enter> for forward search, `#<Enter>` for backward search
-		- type `n` for next occurrence, `N` for next occurrence in reverse direction
-	- substitute
-		- :[range]s/{pattern-search}/{string-to-replace}/[flags]
-			- to substitute old with new in the current line for the first occurrence
-			- range default is current line
-			- :1,5s/for/FOR/
-			- g flag for global
-			- `$` represents last line
-			- `.` represents current line
-			- `%` represents total file
-			- /Global/,/Local/s/net/org/g
-				- /Global/, /Local/ are pattern
-			- :%s/\/var\/spool/\/usr\/local/g
-			- :%s#/var/spool#/usr/local#g
-		- global substitution
-			- %s/{pattern}/{string}/g
-	- line numbers
-		- :set nu
-		- :set nonu
-		- :set nu!
-- https://github.com/vim/vim/blob/master/runtime/doc/
-- modes
-  collapsed:: true
-	- normal mode or command mode
-	- insert mode
-		- press `i` to enter insert mode
-		- to leave insert mode press `esc`
-		- `I` (capital I) to move to first non blank character of the line and put it in insert mode.
-		- `A` (capital A) to move to the last and append i.e. go to insert mode.
-	- line mode or last line mode or command line mode
-		- press `:` to enter into command mode
-		- key in the command followed by pressing `<Enter>` to execute the command and go to normal mode
-		- if you want to abandon the command mode press `Esc` to go to normal mode
-	- visual mode
-		- characterwise visual mode: v
-			- to highlight and go in two directions use `o` to switch highlight
-		- linwise visual mode: V
-		- block wise visual mode: `Ctrl + v`
-			- use `o` to go to other end of the block
-			- use `O` to go to other end of the line in the block
-			- to append text highlight the block using $ and use A and type text and press <ESCAPE>
-			- to prepend text use I
-		- `gv` to go to last visual mode with highlighted text
-		- > - shift right
-		- < - shift left
-		- operations on selected area
-			- select the area and type :
-			- and do the operations on it like substitute s
-		- centering (ce), left (le), rigtht (ri)
-			- select the area
-			- :ce 40 (means centre align 40 width)
-			- :le 5 (left align 5 width)
-	- diff mode
-		- vim -d file1.txt file2.txt
-		- :set noscrollbind
-		- :set scrollbind
-		- `:diffget` to get text from file2 to file1
-		- `:diffput` to put text from file1 to file2
-- commands are case sensitive
-- `ctrl + o` - to go to back in the section you visited
-- `ctrl + i` - to go forward in the section you visited
-- `.` dot to repeat previous command
-- manual
-  collapsed:: true
-	- `:help`
-	- :h usr<tab>
-	- `:help dd`
-	- `:help linewise`
-	- to view help only type `:only`
-	- to view syntax type `:syntax on`
-	- place the cursor on the word and hit `ctrl + ]` to get help about
-	- `:help :q[uit]`
-	- `:help :h[elp]`
-	- `:h count`
-	- `Ctrl + w`, `Ctrl + w` to switch between windows
-	- command line completion `:h  :qu<Ctrl+D>` to get list of commands starting with `:qu`. type the command or cycle trough using tab.
-	- `:h :q<Ctrl+D>`
-	- `:set nowildmenu`
-		- `:h wildmenu`
-		- tab to cycle through menu items
-- regular expressions
-  collapsed:: true
-	- in normal mode `/` for going forward in file, `?` for going backward in file
-	- search text followed by `<ENTER>`
-	- next word type `n` to go forward, `N` to go backward
-	- `atte.tion` use `.` for any letter in place of `.`
-	- shortcut for `/`, place the cursor word you want to search press `*` to go forward
-	- shortcut for `*`, place the cursor word you want search press `#` to go backward
-- registers
-  collapsed:: true
-	- `"a` followed by operation like `yy` to copy line
-	- `"Ayy` to append to the `a` register
-	- `:reg [register(s)]`
-		- `:reg`
-		- `:reg a`
-		- `:reg 1a`
-	- repeating with registers
-		- [count][register]operator
-		  or
-		  [register][count]operator
-	- cut-copy-paste=delete-yank-put
-	- registers are storage locations
-	- "" contains last operated on text
-	- numbered registers: "0 ... "9
-		- last yanked will be in "0
-		- last deleted will be in "1
-	- named registers: "a ... "z
-		- you can append to registers by using upper case of register. for example to append to register `a` use `"A`
-	- black hole register
-		- `"_dd` to delete text safely to black hole
-- replace
-  collapsed:: true
-	- `r` to replace the character with new typed one
-	- `:%s/foo/bar/g` replace `foo` with `bar` `globally` in the file. omit `g` if it is at one place only. omit `%` if it is on the same line.
-- mark
-  collapsed:: true
-	- to mark `ma`
-	- go to the mark line type `'a`. go to marked place type `a
-	- to view marks `:marks`
-	- delete a mark `:delmark m`
-	- to delete content from cursor upto mark type `d'a`
-- undo type `u`
-- redo type `<CTRL> + r`
-- go to last edit place `'.`
-- buffers
-  collapsed:: true
-	- to view list of buffers type `:buffers` or `:ls`
-	- `%a` indicates current buffer
-	- to go to previous buffer `:bp`, `#` indicates previous buffer
-	- to go to next buffer `:bn`
-	- go to specific buffer `:b4`
-	- buffer delete `:bd`
-- find and edit files
-  collapsed:: true
-	- `:e <tab>`
-	- `:e he<tab>`
-	- `:e .` to list all files in current directory
-- read command
-  collapsed:: true
-	- `:r file.txt` - to place the text of `file.txt` in the current file
-- abbreviation
-  collapsed:: true
-	- in `.vimrc` add `abbr _ak vim course`
-	- use in insert mode type `_ak<SPACE>`
-- to execute commands inside vim
-  collapsed:: true
-	- `:!ls -la`
-- `+` sign
-  collapsed:: true
-	- $ vim test.txt +8 # to go to 8th line
-	- $ vim test.txt /little # to go to first occurrence of little
-- to expand the file type `go`
-- text objects
-  collapsed:: true
-	- {operatore}{a|i}{object}
-	- example:
-		- daw: Delete a word (including space)
-		- ciw: change inner word
-		- das: delete a sentence
-		- dis: delete inner sentence
-		- dap: delete a paragraph
-		- dip: delete a inner paragraph
-		- ci]: change inner brackets
-		- da]: delete text object including brackets
-		- da(, di(, dap, dip
-		- `a<` = `a>`, `i<` = `i>`
-		- `cit` change inside tags `<p>`Header`</p>`
-		- `a{` = `a}`, `i{` = `i}`, `aB`, `iB`
-		- `ca"`, `ci"`, `a'`, `i'`, a`, i`
-- macros
-  collapsed:: true
-	- macros are recorded series of keystrokes
-	- macros use registers
-	- process
-		- start recording: `q{REGISTER}`
-		- finish by `q`
-		- play back: `@{REGISTER}`
-		- repeat last typed macro `@@`
-	- macro best practices
-		- normalise the cursor position: 0
-		- perform edits and operations
-		- position you cursor to enable easy replays: j
-		- new commands can be appended also type `qC` followed by recording and stopping by `q`
-	- 50@c to apply macro in register c to 50 lines
-	- [range]normal @c
-		- 27,35normal @c
-		- .,$normal @c
-	- to edit a macro: edit the registry
-		- example registry a:
-			- paste by: "ap
-			- make changes and copy again with "ay$
-	- saving macros
-		- viminfo file
-			- .viminfo or _viminfo
-			- stores history and non-empty registers
-			- read when vim starts
-			- can easily overwrite registers
-		- vimrc file
-			- .vimrc or _vimrc
-			- let @d = ''0jDkPa jdd'
-			- if you want to type special literal symbols type `<CTRL>+v` followed by <ESCAPE>
-			- if it has any single quotes (') you can surround with double quotes (")
-- Ctrl + g: to get line count
-- vimrc
-  collapsed:: true
-	- rc = run commands
-	- ~/.vimcr, $HOME/_vimrc
-	- each line is executed as a command
-		- set ruler = :set ruler
-		- if it it boolean, we can toggle by adding !
-		- if it is numeric, new value can be set
-		- :h history<CTRL>+<D> to list items with history
-		- :h 'history'
-		- :set history=500
-		- partial command search
-			- :h h<up-arrow> #this can give commands with h from history of commands
-		- default value can be set by append & :set history&
-		- :set #this command shows values other than default values
-		- 1<CTRL>+<g> to display file path
-		- :h option-list # to view list of settings
-		- :options # to view list of options available
-		- " for comments
-		- set history=1000 # keep 1000 items in the history
-		- set ruler # show the cursor position
-		- set showcmd # show incomplete commands
-		- set wildmenu # shows a menu when using tab completion
-		- set scrolloff=5 # set the screen by scrolling to top above it 5 lines will be there
-		- set backup # for file backup
-		- set bex=SOMETHING # for backup extension
-		- set lbr # for line break wrap
-		- set ai # auto indent
-		- set si # for smart indent useful for programming
-		- set bg=light # to tell vim about the background color so that it can set other font colors
-		- color slate
-		- map KEY KEYSTROKES
-			- example
-				- map <F2> iNagaraju Gumpini<CR>
-			- Keys
-			  collapsed:: true
-				- <BS> BackSpace
-				- <CR> Enter
-				- <Enter> Enter
-				- <Return> Enter
-				- <Esc> Escape
-				- <Space> Space
-				- <Up> Up arrow
-				- <Down> Down arrow
-				- <Left> Left arrow
-				- <Right> Right arrow
-				- <Insert> Insert
-				- <Del> Delete
-				- <Home> Home
-				- <End> End
-				- <PageUp> Page-Up
-				- <PageDown> Page-Down
-				- <Tab> Tab
-				- <bar> '|'
-				- <C-X> Ctrl+X
-				- <F1>-<F12> Function Keys
-			- :source ~/.vimrc
-			- leader key (space bar)
-				- this way of mapping will not interfere with other vim mappings
-				- you can remap leader key by
-					- let mapleader=","
-				- map <leader>w :w!<CR>
-			- :h mapping
-			- mkvimrc testvimrc
-			- mkvimrc! (to overwrite ~/.vimrc file)
-			- :h modeline
-				- will be at bottom or top
-				- " vim: set ft=vim :
-				- tells vim this file is vimrc file
-			- to get help about correct documentation
-				- :h 'ruler'<ENTER>
-- buffers
-  collapsed:: true
-	- vim buf*<ENTER> # it is shell feature not vim feature
-	- to view buffers
+	- vim --version
+	- to enter vim type `vim` at command line
+	- basics
 	  collapsed:: true
-		- :buffers (:ls) (:files)
-		  collapsed:: true
-			- %a is % current buffer, a means loaded
-			- `#` is previously opened buffer
-			- `+` changes made but not written
-			- `h` loaded into memory
-			- without any indicator means not loaded into memory
-			- buffer can be in 3 states
-			  collapsed:: true
-				- active (loaded into memory and displayed)
-				- hidden (loaded into memory but not displayed)
-				- in-active (not loaded into memory not displayed)
-			- to work with multiple buffers
-		- to open buffers by numbers
-		  collapsed:: true
-			- :e / :edit
-			- :buffer 3
-			- :b3
-			- :b buf-dab.txt
-			- :b <CTRL+D>
-			- : b <TAB>
-			- :bnext (:bn)
-			- :bprevious (:bp)
-			- :bfirst (:bf)
-			- :blast (:bl)
-			- previously (^) opened buffer <CTRL+6> or <CTRL+SHIFT+6)
-			  collapsed:: true
-				- :b#
-			- :set hidden # to work with all buffers without saving
-			  collapsed:: true
-				- otherwise :b!2 # to shift to buffer2 and changes not written in b1
-			- :wall # to write all buffers
-			- :qall!
-			- :badd modes.txt # to add modes.txt to buffers
-			- :bdelete (:bd) # removes the current buffer from memory
-			  collapsed:: true
-				- :bd 6
-				- :bd buf-ant.txt
-				- 1,4bd # to delete a range of buffers
-				- %bd # to delete all buffers
-			- to set commands to all buffers
-			  collapsed:: true
-				- :bufdo set nu rnu
-				- :bufdo %s/#/@/g
-				- using pipe `|` to combine commands
-					- :bufdo %s/#/@/g | w
-			- multiple windows
-			  collapsed:: true
-				- :sp # to split window horizontally
-				  collapsed:: true
-					- <Ctrl+w>+s
-				- :vs # to split window vertically
-				  collapsed:: true
-					- <Ctrl+w>+v
-				- :sp buf-bed.txt
-				- close window
-				  collapsed:: true
-					- <Ctrl+w>q
-					- close all windows except current one
-						- :only
-						- :on
-						- <Ctrl+w>+o
-				- jump between windows
-				  collapsed:: true
-					- <Ctrl+w><Ctrl+w>
-				- cycle through windows
-				  collapsed:: true
-					- <Ctrl+w><Ctrl+w>
-					- Top Left -> Top Right -> Bottom Left -> Bottom Right
-					- <Ctrl+w>h, j, k, l to navigate between windows
-					- to increase size vertically <Ctrl+w>+
-					- to decrease size vertically <Ctrl+w>-
-					- to equalise all window <Ctrl+w>=
-					- to maximise height <Ctrl+w>_
-					- to maximise width <Ctrl+w>|
-					- to increase width <Ctrl+w>+>
-					- to decrease width <Ctrl+w>+<
-					- to rotate <Ctrl+w>+r
-						- <Ctrl+w>+H, <Ctrl+w>+J, <Ctrl+w>+L, <Ctrl+w>+K
-				- to open all windows
-				  collapsed:: true
-					- :ball
-				- :windo
-				  collapsed:: true
-					- to execute commands in all windows
-				- some functions may not work, try all versions which works for you
-				  collapsed:: true
-					- :h Ctrl+w
-					- <Ctrl+w><Ctrl+q>
-					- <Ctrl+w><Ctrl+w>, <Ctrl+w>w
-					- Ctrl-s (suspends screen updating) can be resumed by Ctrl-q (but in some terminals may not work)
-				- :h windows
-- plugins
-  collapsed:: true
-	- for vim version 7 and below
+		- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
+		- to open a file: `e file.txt`
+		- how to exit: type `:q!`, `qa!` to exit all buffers.
+			- `:q` for quit
+			- `a` for all buffers
+			- `!` for force
+		- to write a file
+			- go to insert mode by pressing `i` and write the content
+			- to save (write) the file press `:w` to write or `:x`
+			- to save (write) and quit press `:wq` or `ZZ`
+			- to save (write) with previous state with no write `:e!`
+			- `:sav newfile.txt` save as new file
+	- `h` - left, `j` - down, `k` - up, `l` - right
+	- `ctrl + f` - forward - page down
+	- `ctrl + b` - backward - page up
+	- `w` - navigate forward by word. punctuation also considered as word
+	- `b` - navigate backward by word. punctuation also considered as word
+	- `W` - navigate forward by word. space treated as word boundaries
+	- `B` - navigate backward by word. space treated as word boundaries
+	- `)` - navigate to next sentence.
+	- `(` - navigate to previous sentence.
+	- `}` - navigate to next paragraph
+	- `{` - navigate to previous paragraph
+	- `]]` - navigate to end of file
+	- `[[` - navigate to starting of file
+	- >> - to move the text to right
+	- << - to move the text to left
+	- shiftwidth
 	  collapsed:: true
-		- third party plugin managers
-			- vim-plug
-			- vundle
-			- NeoBundle
-			- Pathogen
-	- vim version 8 has built-in plugin manager
-		- google.com, vimawesome.com:
-		- how to install plugins
-			- know vim plugin directory
-			- :set packpath
-			- packages are stored at {packpath}/pack/{package-name}
-				- {packpath}/pack/{package-name}/start/{plugin-name}
-				  collapsed:: true
-					- starts at vim starting
-				- {packpath}/pack/{package-name}/opt/{plugin-name}
-					- load by `:packadd {plugin-directory-name}`
-					- exmaple:
-						- :packadd vim-fugitive
-						- ~/.vim/pack/git-plugins/opt/vim-fugitive
-			- install NERDTree
-				- cd ~/.vim/pack/plugins/start/
-				- git clone https://github.com/preservim/nerdtree.git
-				- :NERDTree .
-				- o to open file
-				- Ctrl + o to unfold sub-directories
-				- Ctrl + x to fold sub-directories
-			- install Ctrlp (fzf) plugin
-				- git clone https://github.com/kien/ctrlp.vim.git
-				- <Ctrl+p>/tx<Ctrl+v> (for vertical split) <Ctrl+s> (for horizonal split)
-			- Install tabular plugin
-				- cd ../opt/
-				- git clone https://github.com/godlygeek/tabular.git
-				- :packadd(pd) tabular
-				- ```
-				  |dog|cat|goose|
-				  |bunny|owl|turkey|
-				  |goat|horse|frog|
-				  ```
-				- :Tab /|/r3 (| - delimiter, r-right justification, 3 spaces)
-			- install easymotion plugin
-				- cd ../start/
-				- git clone https://github.com/easymotion/vim-easymotion.git
-				- leader+leader+j (for below line)
-				- leader+leader+k (for above lines)
-				- leader+leader+w (for words)
-				- leader+leader+s (for character)
-			- more plugins about git can be placed in a categorised directory
-				- cd ../../
-				- mkdir git-stuff
-				- cd git-stuff
-				- mkdir start
-				- git clone https://github.com/tpope/vim-fugitive.git
-				- :Git blame
-			- remove plugin
-				- rm -rf vim-fugitive
-- menu
-  collapsed:: true
-	- :help menu
-	- :set so=5 (so scroll off 5 lines above)
-	- in gvim
+		- :set shiftwidht?
+		- :set tabstop?
+		- :set expandtab?
+	- >i{ - to move text in brackets to the right
+	- copy - `y` followed by noun like `w` - word, `)` - line, regular expression
+	- `yy` copy the line
+	- paste (put) - `p`
+	- to change the text type `c` followed by `w` - word, `)` - line, regular expression
+	- `a` append next to cursor and put it in insert mode
+	- `A` append at the end of line and put it in insert mode
+	- `o` to insert a new line below the current line. `O` to insert a new line above the current line.
+	- repeat commands
 	  collapsed:: true
-		- `"+` register
-			- contains text copied with Ctrl+c from clip board
-			- text in register will be available to other application via Ctrl+v
-			- to use vim for system clip board both ways `:set clipboard=unnamedplus`
-		- `"*` register selected text with mouse
-		- `P` put the copied text and places the cursor on the last character
-		- `gP` puts the copied text and places the cursor on the next character if available
-		- ~/.gvimrc or ~/_gvimrc
-			- after opening gvim first .vimrc file will be read and after taht .gvimrc file will be read
-		- menu.vim also available at `$VIMRUNTIME/menu.vim`
-		- can check above locations with `:version`
-		- fonts in gvim
+		- 80operation<symbol><Esc>
+		- 80i#<Esc>
+	- replace mode <Shift><r>
+	  collapsed:: true
+		- it will replace what ever you type
+		- lower case <r> will replace only one character
+	- change mode
+	  collapsed:: true
+		- c+motion
+		- cw
+		- cw can be put into register like this `"acw`
+		- `c$` to change line from current cursor position to last of the line. shorcut `C`
+		- `cc` to change the entire line
+		- swap case of the character by `~`, word `g~w`, line `g~$` or `g~~`
+		- swap a word to upper case `gUw`
+		- swap a word to lower case `guw`
+		- swap a line to upper case `gUU`
+		- swap a line to lower case `guu`
+	- joinng two lines <shift>+<j> (capital J)
+	  collapsed:: true
+		- if line ends with `.` it will add two spaces
+		- if space are not required then `gJ`
+		- to join 3 lines use `3<Shift><j>`
+	- search
+	  collapsed:: true
+		- search forward
+			- f{char}
+			- forward till search: letter before the search character type `t{char}`
+			- to repeat the same search type `;`
+		- search backwar
+			- F{char}
+			- Reverse till search: letter before the search character in backward direction type `T{char}`
+			- to repeat the same seach type `,`
+		- using forward slash `/{search word}`<Enter>.
+			- to go to next occurrence in forward direction type `n`.
+			- to go to next occurrence in reverse direction type `N`.
+		- incremental search (is)
+			- view (`incsearch` | `noincsearch`)by `:set is?`
+			- turn on by `:set is` turn off by `:set nois`
+		- highlight search (hls / hlsearch)
+			- view by :set hls?
+			- turn on by `:set hls` turn off by `:set nohls`
+		- backward search
+			- `?{pattern}<ENTER>`
+			- type `n` for next occurrence, `N` for next occurrence in reverse direction
+		- assertick (*) / pound (#)
+			- put cursor at the word start and press `*`<Enter> for forward search, `#<Enter>` for backward search
+			- type `n` for next occurrence, `N` for next occurrence in reverse direction
+		- substitute
+			- :[range]s/{pattern-search}/{string-to-replace}/[flags]
+				- to substitute old with new in the current line for the first occurrence
+				- range default is current line
+				- :1,5s/for/FOR/
+				- g flag for global
+				- `$` represents last line
+				- `.` represents current line
+				- `%` represents total file
+				- /Global/,/Local/s/net/org/g
+					- /Global/, /Local/ are pattern
+				- :%s/\/var\/spool/\/usr\/local/g
+				- :%s#/var/spool#/usr/local#g
+			- global substitution
+				- %s/{pattern}/{string}/g
+		- line numbers
+			- :set nu
+			- :set nonu
+			- :set nu!
+	- https://github.com/vim/vim/blob/master/runtime/doc/
+	- modes
+	  collapsed:: true
+		- normal mode or command mode
+		- insert mode
+			- press `i` to enter insert mode
+			- to leave insert mode press `esc`
+			- `I` (capital I) to move to first non blank character of the line and put it in insert mode.
+			- `A` (capital A) to move to the last and append i.e. go to insert mode.
+		- line mode or last line mode or command line mode
+			- press `:` to enter into command mode
+			- key in the command followed by pressing `<Enter>` to execute the command and go to normal mode
+			- if you want to abandon the command mode press `Esc` to go to normal mode
+		- visual mode
+			- characterwise visual mode: v
+				- to highlight and go in two directions use `o` to switch highlight
+			- linwise visual mode: V
+			- block wise visual mode: `Ctrl + v`
+				- use `o` to go to other end of the block
+				- use `O` to go to other end of the line in the block
+				- to append text highlight the block using $ and use A and type text and press <ESCAPE>
+				- to prepend text use I
+			- `gv` to go to last visual mode with highlighted text
+			- > - shift right
+			- < - shift left
+			- operations on selected area
+				- select the area and type :
+				- and do the operations on it like substitute s
+			- centering (ce), left (le), rigtht (ri)
+				- select the area
+				- :ce 40 (means centre align 40 width)
+				- :le 5 (left align 5 width)
+		- diff mode
+			- vim -d file1.txt file2.txt
+			- :set noscrollbind
+			- :set scrollbind
+			- `:diffget` to get text from file2 to file1
+			- `:diffput` to put text from file1 to file2
+	- commands are case sensitive
+	- `ctrl + o` - to go to back in the section you visited
+	- `ctrl + i` - to go forward in the section you visited
+	- `.` dot to repeat previous command
+	- manual
+	  collapsed:: true
+		- `:help`
+		- :h usr<tab>
+		- `:help dd`
+		- `:help linewise`
+		- to view help only type `:only`
+		- to view syntax type `:syntax on`
+		- place the cursor on the word and hit `ctrl + ]` to get help about
+		- `:help :q[uit]`
+		- `:help :h[elp]`
+		- `:h count`
+		- `Ctrl + w`, `Ctrl + w` to switch between windows
+		- command line completion `:h  :qu<Ctrl+D>` to get list of commands starting with `:qu`. type the command or cycle trough using tab.
+		- `:h :q<Ctrl+D>`
+		- `:set nowildmenu`
+			- `:h wildmenu`
+			- tab to cycle through menu items
+	- regular expressions
+	  collapsed:: true
+		- in normal mode `/` for going forward in file, `?` for going backward in file
+		- search text followed by `<ENTER>`
+		- next word type `n` to go forward, `N` to go backward
+		- `atte.tion` use `.` for any letter in place of `.`
+		- shortcut for `/`, place the cursor word you want to search press `*` to go forward
+		- shortcut for `*`, place the cursor word you want search press `#` to go backward
+	- registers
+	  collapsed:: true
+		- `"a` followed by operation like `yy` to copy line
+		- `"Ayy` to append to the `a` register
+		- `:reg [register(s)]`
+			- `:reg`
+			- `:reg a`
+			- `:reg 1a`
+		- repeating with registers
+			- [count][register]operator
+			  or
+			  [register][count]operator
+		- cut-copy-paste=delete-yank-put
+		- registers are storage locations
+		- "" contains last operated on text
+		- numbered registers: "0 ... "9
+			- last yanked will be in "0
+			- last deleted will be in "1
+		- named registers: "a ... "z
+			- you can append to registers by using upper case of register. for example to append to register `a` use `"A`
+		- black hole register
+			- `"_dd` to delete text safely to black hole
+	- replace
+	  collapsed:: true
+		- `r` to replace the character with new typed one
+		- `:%s/foo/bar/g` replace `foo` with `bar` `globally` in the file. omit `g` if it is at one place only. omit `%` if it is on the same line.
+	- mark
+	  collapsed:: true
+		- to mark `ma`
+		- go to the mark line type `'a`. go to marked place type `a
+		- to view marks `:marks`
+		- delete a mark `:delmark m`
+		- to delete content from cursor upto mark type `d'a`
+	- undo type `u`
+	- redo type `<CTRL> + r`
+	- go to last edit place `'.`
+	- buffers
+	  collapsed:: true
+		- to view list of buffers type `:buffers` or `:ls`
+		- `%a` indicates current buffer
+		- to go to previous buffer `:bp`, `#` indicates previous buffer
+		- to go to next buffer `:bn`
+		- go to specific buffer `:b4`
+		- buffer delete `:bd`
+	- find and edit files
+	  collapsed:: true
+		- `:e <tab>`
+		- `:e he<tab>`
+		- `:e .` to list all files in current directory
+	- read command
+	  collapsed:: true
+		- `:r file.txt` - to place the text of `file.txt` in the current file
+	- abbreviation
+	  collapsed:: true
+		- in `.vimrc` add `abbr _ak vim course`
+		- use in insert mode type `_ak<SPACE>`
+	- to execute commands inside vim
+	  collapsed:: true
+		- `:!ls -la`
+	- `+` sign
+	  collapsed:: true
+		- $ vim test.txt +8 # to go to 8th line
+		- $ vim test.txt /little # to go to first occurrence of little
+	- to expand the file type `go`
+	- text objects
+	  collapsed:: true
+		- {operatore}{a|i}{object}
+		- example:
+			- daw: Delete a word (including space)
+			- ciw: change inner word
+			- das: delete a sentence
+			- dis: delete inner sentence
+			- dap: delete a paragraph
+			- dip: delete a inner paragraph
+			- ci]: change inner brackets
+			- da]: delete text object including brackets
+			- da(, di(, dap, dip
+			- `a<` = `a>`, `i<` = `i>`
+			- `cit` change inside tags `<p>`Header`</p>`
+			- `a{` = `a}`, `i{` = `i}`, `aB`, `iB`
+			- `ca"`, `ci"`, `a'`, `i'`, a`, i`
+	- macros
+	  collapsed:: true
+		- macros are recorded series of keystrokes
+		- macros use registers
+		- process
+			- start recording: `q{REGISTER}`
+			- finish by `q`
+			- play back: `@{REGISTER}`
+			- repeat last typed macro `@@`
+		- macro best practices
+			- normalise the cursor position: 0
+			- perform edits and operations
+			- position you cursor to enable easy replays: j
+			- new commands can be appended also type `qC` followed by recording and stopping by `q`
+		- 50@c to apply macro in register c to 50 lines
+		- [range]normal @c
+			- 27,35normal @c
+			- .,$normal @c
+		- to edit a macro: edit the registry
+			- example registry a:
+				- paste by: "ap
+				- make changes and copy again with "ay$
+		- saving macros
+			- viminfo file
+				- .viminfo or _viminfo
+				- stores history and non-empty registers
+				- read when vim starts
+				- can easily overwrite registers
+			- vimrc file
+				- .vimrc or _vimrc
+				- let @d = ''0jDkPa jdd'
+				- if you want to type special literal symbols type `<CTRL>+v` followed by <ESCAPE>
+				- if it has any single quotes (') you can surround with double quotes (")
+	- Ctrl + g: to get line count
+	- vimrc
+	  collapsed:: true
+		- rc = run commands
+		- ~/.vimcr, $HOME/_vimrc
+		- each line is executed as a command
+			- set ruler = :set ruler
+			- if it it boolean, we can toggle by adding !
+			- if it is numeric, new value can be set
+			- :h history<CTRL>+<D> to list items with history
+			- :h 'history'
+			- :set history=500
+			- partial command search
+				- :h h<up-arrow> #this can give commands with h from history of commands
+			- default value can be set by append & :set history&
+			- :set #this command shows values other than default values
+			- 1<CTRL>+<g> to display file path
+			- :h option-list # to view list of settings
+			- :options # to view list of options available
+			- " for comments
+			- set history=1000 # keep 1000 items in the history
+			- set ruler # show the cursor position
+			- set showcmd # show incomplete commands
+			- set wildmenu # shows a menu when using tab completion
+			- set scrolloff=5 # set the screen by scrolling to top above it 5 lines will be there
+			- set backup # for file backup
+			- set bex=SOMETHING # for backup extension
+			- set lbr # for line break wrap
+			- set ai # auto indent
+			- set si # for smart indent useful for programming
+			- set bg=light # to tell vim about the background color so that it can set other font colors
+			- color slate
+			- map KEY KEYSTROKES
+				- example
+					- map <F2> iNagaraju Gumpini<CR>
+				- Keys
+				  collapsed:: true
+					- <BS> BackSpace
+					- <CR> Enter
+					- <Enter> Enter
+					- <Return> Enter
+					- <Esc> Escape
+					- <Space> Space
+					- <Up> Up arrow
+					- <Down> Down arrow
+					- <Left> Left arrow
+					- <Right> Right arrow
+					- <Insert> Insert
+					- <Del> Delete
+					- <Home> Home
+					- <End> End
+					- <PageUp> Page-Up
+					- <PageDown> Page-Down
+					- <Tab> Tab
+					- <bar> '|'
+					- <C-X> Ctrl+X
+					- <F1>-<F12> Function Keys
+				- :source ~/.vimrc
+				- leader key (space bar)
+					- this way of mapping will not interfere with other vim mappings
+					- you can remap leader key by
+						- let mapleader=","
+					- map <leader>w :w!<CR>
+				- :h mapping
+				- mkvimrc testvimrc
+				- mkvimrc! (to overwrite ~/.vimrc file)
+				- :h modeline
+					- will be at bottom or top
+					- " vim: set ft=vim :
+					- tells vim this file is vimrc file
+				- to get help about correct documentation
+					- :h 'ruler'<ENTER>
+	- buffers
+	  collapsed:: true
+		- vim buf*<ENTER> # it is shell feature not vim feature
+		- to view buffers
 		  collapsed:: true
-			- :set gfn=*<ENTER> (gfn=GUI font)
-			- view by :set gfn?
-			- put this in `.gvimrc`
-			- if any spaces escape them with `\` (back slash)
-			- :set gfn=Monospace\ Regular:h14
-			- :h gui
-- terminal apps
-  collapsed:: true
-	- gnu screen
-	- tmux
+			- :buffers (:ls) (:files)
+			  collapsed:: true
+				- %a is % current buffer, a means loaded
+				- `#` is previously opened buffer
+				- `+` changes made but not written
+				- `h` loaded into memory
+				- without any indicator means not loaded into memory
+				- buffer can be in 3 states
+				  collapsed:: true
+					- active (loaded into memory and displayed)
+					- hidden (loaded into memory but not displayed)
+					- in-active (not loaded into memory not displayed)
+				- to work with multiple buffers
+			- to open buffers by numbers
+			  collapsed:: true
+				- :e / :edit
+				- :buffer 3
+				- :b3
+				- :b buf-dab.txt
+				- :b <CTRL+D>
+				- : b <TAB>
+				- :bnext (:bn)
+				- :bprevious (:bp)
+				- :bfirst (:bf)
+				- :blast (:bl)
+				- previously (^) opened buffer <CTRL+6> or <CTRL+SHIFT+6)
+				  collapsed:: true
+					- :b#
+				- :set hidden # to work with all buffers without saving
+				  collapsed:: true
+					- otherwise :b!2 # to shift to buffer2 and changes not written in b1
+				- :wall # to write all buffers
+				- :qall!
+				- :badd modes.txt # to add modes.txt to buffers
+				- :bdelete (:bd) # removes the current buffer from memory
+				  collapsed:: true
+					- :bd 6
+					- :bd buf-ant.txt
+					- 1,4bd # to delete a range of buffers
+					- %bd # to delete all buffers
+				- to set commands to all buffers
+				  collapsed:: true
+					- :bufdo set nu rnu
+					- :bufdo %s/#/@/g
+					- using pipe `|` to combine commands
+						- :bufdo %s/#/@/g | w
+				- multiple windows
+				  collapsed:: true
+					- :sp # to split window horizontally
+					  collapsed:: true
+						- <Ctrl+w>+s
+					- :vs # to split window vertically
+					  collapsed:: true
+						- <Ctrl+w>+v
+					- :sp buf-bed.txt
+					- close window
+					  collapsed:: true
+						- <Ctrl+w>q
+						- close all windows except current one
+							- :only
+							- :on
+							- <Ctrl+w>+o
+					- jump between windows
+					  collapsed:: true
+						- <Ctrl+w><Ctrl+w>
+					- cycle through windows
+					  collapsed:: true
+						- <Ctrl+w><Ctrl+w>
+						- Top Left -> Top Right -> Bottom Left -> Bottom Right
+						- <Ctrl+w>h, j, k, l to navigate between windows
+						- to increase size vertically <Ctrl+w>+
+						- to decrease size vertically <Ctrl+w>-
+						- to equalise all window <Ctrl+w>=
+						- to maximise height <Ctrl+w>_
+						- to maximise width <Ctrl+w>|
+						- to increase width <Ctrl+w>+>
+						- to decrease width <Ctrl+w>+<
+						- to rotate <Ctrl+w>+r
+							- <Ctrl+w>+H, <Ctrl+w>+J, <Ctrl+w>+L, <Ctrl+w>+K
+					- to open all windows
+					  collapsed:: true
+						- :ball
+					- :windo
+					  collapsed:: true
+						- to execute commands in all windows
+					- some functions may not work, try all versions which works for you
+					  collapsed:: true
+						- :h Ctrl+w
+						- <Ctrl+w><Ctrl+q>
+						- <Ctrl+w><Ctrl+w>, <Ctrl+w>w
+						- Ctrl-s (suspends screen updating) can be resumed by Ctrl-q (but in some terminals may not work)
+					- :h windows
+	- plugins
+	  collapsed:: true
+		- for vim version 7 and below
+		  collapsed:: true
+			- third party plugin managers
+				- vim-plug
+				- vundle
+				- NeoBundle
+				- Pathogen
+		- vim version 8 has built-in plugin manager
+			- google.com, vimawesome.com:
+			- how to install plugins
+				- know vim plugin directory
+				- :set packpath
+				- packages are stored at {packpath}/pack/{package-name}
+					- {packpath}/pack/{package-name}/start/{plugin-name}
+					  collapsed:: true
+						- starts at vim starting
+					- {packpath}/pack/{package-name}/opt/{plugin-name}
+						- load by `:packadd {plugin-directory-name}`
+						- exmaple:
+							- :packadd vim-fugitive
+							- ~/.vim/pack/git-plugins/opt/vim-fugitive
+				- install NERDTree
+					- cd ~/.vim/pack/plugins/start/
+					- git clone https://github.com/preservim/nerdtree.git
+					- :NERDTree .
+					- o to open file
+					- Ctrl + o to unfold sub-directories
+					- Ctrl + x to fold sub-directories
+				- install Ctrlp (fzf) plugin
+					- git clone https://github.com/kien/ctrlp.vim.git
+					- <Ctrl+p>/tx<Ctrl+v> (for vertical split) <Ctrl+s> (for horizonal split)
+				- Install tabular plugin
+					- cd ../opt/
+					- git clone https://github.com/godlygeek/tabular.git
+					- :packadd(pd) tabular
+					- ```
+					  |dog|cat|goose|
+					  |bunny|owl|turkey|
+					  |goat|horse|frog|
+					  ```
+					- :Tab /|/r3 (| - delimiter, r-right justification, 3 spaces)
+				- install easymotion plugin
+					- cd ../start/
+					- git clone https://github.com/easymotion/vim-easymotion.git
+					- leader+leader+j (for below line)
+					- leader+leader+k (for above lines)
+					- leader+leader+w (for words)
+					- leader+leader+s (for character)
+				- more plugins about git can be placed in a categorised directory
+					- cd ../../
+					- mkdir git-stuff
+					- cd git-stuff
+					- mkdir start
+					- git clone https://github.com/tpope/vim-fugitive.git
+					- :Git blame
+				- remove plugin
+					- rm -rf vim-fugitive
+	- menu
+	  collapsed:: true
+		- :help menu
+		- :set so=5 (so scroll off 5 lines above)
+		- in gvim
+		  collapsed:: true
+			- `"+` register
+				- contains text copied with Ctrl+c from clip board
+				- text in register will be available to other application via Ctrl+v
+				- to use vim for system clip board both ways `:set clipboard=unnamedplus`
+			- `"*` register selected text with mouse
+			- `P` put the copied text and places the cursor on the last character
+			- `gP` puts the copied text and places the cursor on the next character if available
+			- ~/.gvimrc or ~/_gvimrc
+				- after opening gvim first .vimrc file will be read and after taht .gvimrc file will be read
+			- menu.vim also available at `$VIMRUNTIME/menu.vim`
+			- can check above locations with `:version`
+			- fonts in gvim
+			  collapsed:: true
+				- :set gfn=*<ENTER> (gfn=GUI font)
+				- view by :set gfn?
+				- put this in `.gvimrc`
+				- if any spaces escape them with `\` (back slash)
+				- :set gfn=Monospace\ Regular:h14
+				- :h gui
+	- terminal apps
+	  collapsed:: true
+		- gnu screen
+		- tmux
 - resources
-  collapsed:: true
-	- https://theprimeagen.github.io/vim-fundamentals/
-		- [[theprimeagen-vim-fundamentals]]
+	- videos
+		- Udemy_Vim_Masterclass_2025-1
+		- https://theprimeagen.github.io/vim-fundamentals/
+			- [[theprimeagen-vim-fundamentals]]
+	- books
+		- mastering vim
+		- Drew Neil - Modern Vim_ Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018)
+		- Arnold Robbins, Elbert Hannah - Learning the vi and Vim Editors_ Power and Agility Beyond Just Text Editing-O'Reilly Media (2021)

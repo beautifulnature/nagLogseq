@@ -1,4 +1,5 @@
 - resources
+	- LATER linkedin programming foundations
 	- Programming Language Theory
 		- https://steshaw.org/plt/
 	- AI

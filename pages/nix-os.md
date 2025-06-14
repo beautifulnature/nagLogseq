@@ -5,6 +5,7 @@
 	- sudo nixos-rebuild switch
 - book
 	- Nix Mastery - Reproducible Systems and Functional Package Management
+	  collapsed:: true
 		- Introduction
 		- collapsed:: true
 		  1. Introduction to Nix and Functional package management
@@ -107,7 +108,8 @@
 				- lazy evaluation and purity
 				- evaluation environments
 				- debugging and tracing evaluations
-		- 3. setting up nix environment
+		- collapsed:: true
+		  3. setting up nix environment
 			- 3.1 installing nix on your system
 			- 3.2 configuring the nix environment
 			- 3.3 basic nix commands
@@ -422,6 +424,7 @@
 			- 15.6 maintaining and updating nix environments
 			- 15.7 community and support resources
 	- installation
+	  collapsed:: true
 		- nagaraju@RD-nagaraju ~ $ curl -k -L https://nixos.org/nix/install | sh
 		    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 		                                   Dload  Upload   Total   Spent    Left  Speed

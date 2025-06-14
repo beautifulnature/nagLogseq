@@ -1,0 +1,3 @@
+- resources
+	- video
+		- Low_Level_Academy_Fundamentals_of_ARM_Assembly_2024-12
