@@ -1,0 +1,3 @@
+- resources
+	- books
+		- [[Excel in perfection]] - Examples, tips and tricks from practice - Harald Nahrstedt

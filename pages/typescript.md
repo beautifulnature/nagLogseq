@@ -1,5 +1,46 @@
+- devops
+  collapsed:: true
+	- typescriptlang.org/play
+	- npm install typescript -g
+	- compiler: tsc
+	- node 23+ has TS support enabled by default
+	- ide: vscode
+		- sometimes it will hung: Ctrl + Shift + p > Restart Typescript Server
+- why typescript?
+  collapsed:: true
+	- catch errors early
+	- enhanced autocomplete
+	- convey intent
+	- types are tests
+	- safer refactoring
+	- make it impossible
+- tsconfig
+  collapsed:: true
+	- tsc --init
+	- tsc -p path/to/tsconfig.json
+- types
+	- primitive types (string, number etc)
+	- arrays and tuples
+	- objects
+	- any and unknown
+		- ts has 2 top types
+			- any
+			- unknown
+	- never
+	- unions
+- enums
+- interfaces
+- functions
+- classes
+- modules
+- compiling TS
+- using TS without compile
+- coverting js to ts
+- features to avoid
 - resources
+  collapsed:: true
 	- videos
+		- dometrain - getting started typescript - cory house
 		- total typescript
 	- books
 		- tackling typescript

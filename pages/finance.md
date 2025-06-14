@@ -1,4 +1,5 @@
 - algorithmic trading
+  collapsed:: true
 	- to overcome human limitations
 	  collapsed:: true
 		- emotional reaction

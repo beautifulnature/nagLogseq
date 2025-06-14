@@ -1,0 +1,21 @@
+- 6.1 Introduction
+	- 6.1.1 Outlook-Options
+	- 6.1.2 Outlook and OneNote
+	- 6.1.3 Advantages of time management
+	- 6.1.4 The 60-40 rule
+	- 6.1.5 Time wasters and time traps
+- 6.2 Dates
+	- 6.2.1 Weekly schedule
+	- 6.2.2 Daily schedule
+	  id:: 6831590a-e576-48ce-9e74-140848feedaa
+	- 6.2.3 Clearly display appointments with rules
+	- 6.2.4 Resource calendar
+- 6.3 Time planning methods
+	- 6.3.1 Pareto principle
+	- 6.3.2 ALPEN method
+	- 6.3.3 Eisenhower-Matrix
+	- 6.3.4 ABC analysis
+	- 6.3.5 Salami-Tactics
+	- 6.3.6 Pomodoro-Technik
+	- 6.3.7 Time-Boxing
+	- 6.3.8 Performance review

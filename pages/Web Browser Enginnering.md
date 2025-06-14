@@ -1,0 +1,22 @@
+- Authors: Pavel Panchekha https://pavpanchekha.com, Chris Harrelson https://twitter.com/chrishtr
+- ISBN: 9780198913856
+- Resources
+	- Google Blink Rendering https://www.chromium.org/teams/rendering
+	- Google Transit https://google.com/transit
+	- https://jamesrwilcox.com - book idea
+	- https://www.mwillsey.com/ - proof read
+	- https://homes.cs.washington.edu/~ztatlock/ - encouraged book to course
+	- https://www.sscharmingds.com/ - pavel wife
+	- https://www.cs.rochester.edu/u/gildea/ - book feedback
+	- https://www.cis.upenn.edu/~stevez/
+	- https://browser.engineering/blog/why-python.html
+	- https://en.wikipedia.org/wiki/Web_page
+	- https://developer.mozilla.org/en-US/docs/Learn
+	- https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
+	- https://en.wikipedia.org/wiki/Bulletin_board_system
+	- https://en.wikipedia.org/wiki/Headless_browser
+	- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
+	- https://en.wikipedia.org/wiki/Inversion_of_control
+	- https://en.wikipedia.org/wiki/Constraint_programming
+	- https://en.wikipedia.org/wiki/Declarative_programming
+-

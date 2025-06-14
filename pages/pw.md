@@ -6,10 +6,15 @@
 	- winscp	`10.5.4.120`	`root`	`Mat#120@120`	pps-uploading
 - cs-cps	`sbe12` `sbe@12`
 - mail
-	- `corporatestandards@bhel.in` `AgmSbe@2504`
+	- `corporatestandards@bhel.in` `Agmsbe@20252`
 	- `10.5.4.84`	`msearch` `Agmsbe@20241`
 	- `nagaraju@bhel.in` `Ramarao@6014755`
 	- addressbook
 		- `ldap.bhel.in` `username: uid=nagaraju,ou=people,dc=bhel,dc=in` `password: mailpassword`
 - rd sharing `10.9.9.99` `bhelrnd` `$bhel#itx`
 - teams `nagaraju@bhel.in` `Gas51469`
+- proxy
+	- Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' | Select-Object ProxyServer, ProxyEnable
+	  ProxyServer            ProxyEnable
+	  -----------            -----------
+	  intgw-hyd.bhel.in:8080           0
