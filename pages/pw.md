@@ -18,3 +18,6 @@
 	  ProxyServer            ProxyEnable
 	  -----------            -----------
 	  intgw-hyd.bhel.in:8080           0
+- common pc
+	- sdg1
+	- Bhel@12345
