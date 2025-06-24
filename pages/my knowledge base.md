@@ -7,5 +7,6 @@
 - [[hardware]]
 - [[finance]]
 - [[math]]
+- [[physics]]
 - [[resources]]
 - [[office]]
