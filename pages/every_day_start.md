@@ -1,7 +1,8 @@
 - zero_start
-	- ssg
+	- ssg - hugo
+	- typing - vim
 	- youtube
-	- host
+	- python
 - core
 	- academic
 	  collapsed:: true
@@ -37,5 +38,6 @@
 			- [[nix-os]]
 		- [[CNC]]
 		- ai
-	- academic
+	- wealth
+	  collapsed:: true
 		- [[finance]]

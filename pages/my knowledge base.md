@@ -1,4 +1,6 @@
 - Just Do it
+- moto: learn -> make -> earn -> learn
+- [[schdule]]
 - [[every_day_start]]
 - [[to read immediately]]
 - [[fitness]]
