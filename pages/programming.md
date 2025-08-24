@@ -1,5 +1,8 @@
 - resources
-	- LATER linkedin programming foundations
+	- linkedin programming foundations
+	  :LOGBOOK:
+	  CLOCK: [2025-08-20 Wed 10:11:46]--[2025-08-20 Wed 10:11:47] =>  00:00:01
+	  :END:
 	- Programming Language Theory
 		- https://steshaw.org/plt/
 	- AI

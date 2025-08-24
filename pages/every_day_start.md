@@ -26,8 +26,7 @@
 			- kuchipudi
 		- drawing
 	- automation
-	  collapsed:: true
-		- software-engineering
+		- programming languages
 		  collapsed:: true
 			- [[programming]]
 			- graphics
@@ -51,3 +50,30 @@
 	- wealth
 	  collapsed:: true
 		- [[finance]]
+			- html
+				- linkedin essential
+			- css
+				- css in depth
+			- javascript
+				- exploring javascirpt
+				- deep javascript
+			- python
+				- learning python
+				- Udemy_Python_Developer_Complete_course_2024-12
+				- CS_Primer_Programming_Beyond_the_Basics_2025-1
+			- java
+				- pluralsight playbook
+			- c
+		- application
+		  collapsed:: true
+			- ssg
+			- systems programming
+			  collapsed:: true
+				- os
+		- maker
+		  collapsed:: true
+			- cnc
+				- 3d printing
+			- engineering
+	- academic
+		- math

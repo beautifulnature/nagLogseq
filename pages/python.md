@@ -1,10 +1,12 @@
 - python documentation
+  collapsed:: true
 	- https://pyton.org
 	- https://docs.python.org/3/
 	- is interpreted language
 	- is dynamically typed language
 	- indentation is important in python (white space, tabs before statements)
 - devops
+  collapsed:: true
 	- installation
 		- py --version
 	- ide: vscode, vscode extensions: pylance, python, python debuuger, pycharm
@@ -479,8 +481,11 @@
 		    print("finally always runs")
 		  ```
 - resources
+  collapsed:: true
 	- Thonny
 	- videos
+		- Udemy_Python_Developer_Complete_course_2024-12
+		- linkedin essential python
 		- linked python standard library essential training
 		  id:: 684d80fe-4d18-4598-9a03-8962b23f3287
 		- linked python: working with data
