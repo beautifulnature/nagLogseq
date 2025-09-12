@@ -1,5 +1,6 @@
 - now on xtreme
 - schedule
+  collapsed:: true
 	- 04:30 to 05:30 : 🏋️
 	- 05:30 to 07:30 : 🚶
 	- 07:30 to 08:30 : office
@@ -30,6 +31,6 @@
 	- 16:10 to 16:30 : work
 	- 16:30 to 17:30 : transport
 	- 17:30 to 19:30 : 🏋️ / 🚶
-	- 19:30 to 20:00 : dinner
+	- 19:30 to 20:00 : fresh up / dinner
 	- 20:00 to 21:15 : study
 	- 21:30 to 04:30 : sleep

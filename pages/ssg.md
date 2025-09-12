@@ -4,3 +4,4 @@
 	- jekyll
 	- hexo
 	- [[hugo]]
+	- [[astro]]

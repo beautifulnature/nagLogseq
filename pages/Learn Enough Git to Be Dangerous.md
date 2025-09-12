@@ -1,0 +1,4 @@
+- https://www.learnenough.com/git
+- https://news.learnenough.com/default-git-branch-name-with-learn-enough-and-the-rails-tutorial
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+-

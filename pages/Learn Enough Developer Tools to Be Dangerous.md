@@ -1,0 +1,3 @@
+- [[Learn Enough Command Line to Be Dangerous]]
+- [[Learn Enough Text Editor to Be Dangerous]]
+- [[Learn Enough Git to Be Dangerous]]

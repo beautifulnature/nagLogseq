@@ -1,0 +1,2 @@
+- https://www.learnenough.com/command-line
+- https://news.learnenough.com/macos-bash-zshell

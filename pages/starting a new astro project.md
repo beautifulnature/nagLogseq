@@ -1,0 +1,3 @@
+- astro uses node, so you need to have node installed onto your computer.
+- creating an astro project
+- npm create astro@latest

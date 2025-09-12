@@ -1,0 +1,8 @@
+- magicaldevschool.com
+	- astro recipes
+		- astro basics
+			- [[starting a new astro project]]
+			- [[using environment variables]]
+		- astro and javascript
+		- astro ssr
+		- collecting payments with stripe
