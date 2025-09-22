@@ -1,3 +1,3 @@
 - https://theprimeagen.github.io/dev-productivity/
 - https://github.com/ThePrimeagen/dev-productivity?tab=readme-ov-file
-- @dhh
+- https://www.learnenough.com/dev-environment

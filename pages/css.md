@@ -8,5 +8,6 @@
 	- Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/
 	- https://stackoverflow.com/questions/10205464/what-is-the-difference-between-background-and-background-color
 	- https://www.cssfontstack.com/
+	- https://unicode-table.com/en/
 	- books
 		- css in depth
