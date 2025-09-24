@@ -2,6 +2,7 @@
 	- content which is stored directly and delivered verbatim from the server is called the static content.
 	- staticgen.com
 	- jekyll
+		- date - https://cloudcannon.com/tutorials/
 	- hexo
 	- [[hugo]]
 	- [[astro]]
