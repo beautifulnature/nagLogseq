@@ -10,5 +10,6 @@
 	- https://www.cssfontstack.com/
 	- https://unicode-table.com/en/
 	- https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+	- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 	- books
 		- css in depth
