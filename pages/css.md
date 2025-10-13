@@ -11,5 +11,6 @@
 	- https://unicode-table.com/en/
 	- https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 	- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+	- https://css-tricks.com/snippets/css/complete-guide-grid/
 	- books
 		- css in depth
