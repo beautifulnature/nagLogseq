@@ -1,11 +1,13 @@
 - zero_start
-	- [[html]]
-	- [[css]]
-	- [[javascript]]
+	- [[make]]
+		- blog
+			- ssg - hugo
+			- [[html]]
+			- [[css]]
+			- [[javascript]]
 	- [[java]]
 	- [[VBA-object]]
 	- [[ai]]
-	- ssg - hugo
 	- editing - cli - typing - vim
 	- youtube
 	- python
@@ -13,7 +15,6 @@
 	- physics: new book
 	- [[systems programming in linux]]
 - core
-  collapsed:: true
 	- academic
 	  collapsed:: true
 		- [[math]]
@@ -26,6 +27,7 @@
 			- kuchipudi
 		- drawing
 	- automation
+	  collapsed:: true
 		- programming languages
 		  collapsed:: true
 			- [[programming]]
@@ -76,4 +78,5 @@
 				- 3d printing
 			- engineering
 	- academic
+	  collapsed:: true
 		- math
