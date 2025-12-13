@@ -10,6 +10,7 @@
 	- https://www.youtube.com/@PRSundar64
 - yt-health
 	- https://www.youtube.com/@dr.movvasrinivas
+	- https://www.youtube.com/@NageswaraAyurvedic
 	- https://www.youtube.com/@VRKexclusive
 - yt-history
 	- https://www.youtube.com/@JayVardhanSingh
@@ -21,16 +22,24 @@
 	- learning
 		- https://www.youtube.com/@JustinSung
 		- https://www.youtube.com/@icanstudystudent
+		- https://www.youtube.com/@aliabdaal
 - yt-technology
 	- AI
 		- https://www.youtube.com/@deeplearningexplained
 		- https://www.youtube.com/@aiDotEngineer
 		- https://www.youtube.com/@intheworldofai
+		- https://www.youtube.com/@1littlecoder
 	- coding
 		- https://www.youtube.com/@t3dotgg
+		- https://www.youtube.com/@1BestCsharpblog
+	- cse
+		- https://www.youtube.com/@exclamationfoundation
+	- maker
+		- https://www.youtube.com/@kicadeda
 	- java
 		- https://www.youtube.com/@coffeesoftware
 		- https://www.youtube.com/@FrankDelporte
+		- https://www.youtube.com/@Telusko
 	- linux
 		- https://www.youtube.com/@LinusTechTips
 		- https://www.youtube.com/@LinuxPlumbersConference
