@@ -23,13 +23,11 @@ collapsed:: true
   collapsed:: true
 	- Book value represents the net asset value of a company, calculated by subtracting total liabilities from total assets. It reflects what shareholders would theoretically receive if the company were to be liquidated.
 	- ## Key Components of Book Value
-	  collapsed:: true
 		- **Total Assets**
 			- This includes all physical and intangible assets owned by the company, such as cash, inventory, property, and equipment.
 			- **Total Liabilities**
 				- This encompasses all debts and obligations, including loans, accounts payable, and any other financial obligations.
 	- ## Calculation
-	  collapsed:: true
 		- The formula for calculating book value is:
 		  
 		  Book Value=Total Assets−Total Liabilities
@@ -38,7 +36,6 @@ collapsed:: true
 		  
 		  BVPS=Shareholders Equity/Number of Outstanding Shares​
 	- ## Importance of Book Value
-	  collapsed:: true
 		- **Valuation Metric**
 			- Book value serves as a fundamental metric for investors to assess whether a stock is undervalued or overvalued compared to its market price.
 		- **Financial Health Indicator**
@@ -46,17 +43,14 @@ collapsed:: true
 		- **Investment Decisions**
 			- Investors often look for stocks trading below their book value as potential investment opportunities.
 	- ## Limitations
-	  collapsed:: true
 		- **Historical Cost Basis**
 			- Book value is based on historical costs and may not reflect current market conditions or the true economic value of assets.
 		- **Intangible Assets Exclusion**
 			- It often excludes intangible assets like goodwill, which can undervalue companies with significant intellectual property or brand equity.
 	- In summary, book value is a crucial metric in financial analysis that helps investors gauge a company's worth relative to its market valuation.
 - ## Return on Capital Employed (ROCE)
-  collapsed:: true
 	- ROCE is a financial metric used to assess a company's profitability and the efficiency with which it utilizes its capital. It measures how well a company generates profits from its capital employed, which includes both equity and debt.
 	- ## Key Points about ROCE
-	  collapsed:: true
 		- **Definition**
 			- ROCE indicates the return generated on the capital invested in the business. It helps investors and management understand how effectively a company is using its capital to generate earnings.
 		- **Formula**
@@ -83,7 +77,6 @@ collapsed:: true
 			- **Comparative Analysis**
 				- Investors can use ROCE to compare different companies' performance, helping identify those with superior returns.
 	- ## Example Calculation
-	  collapsed:: true
 		- For instance, if a company has an EBIT of ₹100 million and total assets of ₹500 million with current liabilities of ₹200 million, the calculation would be:
 		- Calculate Capital Employed:
 		  
@@ -96,12 +89,10 @@ collapsed:: true
 	- ## Conclusion
 	  ROCE is a valuable metric for assessing a company's profitability and operational efficiency in utilizing its capital. By analyzing ROCE alongside other financial ratios, investors can make informed decisions regarding potential investments.
 - ## Data
-  collapsed:: true
 	- yahoo finance
 	- NSE india
 	- Brokers
 - ## Common Terms
-  collapsed:: true
 	- Long (Buy)
 	- Short (Sell)
 	- Square Off
@@ -144,10 +135,8 @@ collapsed:: true
 	- Leverage - pay smaller amount of money Buy more amount of shares
 	- Portfolio
 	- Derivatives
-	  collapsed:: true
 		- A financial security with a value derived from an underlying asset
 		- Futures
-		  collapsed:: true
 			- Futures Contract
 				- Buyer <-- Time: 30 Days --> Seller
 				- Underlying
@@ -187,7 +176,6 @@ collapsed:: true
 			- Hallo Effect
 		-
 - Technical
-  collapsed:: true
 	- Pivot Point
 		- Technical indicatore used to indicate overall market trend
 		- trading above the pivot point indicate bullish sentiment, below indicates bearish

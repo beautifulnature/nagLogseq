@@ -1,2 +1,22 @@
-- [[windows]]
+- windows
+	- run: win + r
+	- proxy settings: inetcpl.cpl
+	- static ip: ncpl.cpl
+	- starup folder: shell:startup
+	- windows
+		- alt + tab: to scroll through open windows
+		- ctrl + win: go to next desktop
+		- win + ->: take current window to right
+		- win + <-: take current window to left
+		- win + uparrow: maximise current window
+		- win + downarrow: manimise current window
+		- win + e: open explorer
+	- browser
+		- alt + d: go to addressbar
+		- ctrl + d: make bookmark
+		- alt + <-: back
+		- alt + ->: forward
+		- @favorite: to search in favorites
+		- ctrl + t: to open new tab
+		- ctrl + tab: to scroll through open tabs
 - [[intellij]]

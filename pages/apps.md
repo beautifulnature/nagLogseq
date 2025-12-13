@@ -1,3 +1,4 @@
+- [[note-taking]]
 - [[winget]]
 - [[logseq]]
 - [[notepad++]]
@@ -20,6 +21,5 @@
 	- drawio
 - [[sdkman]]
 - [[putty]]
-- [[wsl]]
 - [[googlecolab]]
 - [[utilities]]

@@ -1,3 +1,7 @@
-- https://theprimeagen.github.io/dev-productivity/
-- https://github.com/ThePrimeagen/dev-productivity?tab=readme-ov-file
-- https://www.learnenough.com/dev-environment
+- [[apps]]
+- [[pc settings]]
+- [[x cuts]]
+- resources
+	- https://theprimeagen.github.io/dev-productivity/
+	- https://github.com/ThePrimeagen/dev-productivity?tab=readme-ov-file
+	- https://www.learnenough.com/dev-environment

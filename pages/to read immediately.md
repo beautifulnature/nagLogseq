@@ -1,4 +1,4 @@
 - ideological successors
 - Learn Enough Developer Tools to Be Dangerous
-- [[Book: Robo Advisior]]
-- [[Book: How to live an Extraordinary Life]]
+- Book: Robo Advisior
+- Book: How to live an Extraordinary Life

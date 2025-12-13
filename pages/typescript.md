@@ -1,5 +1,4 @@
 - devops
-  collapsed:: true
 	- typescriptlang.org/play
 	- npm install typescript -g
 	- compiler: tsc
@@ -7,7 +6,6 @@
 	- ide: vscode
 		- sometimes it will hung: Ctrl + Shift + p > Restart Typescript Server
 - why typescript?
-  collapsed:: true
 	- catch errors early
 	- enhanced autocomplete
 	- convey intent
@@ -15,7 +13,6 @@
 	- safer refactoring
 	- make it impossible
 - tsconfig
-  collapsed:: true
 	- tsc --init
 	- tsc -p path/to/tsconfig.json
 - types
@@ -38,7 +35,6 @@
 - coverting js to ts
 - features to avoid
 - resources
-  collapsed:: true
 	- videos
 		- dometrain - getting started typescript - cory house
 		- total typescript

@@ -1,0 +1,9 @@
+- [[finance]]
+	- https://www.youtube.com/@ShkreliPlanet
+	- OPM (Other People Money)
+	- FO (Family Office)
+	- Returns
+		- 20% annual returns
+		- 10 - 15 % returns
+		- more than 20% (but suspicious)
+- [[Algorithmic trading]]

@@ -1,7 +1,10 @@
+- [[html]]
+- [[js]]
+- [[css]]
+- [[seo]]
+- static site generators [[ssg]]
 - content management systems [cms]
 	- wordpress
 	- drupal
 	- joomla
 	- umbraco
-- static site generators [[ssg]]
-- [[browser]]
