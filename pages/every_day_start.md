@@ -13,9 +13,7 @@
 	- physics: new book
 	- [[systems programming in linux]]
 - core
-  collapsed:: true
 	- academic
-	  collapsed:: true
 		- [[math]]
 		- [[physics]]
 		- [[chemistry]]
@@ -26,6 +24,7 @@
 			- kuchipudi
 		- drawing
 	- automation
+	  collapsed:: true
 		- programming languages
 		  collapsed:: true
 			- [[programming]]
