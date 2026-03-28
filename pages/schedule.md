@@ -1,6 +1,5 @@
 - now on xtreme
 - schedule
-  collapsed:: true
 	- 04:30 to 05:30 : 🏋️
 	- 05:30 to 07:30 : 🚶
 	- 07:30 to 08:30 : office

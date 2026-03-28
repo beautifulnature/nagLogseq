@@ -1,5 +1,4 @@
 - tools
-  collapsed:: true
 	- sudo apt update
 	- sudo apt install gcc build-essential
 	- ide
@@ -13,7 +12,6 @@
 		- Code::Blocks
 		- Code Lite
 - c-language
-  collapsed:: true
 	- ISO 9899
 	- programming langauge
 	  collapsed:: true

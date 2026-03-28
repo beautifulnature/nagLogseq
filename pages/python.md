@@ -1,12 +1,10 @@
 - python documentation
-  collapsed:: true
 	- https://pyton.org
 	- https://docs.python.org/3/
 	- is interpreted language
 	- is dynamically typed language
 	- indentation is important in python (white space, tabs before statements)
 - devops
-  collapsed:: true
 	- installation
 		- py --version
 	- ide: vscode, vscode extensions: pylance, python, python debuuger, pycharm
@@ -15,11 +13,9 @@
 	- python interpreter
 		- REPL - Read Evaluate Print Loop
 	- python cli
-	  collapsed:: true
 		- python3
 		- `exit()` or `Ctrl + Z`
 - variables
-  collapsed:: true
 	- x = 10
 	- x, y, z = (10, 20, 30) this is tuple
 	- swaping of values
@@ -81,7 +77,7 @@
 			- name_queue2 = deque(['ksm', 'gnr', 'src'])
 			- name_queue2.append('rs')
 		- combined_list = int_list + mixed_list
-		- nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+		- nested_list = `[[1, 2, 3], [4, 5, 6], [7, 8, 9]]`
 			- nested_list[0]
 			- [1, 2, 3]
 			- nested_list[0][1]
@@ -101,28 +97,20 @@
 				  ['h', 'e', 'l', 'l', 'o']
 				  ```
 - comments
-  collapsed:: true
 	- starts with `#` (short cut `ctrl` + `/`)
 - data types
-  collapsed:: true
 	- numeric
-	  collapsed:: true
 		- int
 		- float
 	- string
-	  collapsed:: true
 		- string literal are surrounded by doble quotes ("") `"cat"`
 		- new line character `\n`
 		- concatenation `+`
 	- boolean
-	  collapsed:: true
 		- True or False
 	- compound
-	  collapsed:: true
 		- sequence
-		  collapsed:: true
 			- lists []
-			  collapsed:: true
 				- lists are mutable
 				- mylist = [0, 1, "two", 3.2, false]
 				- append `+`
@@ -139,18 +127,15 @@
 				- tuples are immutable
 				- mytuple = (0, 1, 2, "three")
 			- set {}
-			  collapsed:: true
 				- contains only unique values
 			- sets, tuples don't support indexing
 			- membership with `in` operator
-			  collapsed:: true
 				- ```
 				  print(1 in mylist)
 				  print(1 in mytuple)
 				  print(1 in myset)
 				  ```
 		- dictionary
-		  collapsed:: true
 			- key-value data structure
 			- keys have to be immutable datatypes like strings, numbers
 			- key in a dictionary has to be unique in the dictionary
@@ -165,7 +150,6 @@
 	- Binary Types
 	- Custom Types
 	- exercise
-	  collapsed:: true
 		- type(12)
 		- isinstance(12, int)
 		- 5 + 1.0 = 6.0 (int + float = float)
@@ -173,7 +157,6 @@
 		- float(6) converts int to float
 		- type(True) bool (boolean)
 - arithmetic operations
-  collapsed:: true
 	- 10 + 5
 	- 10 - 5
 	- 10 * 5
@@ -183,12 +166,10 @@
 	- 2 + 3 * 5 ** 2 = 77
 	- 100 % 75 = 25 (modulus % to get the reminder)
 	- operator precedence
-	  collapsed:: true
 		- parenthesis (), exponentiation **, (* , /), (+, -) left to right
 		- and, or
 		- (2 > 1) or (10 < 8) and (not True)
 - conditional and logical operators
-  collapsed:: true
 	- indentation is important, python uses white space indentation to group together sets of statements for execution identified after `:`
 	- `>`, `<`, `>=`, `<=`, `==`, `!=`
 	- not True is False
@@ -200,7 +181,6 @@
 	- 22 == 20 + 2 (first arithmetic followed by logical)
 	- result = "x is less than y" if (x < y) else "x is greater than or equal to y"
 - loops
-  collapsed:: true
 	- while
 		- used to read data continuously from data source
 		- ```
@@ -241,23 +221,18 @@
 		    print(i, d)
 		  ```
 - function
-  collapsed:: true
 	- larger programs are organised into reusable blocks of code known as functions.
 	- if a function is executed it will give return
-	  collapsed:: true
 		- function definition
-		  collapsed:: true
 			- ```
 			  def my_function(x):
 			      return 0
 			  ```
 		- function calling
-		  collapsed:: true
 			- ```
 			  my_function(5) == 0
 			  ```
 	- example
-	  collapsed:: true
 		- `print()`
 		- ```
 		  def hello_func():
@@ -268,7 +243,6 @@
 		  hello_func()
 		  ```
 	- function that returns a value
-	  collapsed:: true
 		- ```
 		  # function that returns a value
 		  def cube(x):
@@ -278,7 +252,6 @@
 		  print(result)
 		  ```
 	- function with default parameter
-	  collapsed:: true
 		- ```
 		  # function with default value for an parameter
 		  def hello_func(greeting, name=None):
@@ -291,12 +264,10 @@
 		  hello_func("nice to meet you.")
 		  ```
 	- named parameters allows to feed parameters without remembering order
-	  collapsed:: true
 		- ```
 		  hello_func(name="Joe", greeting="nice to meet you.")
 		  ```
 	- function with variable number of parameters
-	  collapsed:: true
 		- ```
 		  def multi_add(start, *args):
 		    result = start
@@ -309,7 +280,6 @@
 		- var arg should come as the last parameter
 	- core library
 		- example
-		  collapsed:: true
 			- ```
 			  # LinkedIn Learning Python course by Joe Marini
 			  # Example file for using built-in functions
@@ -347,14 +317,12 @@
 			  print(f"{greeting} you are vistor number {count}")
 			  ```
 		- datetime
-		  collapsed:: true
 			- https://docs.python.org/3/library/datetime.html#strftime-strftime-behavior
 			- https://www.strfti.me
 			- datetime
 			- date
 			- timedelta
 		- files
-		  collapsed:: true
 			- writing files
 			- reading files
 		- `with` local scope or context manager will handle all context related things
@@ -364,25 +332,18 @@
 			  ```
 - `pass` is null operation
 - errors
-  collapsed:: true
 	- syntax error
 	- indentation error
 - classes
-  collapsed:: true
 	- encapsulating functionality and data together and reused as complete module in other projects
-	-
-	-
 - modules
-  collapsed:: true
 	- library module can be imported
-	  collapsed:: true
 		- ```
 		  import math
 		  from math import pi
 		  import random as r
 		  ```
 	- math library
-	  collapsed:: true
 		- ```
 		  import math
 		  
@@ -399,7 +360,6 @@
 	- tabulate
 		- https://pypi.org/project/tabulate
 	- example
-	  collapsed:: true
 		- ```
 		  # LinkedIn Learning Python course by Joe Marini
 		  # Working with modules of code
@@ -445,10 +405,8 @@
 		  print(tabulate(data, headers="firstrow", tablefmt="double_outline"))
 		  ```
 - execptions
-  collapsed:: true
 	- try except finally
 	- example
-	  collapsed:: true
 		- ```
 		  # LinkedIn Learning Python course by Joe Marini
 		  # Example file for working with Exceptions
@@ -481,7 +439,6 @@
 		    print("finally always runs")
 		  ```
 - resources
-  collapsed:: true
 	- Thonny
 	- videos
 		- Udemy_Python_Developer_Complete_course_2024-12

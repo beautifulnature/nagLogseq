@@ -1,9 +1,7 @@
 - notes
-  collapsed:: true
 	- vim --version
 	- to enter vim type `vim` at command line
 	- basics
-	  collapsed:: true
 		- to create a file type at cli: `vim /home/projects/vim_class/nav.txt`
 		- to open a file: `e file.txt`
 		- how to exit: type `:q!`, `qa!` to exit all buffers.
@@ -32,7 +30,6 @@
 	- >> - to move the text to right
 	- << - to move the text to left
 	- shiftwidth
-	  collapsed:: true
 		- :set shiftwidht?
 		- :set tabstop?
 		- :set expandtab?
@@ -45,15 +42,12 @@
 	- `A` append at the end of line and put it in insert mode
 	- `o` to insert a new line below the current line. `O` to insert a new line above the current line.
 	- repeat commands
-	  collapsed:: true
 		- 80operation<symbol><Esc>
-		- 80i#<Esc>
+		- `80i#<Esc>`
 	- replace mode <Shift><r>
-	  collapsed:: true
 		- it will replace what ever you type
 		- lower case <r> will replace only one character
 	- change mode
-	  collapsed:: true
 		- c+motion
 		- cw
 		- cw can be put into register like this `"acw`
@@ -65,12 +59,10 @@
 		- swap a line to upper case `gUU`
 		- swap a line to lower case `guu`
 	- joinng two lines <shift>+<j> (capital J)
-	  collapsed:: true
 		- if line ends with `.` it will add two spaces
 		- if space are not required then `gJ`
 		- to join 3 lines use `3<Shift><j>`
 	- search
-	  collapsed:: true
 		- search forward
 			- f{char}
 			- forward till search: letter before the search character type `t{char}`
@@ -91,7 +83,7 @@
 		- backward search
 			- `?{pattern}<ENTER>`
 			- type `n` for next occurrence, `N` for next occurrence in reverse direction
-		- assertick (*) / pound (#)
+		- assertick (*) / pound (`#`)
 			- put cursor at the word start and press `*`<Enter> for forward search, `#<Enter>` for backward search
 			- type `n` for next occurrence, `N` for next occurrence in reverse direction
 		- substitute
@@ -106,16 +98,17 @@
 				- /Global/,/Local/s/net/org/g
 					- /Global/, /Local/ are pattern
 				- :%s/\/var\/spool/\/usr\/local/g
-				- :%s#/var/spool#/usr/local#g
+				- `:%s#/var/spool#/usr/local#g`
 			- global substitution
 				- %s/{pattern}/{string}/g
 		- line numbers
-			- :set nu
-			- :set nonu
-			- :set nu!
+			- ```
+			  :set nu
+			  :set nonu
+			  :set nu!
+			  ```
 	- https://github.com/vim/vim/blob/master/runtime/doc/
 	- modes
-	  collapsed:: true
 		- normal mode or command mode
 		- insert mode
 			- press `i` to enter insert mode
@@ -156,7 +149,6 @@
 	- `ctrl + i` - to go forward in the section you visited
 	- `.` dot to repeat previous command
 	- manual
-	  collapsed:: true
 		- `:help`
 		- :h usr<tab>
 		- `:help dd`
@@ -174,7 +166,6 @@
 			- `:h wildmenu`
 			- tab to cycle through menu items
 	- regular expressions
-	  collapsed:: true
 		- in normal mode `/` for going forward in file, `?` for going backward in file
 		- search text followed by `<ENTER>`
 		- next word type `n` to go forward, `N` to go backward
@@ -182,7 +173,6 @@
 		- shortcut for `/`, place the cursor word you want to search press `*` to go forward
 		- shortcut for `*`, place the cursor word you want search press `#` to go backward
 	- registers
-	  collapsed:: true
 		- `"a` followed by operation like `yy` to copy line
 		- `"Ayy` to append to the `a` register
 		- `:reg [register(s)]`
@@ -204,11 +194,9 @@
 		- black hole register
 			- `"_dd` to delete text safely to black hole
 	- replace
-	  collapsed:: true
 		- `r` to replace the character with new typed one
 		- `:%s/foo/bar/g` replace `foo` with `bar` `globally` in the file. omit `g` if it is at one place only. omit `%` if it is on the same line.
 	- mark
-	  collapsed:: true
 		- to mark `ma`
 		- go to the mark line type `'a`. go to marked place type `a
 		- to view marks `:marks`
@@ -218,7 +206,6 @@
 	- redo type `<CTRL> + r`
 	- go to last edit place `'.`
 	- buffers
-	  collapsed:: true
 		- to view list of buffers type `:buffers` or `:ls`
 		- `%a` indicates current buffer
 		- to go to previous buffer `:bp`, `#` indicates previous buffer
@@ -226,27 +213,21 @@
 		- go to specific buffer `:b4`
 		- buffer delete `:bd`
 	- find and edit files
-	  collapsed:: true
 		- `:e <tab>`
 		- `:e he<tab>`
 		- `:e .` to list all files in current directory
 	- read command
-	  collapsed:: true
 		- `:r file.txt` - to place the text of `file.txt` in the current file
 	- abbreviation
-	  collapsed:: true
 		- in `.vimrc` add `abbr _ak vim course`
 		- use in insert mode type `_ak<SPACE>`
 	- to execute commands inside vim
-	  collapsed:: true
 		- `:!ls -la`
 	- `+` sign
-	  collapsed:: true
 		- $ vim test.txt +8 # to go to 8th line
 		- $ vim test.txt /little # to go to first occurrence of little
 	- to expand the file type `go`
 	- text objects
-	  collapsed:: true
 		- {operatore}{a|i}{object}
 		- example:
 			- daw: Delete a word (including space)
@@ -263,7 +244,6 @@
 			- `a{` = `a}`, `i{` = `i}`, `aB`, `iB`
 			- `ca"`, `ci"`, `a'`, `i'`, a`, i`
 	- macros
-	  collapsed:: true
 		- macros are recorded series of keystrokes
 		- macros use registers
 		- process
@@ -297,7 +277,6 @@
 				- if it has any single quotes (') you can surround with double quotes (")
 	- Ctrl + g: to get line count
 	- vimrc
-	  collapsed:: true
 		- rc = run commands
 		- ~/.vimcr, $HOME/_vimrc
 		- each line is executed as a command
@@ -308,9 +287,9 @@
 			- :h 'history'
 			- :set history=500
 			- partial command search
-				- :h h<up-arrow> #this can give commands with h from history of commands
+				- `:h h<up-arrow>` this can give commands with h from history of commands
 			- default value can be set by append & :set history&
-			- :set #this command shows values other than default values
+			- `:set` this command shows values other than default values
 			- 1<CTRL>+<g> to display file path
 			- :h option-list # to view list of settings
 			- :options # to view list of options available
@@ -331,7 +310,6 @@
 				- example
 					- map <F2> iNagaraju Gumpini<CR>
 				- Keys
-				  collapsed:: true
 					- <BS> BackSpace
 					- <CR> Enter
 					- <Enter> Enter
@@ -368,25 +346,20 @@
 				- to get help about correct documentation
 					- :h 'ruler'<ENTER>
 	- buffers
-	  collapsed:: true
 		- vim buf*<ENTER> # it is shell feature not vim feature
 		- to view buffers
-		  collapsed:: true
 			- :buffers (:ls) (:files)
-			  collapsed:: true
 				- %a is % current buffer, a means loaded
 				- `#` is previously opened buffer
 				- `+` changes made but not written
 				- `h` loaded into memory
 				- without any indicator means not loaded into memory
 				- buffer can be in 3 states
-				  collapsed:: true
 					- active (loaded into memory and displayed)
 					- hidden (loaded into memory but not displayed)
 					- in-active (not loaded into memory not displayed)
 				- to work with multiple buffers
 			- to open buffers by numbers
-			  collapsed:: true
 				- :e / :edit
 				- :buffer 3
 				- :b3
@@ -407,17 +380,15 @@
 				- :qall!
 				- :badd modes.txt # to add modes.txt to buffers
 				- :bdelete (:bd) # removes the current buffer from memory
-				  collapsed:: true
 					- :bd 6
 					- :bd buf-ant.txt
 					- 1,4bd # to delete a range of buffers
 					- %bd # to delete all buffers
 				- to set commands to all buffers
-				  collapsed:: true
 					- :bufdo set nu rnu
-					- :bufdo %s/#/@/g
+					- `:bufdo %s/#/@/g`
 					- using pipe `|` to combine commands
-						- :bufdo %s/#/@/g | w
+						- `:bufdo %s/#/@/g | w`
 				- multiple windows
 				  collapsed:: true
 					- :sp # to split window horizontally
@@ -465,7 +436,6 @@
 						- Ctrl-s (suspends screen updating) can be resumed by Ctrl-q (but in some terminals may not work)
 					- :h windows
 	- plugins
-	  collapsed:: true
 		- for vim version 7 and below
 		  collapsed:: true
 			- third party plugin managers
@@ -524,11 +494,9 @@
 				- remove plugin
 					- rm -rf vim-fugitive
 	- menu
-	  collapsed:: true
 		- :help menu
 		- :set so=5 (so scroll off 5 lines above)
 		- in gvim
-		  collapsed:: true
 			- `"+` register
 				- contains text copied with Ctrl+c from clip board
 				- text in register will be available to other application via Ctrl+v
@@ -541,7 +509,6 @@
 			- menu.vim also available at `$VIMRUNTIME/menu.vim`
 			- can check above locations with `:version`
 			- fonts in gvim
-			  collapsed:: true
 				- :set gfn=*<ENTER> (gfn=GUI font)
 				- view by :set gfn?
 				- put this in `.gvimrc`
@@ -549,7 +516,6 @@
 				- :set gfn=Monospace\ Regular:h14
 				- :h gui
 	- terminal apps
-	  collapsed:: true
 		- gnu screen
 		- tmux
 - resources

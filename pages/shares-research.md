@@ -32,6 +32,7 @@
 		- Beneficiary of recent macro and industrial developments (Regulatory, Fiscal/Monetary policy, favourable industrial outlooks etc)
 	- peers [[Macrotech Devel]] [[National Standar]] [[Mahindra Life]] [[Man Infra]] [[Ganesh Housing]] [[PSP Projects]]
 - Sumitomo Chemical India Ltd
+  collapsed:: true
 	- Sumitomo Chemical India Ltd. (SCIL) is a prominent player in the agrochemical sector, operating as a subsidiary of Sumitomo Chemical Company Ltd. (SCCL), Japan. Established in India in 2000, SCIL has significantly expanded its presence in the agricultural and chemical industries, focusing on crop protection, biopesticides, feed additives, and environmental health products.## Company Overview
 	  **Parent Company**: SCIL is part of Sumitomo Chemical Company Ltd., which has a long history dating back to 1913. The parent company is recognized for its strong research and development (R&D) capabilities, spending approximately 9% of its revenue on R&D activities[1](https://ashikagroup.com/images/blog_images/2022-05-02_9442_Ashika%20-%20Stock%20Picks%20%E2%80%93%20Sumitomo%20Chemical%20India%20Ltd.%20-%20May%202022.pdf)[2](https://in.linkedin.com/company/sumitomo-chemical-india-ltd).**Product Portfolio**: SCIL's product offerings include:
 	- **Agrochemicals**: Insecticides, fungicides, herbicides, and plant growth regulators.

@@ -8,3 +8,4 @@
 - writing tools
 	- https://github.com/benweidig/writing-tools
 	- https://belief-driven-design.com/
+- [[youtube]]

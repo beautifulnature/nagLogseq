@@ -1,0 +1,49 @@
+- yt-bharatiya
+	- religion
+		- https://www.youtube.com/@sharadapeetham
+		- https://www.youtube.com/@SVBP
+		- https://www.youtube.com/@Prachyam
+- yt-finance
+	- https://www.youtube.com/@marketsbyzerodha
+	- https://www.youtube.com/@ShkreliPlanet
+	- https://www.youtube.com/@_sbisecurities
+	- https://www.youtube.com/@PRSundar64
+- yt-health
+	- https://www.youtube.com/@dr.movvasrinivas
+	- https://www.youtube.com/@NageswaraAyurvedic
+	- https://www.youtube.com/@VRKexclusive
+- yt-history
+	- https://www.youtube.com/@JayVardhanSingh
+- yt-learning
+	- language
+		- sanskrit
+			- https://www.youtube.com/@GaieaSanskrit
+			- https://www.youtube.com/@samskritabharatitelangana
+	- learning
+		- https://www.youtube.com/@JustinSung
+		- https://www.youtube.com/@icanstudystudent
+		- https://www.youtube.com/@aliabdaal
+- yt-technology
+	- AI
+		- https://www.youtube.com/@deeplearningexplained
+		- https://www.youtube.com/@aiDotEngineer
+		- https://www.youtube.com/@intheworldofai
+		- https://www.youtube.com/@1littlecoder
+	- coding
+		- https://www.youtube.com/@t3dotgg
+		- https://www.youtube.com/@1BestCsharpblog
+	- cse
+		- https://www.youtube.com/@exclamationfoundation
+	- maker
+		- https://www.youtube.com/@kicadeda
+	- java
+		- https://www.youtube.com/@coffeesoftware
+		- https://www.youtube.com/@FrankDelporte
+		- https://www.youtube.com/@Telusko
+	- linux
+		- https://www.youtube.com/@LinusTechTips
+		- https://www.youtube.com/@LinuxPlumbersConference
+	- science
+		- https://www.youtube.com/@WolframResearch
+	- utilities
+		- https://www.youtube.com/@tutortube

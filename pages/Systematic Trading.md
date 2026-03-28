@@ -1,7 +1,6 @@
 - Scientific Approach
 - Consistent Methodology
 - Developing Trading Models
-  collapsed:: true
 	- Trading strategies can be broken down to a set of components (are always part of trading strategy).
 	- For long term trend following model, the exact entry method and timing is not very important.
 	- For short term mean reversal model, the entry approach is critical

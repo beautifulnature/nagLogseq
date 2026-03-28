@@ -30,5 +30,4 @@
 - package managers
 	- chocolatey
 	- winget
-	- [[nix]]
--
+	- nix

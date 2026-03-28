@@ -1,0 +1,12 @@
+- https://www.anaconda.com/download
+- create an environment (kite) by selecting
+	- python
+	- install pandas
+	- click kite > open terminal
+		- pip install kiteconnect
+		- pip install mysqlclient
+		- pip install numpy
+		- pip install matplotlib
+		- pip install mysql-connector
+		- pip install mysql-connector-python
+		- pip install scikit-learn

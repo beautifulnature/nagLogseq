@@ -6,8 +6,7 @@
 		- variable: `JAVA_HOME` value: `E:\tools\sdkman\candidates\java\current`
 		- add `%JAVA_HOME%\bin` to `PATH`
 - [[jshell]]
-- [[maven]]
-  collapsed:: true
+- maven
 	- installation
 		- sdk install maven 3.9.8
 	- set environment variable for your account
