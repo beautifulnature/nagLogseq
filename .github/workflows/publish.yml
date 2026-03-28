@@ -1,0 +1,24 @@
+name: Publish Logseq SPA
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Logseq Publish SPA
+        uses: logseq/publish-spa@main
+        with:
+          src: ""           # uses root of repo (where your graph is)
+          dest: "www"       # output folder
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          branch: gh-pages
+          folder: www
+          clean: true
