@@ -7,3 +7,4 @@
 		- 10 - 15 % returns
 		- more than 20% (but suspicious)
 - [[Algorithmic trading]]
+- [[Book: Robo Advisior]]

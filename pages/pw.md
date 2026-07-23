@@ -3,8 +3,10 @@
 	- db-interlocking `cmca` `cmca123`
 - cmca
 	- `10.5.4.120/manager` `tomee` `tomee`
-	- winscp	`10.5.4.120`	`root`	`Mat#120@120`	pps-uploading
+	- winscp	`172.22.14.233`	`locationopr`	`Mat@233#Opr4`	pps-uploading `locationadmin` `WiLoc@Admin42024`
 - cs-cps	`sbe12` `sbe@12`
+- csd site:
+	-
 - mail
 	- `corporatestandards@bhel.in` `Agmsbe@20252`
 	- `10.5.4.84`	`msearch` `Agmsbe@20241`
