@@ -5,8 +5,8 @@
 	- git config --global core.autocrlf true -> to handle line endings LF to CRLF when check out and CRLF to LF when commiting
 	- git proxy settings
 		- ```proxy
-		  git config --global http.proxy http://6014755:Bhel%40202512@intgw-hyd.bhel.in:8080
-		  git config --global https.proxy https://6014755:Bhel%40202512@intgw-hyd.bhel.in:8080
+		  git config --global http.proxy http://un:pw@ip:8080
+		  git config --global https.proxy https://un:pw@ip:8080
 		  ```
 - git init . -> creates an empty git repository
 - git add * -> add all the files to git staging
