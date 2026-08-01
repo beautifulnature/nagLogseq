@@ -1,6 +1,6 @@
 - Just Do it
 - moto: learn -> make -> earn -> learn
-- [[to read immediately]]
+- [[to-read-immediately]]
 - core
 	- [[academic]]
 	- [[arts]]
