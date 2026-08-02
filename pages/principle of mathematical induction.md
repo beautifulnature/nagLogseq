@@ -1,3 +1,4 @@
+- /up
 - introduction
 	- one key basis for mathematical thinking is deductive reasoning.
 	- deduction is `given a statement to be proven, often called a conjecture or a theorem in mathematics, valid deductive steps are derived and a proof may or may not be established, i.e., deduction is the application of a general case to a particular case`

@@ -1,4 +1,4 @@
-- ![class-11-mathematics-ch8-binomial-theorem.pdf](../assets/class-11-mathematics-ch8-binomial-theorem_1785577367863_0.pdf)
+- ![Class-11-Mathematics-08_Binomial_theorem.pdf](../assets/Class-11-Mathematics-08_Binomial_theorem_1785691796658_0.pdf)
 - introduction
 	- binomial theorem gives an easier way to expand \((a+b)^n\), where n is an integer or a rational number
 - binomial theorem for positive integral indices
