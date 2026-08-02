@@ -1,0 +1,2 @@
+- ![Class-11-Mathematics-12_Introduction_to_3_dimensional_geometry.pdf](../assets/Class-11-Mathematics-12_Introduction_to_3_dimensional_geometry_1785690594913_0.pdf)
+-

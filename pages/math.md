@@ -20,7 +20,7 @@
   CLOCK: [2026-07-30 Thu 16:06:03]--[2026-07-30 Thu 16:06:04] =>  00:00:01
   :END:
 - DONE [[permutations and combinations]]
-- [[binomial theorem]]
+- DONE [[binomial theorem]]
 - [[sequences and series]]
 - [[straight lines]]
 - [[conic sections]]
@@ -29,6 +29,8 @@
 - [[mathematical reasoning]]
 - [[statistics]]
 - [[probability]]
+- [[infinite series]]
+- [[mathematical modeling]]
 - [[inverse trigonometric functions]]
 - [[matrices]]
 - [[determinants]]
@@ -40,6 +42,7 @@
 - [[vector algebra]]
 - [[3 dimensional geometry]]
 - [[linear programming]]
+- [[class-11-12-extras]]
 - calculus
 	- youtube
 		- https://www.youtube.com/watch?v=MO-AExWdl4Q&t=6337s
@@ -47,3 +50,4 @@
 - geogebra
 - resource
 	- https://math.libretexts.org/Bookshelves/Applied_Mathematics
+	- https://ncertstudy.com/ncert-books/2015-16/Class-11/english/7.+Mathematics/

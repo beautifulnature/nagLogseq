@@ -1,0 +1,2 @@
+- ![Class-11-Mathematics-a1_Infinite_Series.pdf](../assets/Class-11-Mathematics-a1_Infinite_Series_1785690802311_0.pdf)
+-

@@ -1,0 +1,2 @@
+- ![Class-11-Mathematics-14_Mathematical_reasoning.pdf](../assets/Class-11-Mathematics-14_Mathematical_reasoning_1785690681434_0.pdf)
+-

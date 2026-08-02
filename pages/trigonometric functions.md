@@ -1,3 +1,4 @@
+- ![Class-11-Mathematics-03_Trigonometric_functions.pdf](../assets/Class-11-Mathematics-03_Trigonometric_functions_1785691185043_0.pdf)
 - introduction
 	- word `trigonometry` is derived from greek words `trigon` and `metron` and it means `measuring the sides of a triangle`.
 - angles
