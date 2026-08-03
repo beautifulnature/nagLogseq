@@ -1,0 +1,8 @@
+- ![class-11-mathematics-ch8-binomial-theorem.pdf](../assets/class-11-mathematics-ch8-binomial-theorem_1785577367863_0.pdf)
+- introduction
+	- binomial theorem gives an easier way to expand \((a+b)^n\), where n is an integer or a rational number
+	- binomial means bi - two, nomial - terms
+	- Pascals triangle or Meru Prastara (by Pingala)
+		- ![image.png](../assets/image_1785578156517_0.png)
+		- https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/A_Spiral_Workbook_for_Discrete_Mathematics_(Kwong)/08:_Combinatorics/8.05:_The_Binomial_Theorem
+		-
