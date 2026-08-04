@@ -21,7 +21,10 @@
   :END:
 - DONE [[permutations and combinations]]
 - DONE [[binomial theorem]]
-- [[sequences and series]]
+- DONE [[sequences and series]]
+  :LOGBOOK:
+  CLOCK: [2026-08-04 Tue 06:25:58]--[2026-08-04 Tue 06:25:59] =>  00:00:01
+  :END:
 - [[straight lines]]
 - [[conic sections]]
 - [[introduction to 3 dimensional geometry]]

@@ -56,16 +56,49 @@
 		  $A_n = a + nd = a + \frac{n(b - a)}{n + 1}$
 - geometric progression (G.P.)
 	- a sequence $a_1, a_2, a_3. ..., a_n, ...$ is called `geometric progression` G.P. or `geometric sequence`, if each term is non-zero and $\frac{a_{k+1}}{a_k}$ = r (constant), for k $\geq$ 1
-	  by letting $a_1$ = a, we obtain a G.P., $a, ar, ar^2, a^3, ...$, where `a` is called the `first term` and `r` is called the `common ratio` of the G.P.
+	  by letting $a_1$ = a, we obtain a G.P., $a, ar, ar^2, a^3, ...$, where `a` is called the `first term` and constant factor`r` is called the `common ratio` of the G.P.
 	  a = the first term
 	  r = the common ratio
 	  l = the last term
 	  n = number of terms
 	  $S_n$ = the sum of first n terms
 	- general term of a G.P.
-		- a G.P. with first non-zero term `a` and common ratio `r`
+		- a G.P. with first non-zero term `a` and common ratio `r` 
+		  $n^{th}$ term is given by $a_n = a^{n-1}$
+		  G.P. can be written as $a, ar, ar^2, ar^3, ar^4, ..., ar^{n-1}$ or $a, ar, ar^2, ar^3, ar^4, ..., ar^{n-1}, ...$; accordingly G.P. is finite or infinite, respectively.
+		- series $a + ar + ar^2 + ar^3 + ar^4 + ... + ar^{n-1}$ or $a + ar + ar^2 + ar^3 + ar^4 + ... + ar^{n-1} + ...$ are called finite or infinite geometric series, respectively
 	- sum of n terms of a G.P.
+		- $S_n$ = $a + ar + ar^2 + ar^3 + ar^4 + ... + ar^{n-1}$
+		  case 1: if r = 1, $S_n$  = na
+		  case 2: $S_n$  = $\frac{a(1-r^n)}{1-r}
+		  or $S_n$  = $\frac{a(r^n-1)}{r-1}$, r $\neq 1$
 	- geometric mean (G.M.)
+		- G.M. of 2 positive numbers a an b is the number $\sqrt{ab}$
+		- given any 2 positive numbers a and b, we can insert as many numbers as we like between them to make the resulting sequence in a G.P.
+		- $G_1, G_2, G_3, ..., G_n$ be n numbers between positive number a and b such that $a, G_1, G_2, G_3, ..., G_n, b$ is a G.P. thus, b being the $(n + 2){th}$ term,
+		  $$
+		  b = ar^{n+1} \qquad or \qquad r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}
+		  $$
+		  hence $G_1 = ar = a\left(\frac{b}{a}\right)^{\frac{1}{n+1}}$
+		  $G_2 = ar^2 = a\left(\frac{b}{a}\right)^{\frac{2}{n+1}}$
+		  $G_3 = ar^3 = a\left(\frac{b}{a}\right)^{\frac{3}{n+1}}$
+		  ...
+		  $G_n = ar^n = a\left(\frac{b}{a}\right)^{\frac{n}{n+1}}$
 - relationship between A.M. and G.M.
+	- A and G are A.M and G.M of 2 positive real numbers a and b
+	  then A = $\frac{a + b}{2}$ and G = $\sqrt{ab}$
+	  A - G = $\frac{a + b}{2} - \sqrt{ab}$
+	            = $\frac{a + b - 2\sqrt{ab}}{2}$
+	            = $\frac{(\sqrt{a} - \sqrt{b})^2}{2} \geq 0$
+	  A $\geq$ G
 - sum of n terms of special series
--
+	- 1 + 2 + 3 + ... + n (sum of first n natural numbers)
+	  $S_n = 1 + 2 + 3 + ... + n = \frac{n (n+1)}{2}$
+	- $1^2 + 2^2 + 3^2 + ... + n^2$ (sum of squares of the first n natural numbers)
+	  $S_n = 1^2 + 2^2 + 3^2 + ... + n^2$
+	  we consider the identity $k^3 - (k - 1)^3 = 3k^2 - 3k + 1$
+	  $S_n = \frac{n (n + 1) (2n + 1)}{6}$
+	- $1^3 + 2^3 + 3^3 + ... + n^3$ (sum of cubes of the first n natural numbers)
+	  $S_n = 1^3 + 2^3 + 3^3 + ... + n^3$
+	  we consider the identity $(k+1)^4 - k^4 = 4k^3 +6k^2 + 4k + 1$
+	  $S_n = \left(\frac{n (n + 1)}{2}\right)^2 = \frac{n^{2}(n+1)^{2}}{4}$
