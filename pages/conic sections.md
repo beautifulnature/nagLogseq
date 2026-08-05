@@ -1,5 +1,7 @@
 - ![Class-11-Mathematics-11_Conic_sections.pdf](../assets/Class-11-Mathematics-11_Conic_sections_1785690485268_0.pdf)
 - introduction
+	- circles, ellipses, parabola, hyperbola, these curves are called `conic sections` or `conics` because they are obtained as intersections of a plane with a double napped right circular cone
+	- the names parabola and hyperbola are given by Apollonius.
 - sections of a cone
 	- circle, ellipse, parabola and hyperbola
 	- degenerated conic sections
