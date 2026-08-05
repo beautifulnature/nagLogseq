@@ -1,2 +1,21 @@
 - ![Class-11-Mathematics-15_Statistics.pdf](../assets/Class-11-Mathematics-15_Statistics_1785690726134_0.pdf)
--
+- introduction
+- measures of dispersion
+- range
+- mean deviation
+	- mean deviation for ungrouped data
+	- mean deviation for grouped data
+		- discrete frequency distribution
+			- mean deviation about mean
+			- mean deviation about median
+		- continuous frequency distribution
+			- mean deviation about mean
+			- mean deviation about median
+	- limitations of mean deviations
+- variance and standard deviation
+	- standard deviation
+	- standard deviation of a discrete frequency distribution
+	- standard deviation of a continuous frequency distribution
+	- shortcut method to find variance and standard deviation
+- analysis of frequency distributions
+	- comparison of 2 frequency distributions with same mean

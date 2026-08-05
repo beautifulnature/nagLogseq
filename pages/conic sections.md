@@ -1,2 +1,19 @@
 - ![Class-11-Mathematics-11_Conic_sections.pdf](../assets/Class-11-Mathematics-11_Conic_sections_1785690485268_0.pdf)
--
+- introduction
+- sections of a cone
+	- circle, ellipse, parabola and hyperbola
+	- degenerated conic sections
+- circle
+- parabola
+	- standard equations of parabola
+	- latus rectum
+- ellipse
+	- relationship between semi-major axis, semi-minor axis and the distance of the focus from the centre of the ellipse
+	- special cases of an ellipse
+	- eccentricity
+	- standard equations of an ellipse
+	- latus rectum
+- hyperbola
+	- eccentricity
+	- standard equation of hyperbola
+	- latus rectum

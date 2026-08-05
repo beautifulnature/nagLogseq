@@ -1,2 +1,23 @@
 - ![Class-11-Mathematics-16_Probability.pdf](../assets/Class-11-Mathematics-16_Probability_1785690767601_0.pdf)
--
+- introduction
+- random experiments
+	- outcomes and sample space
+- event
+	- occurrence of an event
+	- types of events
+		- impossible and sure events
+		- simple event
+		- compound event
+	- algebra of events
+		- complementary event
+		- the event of 'A or B'
+		- the event of 'A and B'
+		- the event of 'A but not B'
+	- mutually exclusive events
+	- exhaustive events
+- axiomatic approach to probability
+	- probability of an event
+	- probability of equally likely outcomes
+	- probability of the event 'A or B'
+	- probability of event 'not A'
+	-

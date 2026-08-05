@@ -1,2 +1,6 @@
 - ![Class-11-Mathematics-a1_Infinite_Series.pdf](../assets/Class-11-Mathematics-a1_Infinite_Series_1785690802311_0.pdf)
--
+- introduction
+- binomial theorem for any index
+- infinite geometric series
+- exponential series
+- logarithmic series

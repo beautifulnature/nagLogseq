@@ -1,2 +1,11 @@
 - ![Class-11-Mathematics-13_Limits_and_derivatives.pdf](../assets/Class-11-Mathematics-13_Limits_and_derivatives_1785690632439_0.pdf)
--
+- introduction
+- intuitive idea of derivatives
+- limits
+	- algebra of limits
+	- limits of polynomials and rational functions
+- limits of tirgonometric functions
+- derivatives
+	- algebra of derivative of functions
+	- derivative of polynomials and trigonometric functions
+	-

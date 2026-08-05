@@ -1,2 +1,15 @@
 - ![Class-11-Mathematics-14_Mathematical_reasoning.pdf](../assets/Class-11-Mathematics-14_Mathematical_reasoning_1785690681434_0.pdf)
--
+- introduction
+- statements
+- new statements from old
+	- negation of a statement
+	- compound statements
+- special words / phrases
+	- the word "And"
+	- the word "Or"
+	- Quantifiers
+- Implications
+	- contrapositive and converse
+- validating statements
+	- by contradiction
+	-

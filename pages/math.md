@@ -25,7 +25,7 @@
   :LOGBOOK:
   CLOCK: [2026-08-04 Tue 06:25:58]--[2026-08-04 Tue 06:25:59] =>  00:00:01
   :END:
-- [[straight lines]]
+- DONE [[straight lines]]
 - [[conic sections]]
 - [[introduction to 3 dimensional geometry]]
 - [[limits and derivatives]]
