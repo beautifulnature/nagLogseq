@@ -1,6 +1,12 @@
 - ![Class-11-Mathematics-12_Introduction_to_3_dimensional_geometry.pdf](../assets/Class-11-Mathematics-12_Introduction_to_3_dimensional_geometry_1785690594913_0.pdf)
 - introduction
+	- to locate the position of a point in a plane, we need 2 intersecting mutually perpendicular lines in a plane called the `coordinate axes` and 2 numbers are called `coordinates of the point with respect to the axes`
+	- a point in space has 3 coordinates with reference to the 3 mutually perpendicular coordinate planes
 - coordinate axes and coordinate planes in 3 dimensional space
+	- ![image.png](../assets/image_1786375972687_0.png)
+	- 3 planes intersecting at a point O such that these 3 planes are mutually perpendicular to each other. these 3 planes intersect along the lines X'OX, Y'OY, Z'OZ called x, y and z-axes, respectively.
+	- note that these lines are mutually perpendicular to each other. these lines constitute the `rectangular coordinate system`. the planes XOY, YOZ, and ZOX, called, respectively the XY-plane, YZ-plane and the ZX-plane, are known as the 3 coordinate planes.
+	- we take the XOY plane as plane of the paper and the line Z'OZ as perpendicular to the XOY. if the plane of the paper is considered as horizontal, then the line Z'OZ will be vertical. the distances measured from XY-plane upwards in the direction of OZ are taken as positive and those measured downwards in the direction of OZ' are taken as negative. similarly, the distance measured to the right of ZX-plane and along OY are taken as positive, to the left of ZX-plane and along OY' as negative. in front of the YZ-plane along OX as positive and to the back of it along OX' as negative. the point O is called the `origin` of the coordinate system. the 3 coordinate planes  divide the space into 8 parts known as `octants`. these octants could be named as XOYZ, X'OYZ, X'OY'Z,, XOY'Z, XOYZ', X'OYZ', X'OY'Z', XOY'Z' and denoted by I, II, III, ..., VIII respectively
 - coordinates of a point in space
 - distance between 2 points
 - section formula
