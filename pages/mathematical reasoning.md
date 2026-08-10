@@ -1,15 +1,105 @@
 - ![Class-11-Mathematics-14_Mathematical_reasoning.pdf](../assets/Class-11-Mathematics-14_Mathematical_reasoning_1785690681434_0.pdf)
 - introduction
+	- the main asset that made humans "superior" to other species was the ability to reason
 - statements
+	- the basic unit involved in mathematical reasoning is a `mathematical statement`
+	- ambiguous sentences are not treated as `statement` in mathematics. so, what makes a sentence a statement is the fact that the sentence is either `true` or `false` but not both
+	- `a sentence is called a mathematically acceptable statement if it is either true or false but not both`
+	- in mathematical reasoning a `statement` means `mathematically acceptable` statement
+	- exclamations, questions, orders sentences are not `statements`.
+	- sentences involving `variable time` such as `today`, `tomorrow` or `yesterday` are not statements
+	- sentences with `pronouns` unless a particular person is referred to and for variable places such as `here`, `there` etc., are not statements
+	- while dealing with statements, we usually denote them by small letters p, q, r, ...
 - new statements from old
 	- negation of a statement
+		- denial of a statement is called the `negation of the statement`
+		- definition: if `p` is a statement, then the negation of p is also a statement and is denoted by `~p`, and read as `not p`
+		- while forming the negation of a statement, phrases like, "it is not the case" or "it is false that" are also used.
+		- example:
+		  p: everyone in Germany speaks German
+		  ~p: not everyone in Germany speaks German
+		  this does not mean that no person in Germany speaks German, it says merely that at least one person in Germany does not speak German
 	- compound statements
+		- definition: a `compound statement` is a statement which is made up of 2 or more statements. in this case, each statement is called a `component statement`
+		- connecting words (connectives) like "and", "or", etc., are used.
 - special words / phrases
 	- the word "And"
+		- rules regarding connective "And"
+			- the compound statement with "And" is true if all its component statements are true
+			- the component statement with "And" is false if any of its component statements is false (this includes the case that some of its component statements are false or all of its component statements are false)
+		- note:
+			- do not think that a statement with "And" is always a compound statement.
+			- we should also observe that it is important to know precisely where in the sentence a given connecting word is introduced.
 	- the word "Or"
-	- Quantifiers
+		- `exclusive "Or"`
+		- `inclusive "Or"`
+		- rule for the compound statement with "Or"
+			- a compound statement with an "Or" is true when one component statement is true or both the component statements are true
+			- a compound statement with an "Or" is false when both the component statements are false
+	- quantifiers
+		- quantifiers are phrases like, "there exists" and "for all"
+		- word closely connected with "there exists" is "for every" or "for all"
+		- a mathematical statement that says "for every" can be interpreted as saying that all the members of the given set S where the property applies must satisfy that property.
+		- example:
+			- p: for every positive number x there exists a positive number y such that y < x
+			- q: there exists a positive number y such that for every positive number x, we have y < x
+			- p is true, q is false
+			- in order for a piece of mathematical writing to make sense, all of the symbols must be carefully introduced and each symbol must be introduced precisely at the right place - not too early and not too late
 - Implications
+	- implications
+		- "if-then", "only if" and "if and only if"
+		- "if-then"
+			- sentence "if p then q" says that in the event if p is true, then q must be true
+			- one of the most important facts is that it does not say any thing (or places no demand) on q when p is false. not happening of p has no effect on happening of q.
+			- the statement does not imply that p happens
+			- p `implies` q denoted by p => q. symbol => stands for implies
+			- p is a sufficient condition for q
+			- p only if q
+			- q is a necessary condition for p
+			- ~q implies ~p
 	- contrapositive and converse
+		- contrapositive and converse are certain other statements can be formed from a given statement with "if-then"
+			- contrapositive
+				- example:
+					- if a number is divisible by 9, then it is divisible by 3
+					- if a number is not divisible by 3, then it is not divisible by 9
+				- contrapositive of the statement if p, then q is "if ~q, then ~p"
+			- converse
+				- converse of a given statement "if p, then q" is if q, then p
+				- example
+					- if a number is divisible by 10, it is divisible by 5
+					- if a number is divisible by 5, then it is divisible by 10
+		- `if and only if`, represented by ⇔ means the following equivalent forms for the given statements p and q
+			- p if and only if q
+			- q if and only if p
+			- p is necessary and sufficient condition for q and vice-versa
+			- p ⇔​ q​
 - validating statements
+	- when a statement is true. to answer this question, one must answer the following questions
+		- what does the statement mean? what would it mean to say that this statement is true and when this statement is not true?
+		- to answer these questions depend upon which of the special words and phrases "and", "or", and which of the implications "if and only", "if-then", and which of the qualifiers "for every", "there exists", appear in the given statement.
+		- some general rules for checking whether a statement is true or not
+		- rule 1: if p and q are mathematical statements, then in order to show that the statement "p and q" is true, the following steps are followed
+			- step 1: show that the statement p is true
+			- step 2: show that the statement q is true
+		- rule 2: statements with "Or"
+			- if p and q are mathematical statements, then in order to show that the statement "p or q" is true, one must consider the following
+				- case 1: by assuming that p is false, show that q must be true
+				- case 2: by assuming that q is false, show that p must be true
+		- rule 3: statements with "if-then:
+			- in order to prove the statement "if p then q" we need to show that any one of the following case is true
+				- case 1: by assuming that p is true, prove that q must be true (direct method)
+				- case 2: by assuming that q is false, prove that p must be false (contrapositive method)
+		- rule 4: statements with "if and only if"
+			- in order to prove the statement "p if and only if q", we need to show
+				- if p is true, then q is true
+				- if q is true, then p is true
 	- by contradiction
-	-
+		- here to check whether a statement p is true, we assume that p is not true i.e., ~p is true. then, we arrive at some result which contradicts our assumption. therefore, we conclude that p is true.
+		- the method involves giving an `example of a situation where the statement is not valid`. such an example is called a `counter example`
+		- counter examples are used to disprove the statement. however, generating examples in favour of a statement do not provide validity of the statement.
+	- the following methods are used to check the validity of statements:
+		- direct method
+		- contrapositive method
+		- method of contradiction
+		- using a counter example
