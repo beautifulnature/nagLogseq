@@ -33,9 +33,9 @@
   CLOCK: [2026-08-10 Mon 16:46:03]--[2026-08-10 Mon 16:46:04] =>  00:00:01
   :END:
 - DONE [[introduction to 3 dimensional geometry]]
-- [[infinite series]]
-- [[mathematical modeling]]
+- DONE [[infinite series]]
 - [[limits and derivatives]]
+- [[mathematical modeling]]
 - [[probability]]
 - [[inverse trigonometric functions]]
 - [[matrices]]

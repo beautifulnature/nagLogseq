@@ -1,5 +1,6 @@
 - ![Class-11-Mathematics-13_Limits_and_derivatives.pdf](../assets/Class-11-Mathematics-13_Limits_and_derivatives_1785690632439_0.pdf)
 - introduction
+	- calculus is that branch of mathematics which mainly deals with the study of change in the value of a function as the points in the domain change.
 - intuitive idea of derivatives
 - limits
 	- algebra of limits
