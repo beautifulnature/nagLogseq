@@ -32,7 +32,7 @@
   :LOGBOOK:
   CLOCK: [2026-08-10 Mon 16:46:03]--[2026-08-10 Mon 16:46:04] =>  00:00:01
   :END:
-- [[introduction to 3 dimensional geometry]]
+- DONE [[introduction to 3 dimensional geometry]]
 - [[infinite series]]
 - [[mathematical modeling]]
 - [[limits and derivatives]]
