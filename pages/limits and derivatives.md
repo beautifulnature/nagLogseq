@@ -2,7 +2,12 @@
 - introduction
 	- calculus is that branch of mathematics which mainly deals with the study of change in the value of a function as the points in the domain change.
 - intuitive idea of derivatives
+	- derivative: rate of change of function (i.e. slope of the tangent to the curve at that point)
 - limits
+	- f(x) $\lim_{x \to a} f(x) = l$
+		- as x -> a (x tends to a) f(x) -> l (f(x) tends to l)
+		- l is the limit of the function
+		-
 	- algebra of limits
 	- limits of polynomials and rational functions
 - limits of tirgonometric functions
