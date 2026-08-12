@@ -63,7 +63,22 @@
 					  $$\lim_{x \to a} f(x) = \lim_{x \to a} \frac{g(x)}{h(x)} = \frac{\lim_{x \to a} (x-a)^k g_1(x)}{\lim_{x \to a} (x-a)^l h_1(x)} $$
 					  $$=\frac{\lim_{x \to a} (x-a)^{(k-l)} g_1(x)}{\lim_{x \to a} h_1(x)} = \frac{0 . g_1(a)}{h_1(a)} = 0$$
 					- if k < l, the limit is not defined
+		- for any positive integer n, $$\lim_{x \to a} \frac{x^n - a^n}{x - a} = na^{n-1}$$
+			- the expression in the above theorem for the limit is true even if n is any rational number and a is positive
 - limits of trigonometric functions
+	- let f and g be 2 real valued functions with the same domain such that  $f(x) \leq g(x)$ for all x in the domain of definition, for some a, if both $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ exist, then $\lim_{x \to a} f(x) \leq \lim_{x \to a} g(x)$
+		- ![image.png](../assets/image_1786544214641_0.png)
+	- sandwich theorem
+		- let f, g and h be real functions such that $f(x) \leq g(x) \leq h(x)$ for all x in the common domain of definition. for some real number a, if $\lim_{x \to a} f(x) = l = \lim_{x \to a} h(x)$, then $\lim_{x \to a} g(x) = l$
+		- ![image.png](../assets/image_1786545717484_0.png)
+	- $$\cos x < \frac{\sin x}{x} < 1 \quad \text{for } 0 < |x| < \frac{\pi}{2}$$
+	- $\lim_{x \to 0} \frac{sin x}{x} = 1$
+	- $\lim_{x \to 0} \frac{1 - cos x}{x} = 0$
+	- we want to evaluate the limit $\lim_{x \to a} \frac{f(x)}{g(x)} = 1$ and the limit exists
+		- first we check the value of f(a) and g(a)
+		- if both are 0, then we see if we can get the factor which is causing the terms to vanish, i.e., see if we can write $f(x) = f_1(x) f_2(x)$ so that $f_1(a) = 0$ and $f_2(a) \neq 0$. similarly, we write $g(x) = g_1(x) g_2(x)$ so that $g_1(a) = 0$ and $g_2(a) \neq 0$. cancel out the common factors from f(x) and g(x) (if possible) and write
+		  $\frac{f(x)}{g(x)} = \frac{p(x)}{q(x)}$, where $q(x) \neq 0$
+		  then $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{p(a)}{q(a)}$
 - derivatives
 	- algebra of derivative of functions
 	- derivative of polynomials and trigonometric functions
