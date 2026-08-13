@@ -1,4 +1,5 @@
 - ![Class-11-Mathematics-16_Probability.pdf](../assets/Class-11-Mathematics-16_Probability_1785690767601_0.pdf)
+- ![Class-12-2-Mathematics-Part-II-07_Probability.pdf](../assets/Class-12-2-Mathematics-Part-II-07_Probability_1786587337081_0.pdf)
 - introduction
 - random experiments
 	- outcomes and sample space

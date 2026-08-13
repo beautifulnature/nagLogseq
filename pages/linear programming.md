@@ -1,0 +1,2 @@
+- ![Class-12-2-Mathematics-Part-II-06_Linear_Programming.pdf](../assets/Class-12-2-Mathematics-Part-II-06_Linear_Programming_1786587268272_0.pdf)
+-

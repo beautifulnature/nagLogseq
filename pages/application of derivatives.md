@@ -1,0 +1,2 @@
+- ![Class-12-1-Mathematics-Part-I-06_Application_of_derivatives.pdf](../assets/Class-12-1-Mathematics-Part-I-06_Application_of_derivatives_1786588343497_0.pdf)
+-

@@ -1,4 +1,5 @@
 - ![Class-11-Mathematics-02_Relations_and_functions.pdf](../assets/Class-11-Mathematics-02_Relations_and_functions_1785691096658_0.pdf)
+- ![Class-12-1-Mathematics-Part-I-01_Relations_and_functions.pdf](../assets/Class-12-1-Mathematics-Part-I-01_Relations_and_functions_1786587975420_0.pdf)
 - Ordered pair
 	- a pair of elements grouped together in a particular order
 - Cartesian products of sets

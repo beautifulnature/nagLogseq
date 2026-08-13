@@ -2,7 +2,7 @@
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:45:59]--[2026-07-28 Tue 16:46:00] =>  00:00:01
   :END:
-- DONE [[relations and functions]]
+- [[relations and functions]]
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:46:11]--[2026-07-28 Tue 16:46:11] =>  00:00:00
   :END:
@@ -38,16 +38,16 @@
 - [[matrices]]
 - [[determinants]]
 - [[vector algebra]]
+- [[integrals]]
+- [[application of integrals]]
+- [[3 dimensional geometry]]
+- [[linear programming]]
+- [[probability]]
+- [[mathematical modeling]]
+- [[differential equations]]
 - [[inverse trigonometric functions]]
 - [[continuity and differentiability]]
 - [[application of derivatives]]
-- [[integrals]]
-- [[application of integrals]]
-- [[differential equations]]
-- [[3 dimensional geometry]]
-- [[linear programming]]
-- [[mathematical modeling]]
-- [[probability]]
 - [[class-11-12-extras]]
 - calculus
 	- youtube
