@@ -1,1 +1,14 @@
 - ![Class-12-2-Mathematics-Part-II-04_Vector_Algebra.pdf](../assets/Class-12-2-Mathematics-Part-II-04_Vector_Algebra_1786553166801_0.pdf)
+- introduction
+- some basic concepts
+- types of vectors
+- addition of vectors
+- multiplication of a vector by a scalar
+	- components of a vector
+	- vector joining 2 points
+	- section formula
+- product of 2 vectors
+	- scalar (or dot) product of 2 vectors
+	- projection of a vector on a line
+	- vector (or cross) product of 2 vectors
+	-

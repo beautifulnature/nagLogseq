@@ -29,6 +29,9 @@
 			- we say $$\lim_{x \to a^-} f(x)$$ is the expected value of f at x=a given the values of f near x to the left of a. this value is called the left hand limit of f at a.
 			- we say $$\lim_{x \to a^+} f(x)$$ is the expected value of f at x=a given the values of f near x to the right of a. this value is called the right hand limit of f(x) at a.
 			- if the right and left hand limits coincide, we call that common value as the limit of f(x) at x = a and denoted it by $$\lim_{x \to a} f(x)$$
+			- the expected value of the function as dictated by the points on the left of a point defines the left hand limit of the function at that point. similarly the right hand limit.
+			- limit of a function at a point is the common value of the left and right hand limits, if they coincide.
+			- for a function f and a real number a, $lim_{x to a} f(x)$ and f(a) may not be same (in fact, one may be defined and not the other one)
 	- algebra of limits
 		- let f and g be 2 functions such that bot $$\lim_{x \to a} f(x)$$ and $$\lim_{x \to a} g(x)$$ exist. then
 			- limit of sum of 2 functions is sum of the limits of the functions, i.e.,
@@ -80,6 +83,34 @@
 		  $\frac{f(x)}{g(x)} = \frac{p(x)}{q(x)}$, where $q(x) \neq 0$
 		  then $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{p(a)}{q(a)}$
 - derivatives
+	- definition 1
+		- suppose f is a real valued function and a is a point in its domain  of definition. the derivative of f at a is defined by
+		  $lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$
+		  provided this limit exists. 
+		  derivative of f(x) at a is denoted by $f'(a)$
+		- observe that $f'(a)$ quantifies the change in f(x) at a with respect to x
+	- definition 2
+		- suppose f is a real valued function, the function defined by $lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$ wherever the limit exists is defined to be the derivative of f at x and is denoted by $f'(x)$. this definition of derivative is also called the first principle of derivative. thus $f'(x) = lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$
+		  clearly the domain of definition of $f'(x)$ is wherever the above limit exists. there are different notions for derivative of a function. sometimes $f'(x)$ denoted by $\frac{d}{dx} (f(x))$ or if y = f(x), is denoted by $\frac{dy}{dx}$. this is referred to as derivative of f(x) or y with respect to x. it is also denoted by D(f(x)). further, derivative of f at x = a is also denoted by $\frac{d}{dx} f(x)|_a$ or $\frac{df}{dx}|_a$ or even $\left(\frac{df}{dx}\right)_{x = a}$
 	- algebra of derivative of functions
+		- f and g be 2 functions such that their derivatives are defined in a common domain
+			- derivative of sum of 2 functions is sum of the derivatives of the functions
+				- $\frac{d}{dx}[f(x) + g(x)] = \frac{d}{dx} f(x) + \frac{d}{dx} g(x)$
+			- derivative of difference of 2 functions is difference of the derivatives of the functions
+				- $\frac{d}{dx}[f(x) - g(x)] = \frac{d}{dx} f(x) - \frac{d}{dx} g(x)$
+			- derivative of product of 2 functions is given by the following `product rule`
+				- $\frac{d}{dx}[f(x) . g(x)] = \frac{d}{dx} f(x) . g(x) + f(x) \frac{d}{dx} g(x)$
+				- u = f(x) and v = g(x) then $(uv)' = u'v + uv'$
+				  this is referred to a Leibnitz rule for differentiating product of functions or the product rule
+			- derivative of quotient of 2 functions is given by the following `quotient rule` (whenever the denominator is non-zero)
+				- $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx} f(x) . g(x) - f(x) \frac{d}{dx} g(x)}{(g(x))^2}$
+				- $\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}$
+			- derivatives of some standard functions
+				- derivative of the function f(x) = x is the constant function 1
+				- derivative of the $f(x) = x^2$ is $\frac{df}{dx} = 2x$
+				- derivative of $f(x) = x^n$ is $nx^{n - 1}$ for any positive integer n
+				- $\frac{d}{dx} \sin x = \cos x$
+				- $\frac{d}{dx} \cos x = - \sin x$
 	- derivative of polynomials and trigonometric functions
-	-
+		- $f(x) = a_n x^n + a_{n-1} x^{n-1} + ... + a_n x + a_0$ be a polynomial function, where $a_i$ s are all real numbers and $a_n \neq 0$, then derivative function is given by
+		  $\frac{df(x)}{dx} = na_n x^{n-1} + (n-1) a_{n-1}x^{n-2} + ... + 2a_2x + a_1$

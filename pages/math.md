@@ -2,9 +2,10 @@
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:45:59]--[2026-07-28 Tue 16:46:00] =>  00:00:01
   :END:
-- [[relations and functions]]
+- LATER [[relations and functions]]
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:46:11]--[2026-07-28 Tue 16:46:11] =>  00:00:00
+  CLOCK: [2026-08-15 Sat 13:17:06]--[2026-08-15 Sat 13:17:07] =>  00:00:01
   :END:
 - DONE [[trigonometric functions]]
   :LOGBOOK:
@@ -34,20 +35,23 @@
   :END:
 - DONE [[introduction to 3 dimensional geometry]]
 - DONE [[infinite series]]
-- [[limits and derivatives]]
-- [[matrices]]
+- DONE [[limits and derivatives]]
+  :LOGBOOK:
+  CLOCK: [2026-08-15 Sat 13:16:58]--[2026-08-15 Sat 13:16:58] =>  00:00:00
+  :END:
+- DONE [[matrices]]
 - [[determinants]]
 - [[vector algebra]]
-- [[integrals]]
-- [[application of integrals]]
-- [[3 dimensional geometry]]
-- [[linear programming]]
-- [[probability]]
-- [[mathematical modeling]]
-- [[differential equations]]
-- [[inverse trigonometric functions]]
 - [[continuity and differentiability]]
 - [[application of derivatives]]
+- [[differential equations]]
+- [[3 dimensional geometry]]
+- [[mathematical modeling]]
+- [[inverse trigonometric functions]]
+- [[integrals]]
+- [[application of integrals]]
+- [[linear programming]]
+- [[probability]]
 - [[class-11-12-extras]]
 - calculus
 	- youtube
