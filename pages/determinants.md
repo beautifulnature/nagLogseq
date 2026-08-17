@@ -61,6 +61,57 @@
 		- then the determinant of A is defined as
 			- det(A) = |A| = \Delta = $a_{11}a_{22} - a_{21}a_{12}$
 	- determinant of a matrix of order 3 x 3
+		- determinant of a matrix of order 3 can be determined by expressing it in terms of second order determinants. this is known as expansion of a determinant along a row (or a column). there are 6 ways of expanding a determinant of order 3 corresponding to each of 3 rows ($R_1, R_2$ and $R3$) and 3 columns ($C_1, C_2,$ and $C_3$) giving the same value as shown below.
+		- consider the determinant of square matrix A = $[a_{ij}]_{3\times 3}$
+		- i.e., |A| = 
+		  $$
+		  \begin{vmatrix}
+		  a_{11} & a_{12} & a_{13} \\
+		  a_{21} & a_{22} & a_{23} \\
+		  a_{31} & a_{32} & a_{33}
+		  \end{vmatrix}
+		  $$
+		- expansion along first row $R_1$
+			- $(-1)^{1+1}\left[(-1)^{\text{sum of suffixes of }a_{11}}\right]$
+			- $$
+			  \left| A \right| = (-1)^{1+1} a_{11}
+			  \begin{vmatrix}
+			  a_{22} & a_{23} \\
+			  a_{32} & a_{33}
+			  \end{vmatrix} 
+			  + (-1)^{1+2} a_{12}
+			  \begin{vmatrix}
+			  a_{21} & a_{23} \\
+			  a_{31} & a_{33}
+			  \end{vmatrix} 
+			  + (-1)^{1+3} a_{13}
+			  \begin{vmatrix}
+			  a_{21} & a_{22} \\
+			  a_{31} & a_{32}
+			  \end{vmatrix}
+			  $$
+			  
+			  $$
+			  = a_{11}
+			  \begin{vmatrix}
+			  a_{22} & a_{23} \\
+			  a_{32} & a_{33}
+			  \end{vmatrix} 
+			  - a_{12}
+			  \begin{vmatrix}
+			  a_{21} & a_{23} \\
+			  a_{31} & a_{33}
+			  \end{vmatrix} 
+			  + a_{13}
+			  \begin{vmatrix}
+			  a_{21} & a_{22} \\
+			  a_{31} & a_{32}
+			  \end{vmatrix}
+			  $$
+	- remarks:
+		- for easier calculations, we shall expand the determinant along that row or column which contains maximum number of zeros.
+		- while expanding, instead of multiplying by (-1)^{i+j}, we can multiply by +1 or -1 according as (i + j) is even or odd
+		-
 - properties of determinants
 - area of a triangle
 - adjoint and inverse of a matrix
