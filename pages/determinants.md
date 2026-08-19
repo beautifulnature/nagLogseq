@@ -113,8 +113,100 @@
 		- while expanding, instead of multiplying by (-1)^{i+j}, we can multiply by +1 or -1 according as (i + j) is even or odd
 		- if A = kB where A and B are square matrices of order n, then |A| = k^n |B|, where n = 1, 2, 3
 - properties of determinants
+	- property 1
+		- the value of the determinant remains unchanged if its rows and columns are interchanged
+		- A is square matrix, A' is transpose of A then det (A) = det (A')
+		- if $R_i$ = ith row and $C_i$ = ith column, then for interchange of row and column, we will symbolically write $C_i$ ↔ $R_i$
+	- property 2
+		- if any 2 rows (or columns) of a determinant are interchanged, then sign of determinant changes
+		- note: we can denote the interchange of rows by $R_i$ ↔ $R_j$ and interchange of columns by $C_i$ ↔ $C_j$
+	- property 3
+		- it any 2 rows (or columns) of a determinant are identical (all corresponding elements are same), then value of determinant is zero
+	- property 4
+		- if each element of a row (or a column) of a determinant is multiplied by constant k, then its value gets multiplied by k
+		- by this property, we can take out any common factor from any one row or any one column of a given determinant
+		- if corresponding elements of any 2 rows (or columns) of a determinant are proportional (in the same ratio), then its value is zero.
+	- property 5
+		- if some or all elements of a row or column of a determinant are expressed as sum of 2 (or more) terms, then the determinant can be expressed as sum of 2 (or more) determinants
+		- $$
+		  \begin{vmatrix}
+		  a_1 + \lambda_1 & a_2 + \lambda_2 & a_3 + \lambda_3 \\
+		  b_1 & b_2 & b_3 \\
+		  c_1 & c_2 & c_3
+		  \end{vmatrix}
+		  =
+		  \begin{vmatrix}
+		  a_1 & a_2 & a_3 \\
+		  b_1 & b_2 & b_3 \\
+		  c_1 & c_2 & c_3
+		  \end{vmatrix}
+		  +
+		  \begin{vmatrix}
+		  \lambda_1 & \lambda_2 & \lambda_3 \\
+		  b_1 & b_2 & b_3 \\
+		  c_1 & c_2 & c_3
+		  \end{vmatrix}
+		  $$
+	- property 6
+		- if, to each of any row or column of a determinant, the equimultiples of corresponding elements of other row (or column) are added, then value of determinant remains the same, i.e., the value of determinant remain same if we apply the operation $R_i$ -> $R_i + kR_j$ or $C_i$ -> $C_i + kC_j$
+		- if $\Delta_1$ is the determinant obtained by applying $R_i$ -> $kR_i$ or $C_i$ -> $kC_i$ to the determinant $\Delta$, then $\Delta_1 = k \Delta$
+		- if more than one operation like $R_i$ -> $R_i + kR_j$ is done in one step, care should be taken to see that a row that is affected in one operation should not be used in another operation. a similar remark applies to column operations.
 - area of a triangle
+	- area of a triangle whose vertices are $(x_1, y_1), (x_2, y_2), (x_3, y_3)$ is given by the expression $\frac{1}{2} [x_1 (y_2 - y_3) + x_2 (y_3 - y_1) + x_3 (y_1 - y_2)]$
+	- now this expression can be written in the form of a determinant as
+	  $$\Delta = \frac{1}{2} 
+	  \begin{vmatrix}
+	  x_1 & y_1 & 1 \\
+	  x_2 & y_2 & 1 \\
+	  x_3 & y_3 & 1
+	  \end{vmatrix}
+	  $$
+	- since area is a positive quantity, we always take the absolute value of the determinant
+	- if are is given, use both positive and negative values of the determinant for calculation
+	- the area of the triangle formed by 3 collinear points is zero
+- minors and cofactors
+	- minor
+		- definition: minor of an element $a_ij$ of a determinant is the determinant obtained by deleting its ith row and jth column in which element $a_ij$ lies and is denoted by $M_{ij}$
+		- minor of an element of a determinant of order n (n $\geq$ 2) is a determinant of order n - 1
+	- cofactor
+		- definition: cofactor of an element $a_ij$, denoted by $A_{ij}$ is defined by $A_{ij} = (-1)^{i + j} M_{ij}$, where $M_{ij}$ is minor of $a_{ij}$
+	- $\Delta = a_{11}A_{11} + a_{12} A_{12} + a_13 A_{13}$
+	  = sum of product of elements of any row (or column) with their corresponding cofactors
+	- if elements of a row (or column) are multiplied with cofactors of any other row (or column), then their sum is zero
 - adjoint and inverse of a matrix
+	- to find inverse of a matrix A, i.e., A^{-1} we shall first define adjoint of a matrix
 	- adjoint of a matrix
+		- definition: the adjoint of square matrix A = [a_{ij}]_{n x n} is defined as the transpose of the matrix [A_{ij}]_{n x n}, where A_{ij} is the cofactor of the element a_{ij} and is denoted by adj A
+		- $$
+		  A = 
+		  \begin{bmatrix}
+		  a_{11} & a_{12} & a_{13} \\
+		  a_{21} & a_{22} & a_{23} \\
+		  a_{31} & a_{32} & a_{33}
+		  \end{bmatrix}
+		  $$
+		- then adj A = transpose of 
+		  $$
+		  \begin{bmatrix}
+		  A_{11} & A_{12} & A_{13} \\
+		  A_{21} & A_{22} & A_{23} \\
+		  A_{31} & A_{32} & A_{33}
+		  \end{bmatrix}
+		  =
+		  \begin{bmatrix}
+		  A_{11} & A_{21} & A_{31} \\
+		  A_{12} & A_{22} & A_{32} \\
+		  A_{13} & A_{23} & A_{33}
+		  \end{bmatrix}
+		  $$
+		- for a square matrix of order 2, 
+		  $$
+		  A = 
+		  \begin{bmatrix}
+		  a_{11} & a_{12} \\
+		  a_{21} & a_{22}
+		  \end{bmatrix}
+		  $$
+			- the adj A can also be obtained by interchanging $a_{11}$ and $a_{22}$ and by changing signs of $a_{12}$ and $a_21$, i.e.,
 - application of determinants and matrices
 	- solution of system of linear equations using inverse of a matrix
