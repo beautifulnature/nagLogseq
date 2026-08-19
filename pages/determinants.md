@@ -111,7 +111,7 @@
 	- remarks:
 		- for easier calculations, we shall expand the determinant along that row or column which contains maximum number of zeros.
 		- while expanding, instead of multiplying by (-1)^{i+j}, we can multiply by +1 or -1 according as (i + j) is even or odd
-		-
+		- if A = kB where A and B are square matrices of order n, then |A| = k^n |B|, where n = 1, 2, 3
 - properties of determinants
 - area of a triangle
 - adjoint and inverse of a matrix
