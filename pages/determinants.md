@@ -208,5 +208,62 @@
 		  \end{bmatrix}
 		  $$
 			- the adj A can also be obtained by interchanging $a_{11}$ and $a_{22}$ and by changing signs of $a_{12}$ and $a_21$, i.e.,
+			- ![image.png](../assets/image_1787187130332_0.png)
+		- theorem
+			- if A be any given square matrix of order n, then
+			  A (adj A) = (adj A) A = |A| I, where I is the identity matrix of order n
+	- singular matrix
+		- definition
+			- a square matrix A is said to be singular if |A| = 0
+			- singular does not have invert and cannot be invertible
+	- non-singular matrix
+		- definition
+			- a square matrix A is said to be non-singular if $|A| \neq 0$.
+		- non-singular matrix has inverse matrix
+		- theorem
+			- if A and B are nonsingular matrices of the same order, then AB and BA are also nonsingular matrices of the same order
+		- theorem
+			- the determinant of the product of matrices is equal to product of their respective determinants, that is, |AB| = |A| |B|, where A and B are square matrices of the same order
+			- if A is a square matrix of order n, then $|adj(A)| = |A|^{n-1}$
+		- theorem
+			- a square matrix A is invertible if and only if A is nonsingular matrix
+			- if A is invertible then $A^{-1} = \frac{1}{|A|} adj A$
 - application of determinants and matrices
+	- application of determinants and matrices used for solving the system of linear equations and for checking consistency of the system of linear equations
+		- consistent system
+			- a system of equations is said to be consistent it its solution (one or more) exists
+		- inconsistent system
+			- a system of equations is said to be inconsistent if its solution does not exist
 	- solution of system of linear equations using inverse of a matrix
+		- express the system of linear equations as matrix equations and solve them using inverse of the coefficient matrix
+			- $$
+			  a_1 x + b_1 y + c_1 z = d_1 \\
+			  a_2 x + b_2 y + c_2 z = d_2 \\
+			  a_3 x + b_3 y + c_3 z = d_3
+			  $$
+			- can be written as AX = B
+				- $$
+				  \begin{bmatrix}
+				  a_1 & b_1 & c_1 \\
+				  a_2 & b_2 & c_2 \\
+				  a_3 & b_3 & c_3
+				  \end{bmatrix}
+				  \begin{bmatrix}
+				  x \\
+				  y \\
+				  z
+				  \end{bmatrix}
+				  =
+				  \begin{bmatrix}
+				  d_1 \\
+				  d_2 \\
+				  d_3
+				  \end{bmatrix}
+				  $$
+			- case 1: if A is nonsingular matrix, then its inverse exists
+			  X = $A^{-1} B$
+			  this matrix equation provides unique solution for the given system of equations as inverse of a matrix is unique. this method of solving of equations is known as Matrix method
+			- case 2: if A is a singular matrix, then |A| = 0
+			  in this case, we calculate (adj A) B
+			  if $(adj A) B \neq O$, (O being zero matrix), then solution does not exist and the system of equations is called inconsistent
+			  if (adj A) B = 0, then system may be either consistent or inconsistent according as the system have either infinitely many solutions or no solution.
