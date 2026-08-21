@@ -19,6 +19,12 @@
 		  |$\overrightarrow{OP}$| = $\sqrt{x^2 + y^2 + Z^2}$
 		- in practice, the position vectors of points A, B, C etc., with respect to the origin O are denoted by $\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}$
 	- direction cosines
+		- consider the position vector $\overrightarrow{OP}$ or $\overrightarrow{r}$ of a point P(z, y, z). the angles \alpha, \beta, \gama made by the verctor $\overrightarrow{r}$ with the positive directions of x, y and z- axes respectively, are called its `direction angles`. the cosine values of these angles, i.e., cos \alpha, cos \beta and cos \gamma are called `direction cosines` of the vector $\overrightarrow{r}$, and usually denoted by l, m and n.
+		- ![image.png](../assets/image_1787311326503_0.png)
+		- triangle OAP is right angles, $cos \alpha = \frac{x}{r}$ (r stands for |$\overrightarrow{r}$|)
+		- from right angled triangles OBP and OCP, $cos \beta = \frac{y}{r}$, cos \gamma = $\frac{z}{r}$
+		- coordinates of the point P may also be expressed as (lr, mr, nr) proportional to the direction cosines are called as `direction ratios` of vector $\overrightarrow{r}$, denoted as a, b, c
+		- note: $l^2 + m^2 + n^2 = 1$ but $a^2 + b^2 + c^2 \neq 1, in general$
 - types of vectors
 	- zero vector
 	- unit vector
