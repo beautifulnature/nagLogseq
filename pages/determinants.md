@@ -126,6 +126,7 @@
 		- if each element of a row (or a column) of a determinant is multiplied by constant k, then its value gets multiplied by k
 		- by this property, we can take out any common factor from any one row or any one column of a given determinant
 		- if corresponding elements of any 2 rows (or columns) of a determinant are proportional (in the same ratio), then its value is zero.
+		- if A = $[a_{ij}]_{3 x 3}$, then $|k . A| = k^3 |A|$
 	- property 5
 		- if some or all elements of a row or column of a determinant are expressed as sum of 2 (or more) terms, then the determinant can be expressed as sum of 2 (or more) determinants
 		- $$

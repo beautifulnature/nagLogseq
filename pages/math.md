@@ -41,17 +41,17 @@
   :END:
 - DONE [[matrices]]
 - [[determinants]]
-- [[vector algebra]]
-- [[continuity and differentiability]]
-- [[application of derivatives]]
-- [[differential equations]]
-- [[3 dimensional geometry]]
-- [[mathematical modeling]]
-- [[inverse trigonometric functions]]
-- [[integrals]]
-- [[application of integrals]]
-- [[linear programming]]
-- [[probability]]
+- [[vector algebra]] 20-08
+- [[continuity and differentiability]] 21-08
+- [[application of derivatives]] 21-08
+- [[differential equations]] 21-08
+- [[3 dimensional geometry]] 22-08
+- [[mathematical modeling]] 22-08
+- [[inverse trigonometric functions]] 22-08
+- [[integrals]] 23-08
+- [[application of integrals]] 23-08
+- [[linear programming]] 22-08
+- [[probability]] 22-08
 - [[class-11-12-extras]]
 - calculus
 	- youtube

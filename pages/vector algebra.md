@@ -1,7 +1,31 @@
 - ![Class-12-2-Mathematics-Part-II-04_Vector_Algebra.pdf](../assets/Class-12-2-Mathematics-Part-II-04_Vector_Algebra_1786553166801_0.pdf)
 - introduction
+	- scalars
+		- scalar quantities such as length, mass, time, distance, speed, area, volume, temperature, volume, temperature, work, money, voltage, density, resistance etc.
+	- vectors
+		- vector quantities like displacement, velocity, acceleration, force, weight, momentum, electric field intensity etc.
+		- algebraic and geometric properties. these 2 types of properties, when considered together give a full realisation to the concept of vectors, and lead to their vital applicability in various areas.
 - some basic concepts
+	- vector
+		- definition: a quantity that has magnitude as well as direction is called a vector
+		- ![image.png](../assets/image_1787236588245_0.png)
+		- i & ii are line given 2 directions by means of arrow heads are called `directed line`
+		- if we restrict line l to the line segment AB, then a magnitude is prescribed on the line l with one of the 2 directions, so that we obtain a `directed line segment`. thus, a directed line segment has magnitude as well as direction and is denoted as $\overrightarrow{AB}$ or \overrightarrow{a}$ and read as vector $\overrightarrow{AB}$ or vector $\overrightarrow{a}$
+		- the point A from where the vector $\overrightarrow{AB}$ starts is called its `initial point`, and the point B where it ends is called its `terminal point`. the distance between initial and terminal points of a vector is called the `magnitude` (or length) of the vector, denoted as $|\overrightarrow{AB}|$ or $|\overrightarrow{a}|$ or a. the arrow indicates the direction of the vector.
+		- note: since the length is never negative, the notation $|\overrightarrow{a}|$ < 0 has no meaning
+	- position vector
+		- ![image.png](../assets/image_1787237704797_0.png)
+		- consider a point P in space, having coordinates (x, y, z) with respect to the origin O (0, 0, 0). then, the vector $\overrightarrow{OP}$ having O and P as its initial and terminal points, respectively, is called the `position vector` of the point P with respect to O. using distance formula, the magnitude of $\overrightarrow{OP}$ (or $\overrightarrow{r}$) is given by
+		  |$\overrightarrow{OP}$| = $\sqrt{x^2 + y^2 + Z^2}$
+		- in practice, the position vectors of points A, B, C etc., with respect to the origin O are denoted by $\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}$
+	- direction cosines
 - types of vectors
+	- zero vector
+	- unit vector
+	- coinitial vectors
+	- collinear vectors
+	- equal vectors
+	- negative of a vector
 - addition of vectors
 - multiplication of a vector by a scalar
 	- components of a vector
@@ -11,4 +35,3 @@
 	- scalar (or dot) product of 2 vectors
 	- projection of a vector on a line
 	- vector (or cross) product of 2 vectors
-	-
