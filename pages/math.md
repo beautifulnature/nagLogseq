@@ -41,12 +41,12 @@
   :END:
 - DONE [[matrices]]
 - [[determinants]]
-- [[vector algebra]] 20-08
+- [[vector algebra]]
+- [[inverse trigonometric functions]] 22-08
 - [[continuity and differentiability]] 21-08
 - [[application of derivatives]] 21-08
 - [[3 dimensional geometry]] 22-08
 - [[mathematical modeling]] 22-08
-- [[inverse trigonometric functions]] 22-08
 - [[linear programming]] 22-08
 - [[integrals]] 23-08
 - [[application of integrals]] 23-08

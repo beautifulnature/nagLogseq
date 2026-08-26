@@ -1,2 +1,13 @@
 - ![Class-12-1-Mathematics-Part-I-05_Continuity_and_differentiability.pdf](../assets/Class-12-1-Mathematics-Part-I-05_Continuity_and_differentiability_1786588262981_0.pdf)
--
+- introduction
+- continuity
+	- algebra of continuous functions
+- differentiability
+	- derivatives of composite functions
+		- chain rule
+	- derivatives of implicit functions
+	- derivatives of inverse trigonometric functions
+- exponential and logarithmic functions
+- derivatives of functions in parametric forms
+- second order derivative
+- mean value theorem

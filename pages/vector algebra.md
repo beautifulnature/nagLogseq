@@ -215,3 +215,51 @@
 			- if $\overrightarrow{a}$ is a unit vector in terms of direction cosines
 			  $\overrightarrow{a} = cos \alpha \hat{i} + cos \beta \hat{j} + cos \gamma \hat{k}$
 	- vector (or cross) product of 2 vectors
+		- in a right handed coordinate system, the thumb of the right hand points in the direction of the positive z-axis when the fingers are curled in the direction away from the positive x-axis toward the positive y-axis
+		- ![image.png](../assets/image_1787724129416_0.png)
+		- definition: the vector product of 2 nonzero vectors $\overrightarrow{a}$ and $overrightarrow{b}$, is denoted by and defined as
+		  $\overrightarrow{a} \times \overrightarrow{b} = |\overrightarrow{a}| |\overrightarrow{b}|\ sin\theta\ \hat{n}$
+		- where \theta is the angle between $\overrightarrow{a}$ and $\overrightarrow{b}$, $0 \leq \theta \leq \pi$ and $\hat{n}$ is a unit vector perpendicular to both $\overrightarrow{a}$ and $\overrightarrow{b}$, such that $\overrightarrow{a}$, $\overrightarrow{b}$ and $\hat{n}$ form a right handed system i.e., the right handed system rotated from $\overrightarrow{a}$ to $\overrightarrow{b}$ moves in the direction of $\hat{n}$
+		- ![image.png](../assets/image_1787725443065_0.png)
+		- if either $\overrightarrow{a} = \overrightarrow{0}$ or $\overrightarrow{b} = \overrightarrow{0}$, the $\theta$ is not defined and in this case, we define $\overrightarrow{a} \times \overrightarrow{b} = \overrightarrow{0}$
+		  id:: 6a8e8684-3c4c-4c8f-8b37-9587f7af1faa
+		- observations
+			- $\overrightarrow{a} \times \overrightarrow{b}$ is a vector
+			- $\overrightarrow{a}$, $\overrightarrow{b}$ 2 nonzero vectors. then $\overrightarrow{a} \times \overrightarrow{b} = \overrightarrow{0}$ if and only if $\overrightarrow{a}$ and $\overrightarrow{b}$ are parallel (or collinear) to each other i.e.,
+			  $\overrightarrow{a} \times \overrightarrow{b} = 0$ <=> $\overrightarrow{a} || \overrightarrow{b}$
+			  in particular, $\overrightarrow{a} \times \overrightarrow{a} = \overrightarrow{0}$ and $\overrightarrow{a} \times (- \overrightarrow{a}) = \overrightarrow{0}$, since in the first situation, $\theta = 0$ and in the second one, $\theta = \pi$, making the value of $sin \theta$ to be 0.
+			- if $\theta = \frac{\pi}{2}$ then $\overrightarrow{a} \times \overrightarrow{b} = |\overrightarrow{a}| |\overrightarrow{b}|$
+			- for mutually perpendicular unit vectors $\hat{i}$, $\hat{j}$, $\hat{k}$
+			  ![image.png](../assets/image_1787726482479_0.png)
+			  $\hat{i} \times \hat{i} = \hat{j} \times \hat{j} = \hat{k} \times \hat{k} = \overrightarrow{0}$
+			  $\hat{i} \times \hat{j} = \hat{k}, \hat{j} \times \hat{k} = \hat{i}, \hat{k} \times \hat{i} = \hat{j}$
+			- in terms of vector product, the angle between 2 vectors give as
+			  $sin \theta = \frac{|\overrightarrow{a} \times \overrightarrow{b}|}{|\overrightarrow{a}| |\overrightarrow{b}|}$
+			- it is always true that the vector product is not commutative, as $\overrightarrow{a} \times \overrightarrow{b} = - \overrightarrow{b} \times \overrightarrow{a}$
+				- indeed, $\overrightarrow{a} \times \overrightarrow{b} = |\overrightarrow{a}| |\overrightarrow{b}|\ sin \theta\ \hat{n}$, where $\overrightarrow{a}$, $\overrightarrow{b}$, $\hat{n}$ form a right handed system i.e., \theta is traversed from $\overrightarrow{a}$ to $\overrightarrow{b}$
+				  while $\overrightarrow{b} \times \overrightarrow{a} = |\overrightarrow{a}| |\overrightarrow{b}|\ sin \theta\ \hat{n_1}$, where $\overrightarrow{b}$, $\overrightarrow{a}$, $\hat{n_1}$ form a right handed system i.e., \theta is traversed from $\overrightarrow{b}$ to $\overrightarrow{a}$.
+				  if $\overrightarrow{a}$, $\overrightarrow{b}$ to lie in the plane of the paper, then $\hat{n}$ and $\hat{n_1}$ both will be perpendicular to the plane of the paper. $\hat{n}$ directed above the paper and $\hat{n_1}$ directed below the paper i.e. $\hat{n_1} = - \hat{n}$
+				  $\overrightarrow{a} \times \overrightarrow{b} = |\overrightarrow{a}| |\overrightarrow{b}|\ sin \theta\ \hat{n}$
+				  $= - |\overrightarrow{a}| |\overrightarrow{b}|\ sin \theta\ \hat{n_1} = -  |\overrightarrow{b}| \times |\overrightarrow{a}|$
+				- ![image.png](../assets/image_1787727195416_0.png)
+			- $\hat{j} \times \hat{i} = - \hat{k}, \hat{k} \times \hat{j} = -\hat{i}, \hat{i} \times \hat{k} = -\hat{j}$
+			- $\overrightarrow{a}$, $\overrightarrow{b}$ represent adjacent sides of a triangle then its area is given as $\frac{1}{2} |\overrightarrow{a} \times \overrightarrow{b}|$
+				- ![image.png](../assets/image_1787728703787_0.png)
+				- Area of triangle ABC = $\frac{1}{2} AB CD = \frac{1}{2} |\overrightarrow{b}| |\overrightarrow{a}| sin \theta = \frac{1}{2} |\overrightarrow{a} \times \overrightarrow{b}|$
+			- $\overrightarrow{a}$, $\overrightarrow{b}$ represent adjacent sides of a parallelogram, then its area is given by $|\overrightarrow{a} \times \overrightarrow{b}|$
+			  collapsed:: true
+				- ![image.png](../assets/image_1787728983537_0.png)
+				- area of parallelogram ABCD = AB . DE  = $\overrightarrow{b} \overrightarrow{a} sin \theta = |\overrightarrow{a} \times \overrightarrow{b}|$
+		- property: distributivity of vector product over addition
+			- $\overrightarrow{a}$, $\overrightarrow{b}$, $\overrightarrow{c}$ 3 vectors and $\lambda$ be a scalar, then
+				- $\overrightarrow{a} \times (\overrightarrow{b} + \overrightarrow{c}) = \overrightarrow{a} \times \overrightarrow{b} + \overrightarrow{a} \times \overrightarrow{c}$
+				- $\lambda (\overrightarrow{a} \times \overrightarrow{b}) = (\lambda \overrightarrow{a}) \times \overrightarrow{b} = \overrightarrow{a} \times (\lambda \overrightarrow{b})$
+		- $\overrightarrow{a}$, $\overrightarrow{b}$ be 2 vectors in component form as $a_1 \hat{i} + a_2 \hat{j} + a_3 \hat{k}$ and $b_1 \hat{i} + b_2 \hat{j} + b_3 \hat{k}$, then
+		  $$
+		  \overrightarrow{a} \times \overrightarrow{b} = 
+		  \begin{vmatrix}
+		  \hat{i} & \hat{j} & \hat{k} \\
+		  a_1 & a_2 & a_3 \\
+		  b_1 & b_2 & b_3
+		  \end{vmatrix}
+		  $$
