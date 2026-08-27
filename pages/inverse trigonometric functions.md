@@ -24,6 +24,7 @@
 		  in other words, if y = $sin^{-1} x$, then sin y = x
 		- remarks
 			- if y = f(x) is an invertible function, then $x = f^{-1}(y)$.
+			  collapsed:: true
 				- sine function
 					- thus, the graph of $sin^{-1} x$ function can be obtained from the graph of original function by interchanging x and y axes, i.e., if (a, b) is a point on the graph of sine function, then (b, a) becomes corresponding point on the graph of inverse sine function. thus, the graph of the function y = $sin^{-1} x$ can be obtained from the graph of y = sin x by interchanging x and y axes. the graphs of y = sin x and y = $sin^{-1} x$ are given in figures. the dark portion of the graph of y = $sin^{-1} x$ represent the principal value branch.
 					- ![image.png](../assets/image_1787741035663_0.png)
@@ -40,10 +41,59 @@
 					- graphs of y = cosec x and y = $cosec^{-1}$ x
 						- ![image.png](../assets/image_1787745995736_0.png)
 			- $sec^{-1}$x function
+			  collapsed:: true
 				- sec x = $\frac{1}{cos\ x}$, the domain of y = sec x is the $set\ \mathbb{R} - \{x : x = (2n + 1) \frac{\pi}{2}, n \in Z\}$ and range is the set R-(-1, 1). it means that sec (secant function) assumes all real values except -1 < y < 1 and is not defined for odd multiples of $\frac{\pi}{2}$. if we restrict the domain of secant function [0, \pi] - {$\frac{\pi}{2}$}, then it is one-one and onto with its range as the set R-(-1,1). actually, secant function restricted to any of the intervals [-\pi, 0] - {-$\frac{\pi}{2}$}, [0, \pi] - {$\frac{\pi}{2}$}, [\pi, 2\pi] - {$\frac{3\pi}{2}$} etc., is bijective and its range is R-(-1,1). thus $sec^{-1}$ can be defined as a function whose domain is R-(-1, 1) and range could be any of the intervals [-\pi, 0] - {-$\frac{\pi}{2}$}, [0, \pi] - {$\frac{\pi}{2}$}, [\pi, 2\pi] - {$\frac{3\pi}{2}$} etc. corresponding to each of these intervals, we get different branches of the function $sec^{-1}$. the branch with range [0, \pi] - {$\frac{\pi}{2}$} is called the principal value branch of the function $sec^{-1}$. we thus have
 				  $sec^{-1}$ : R-(-1,1) -> [0, \pi] -{$\frac{\pi}{2}$}
 				- the graphs of y = sec x and y = $sec^{-1}$ x
 					- ![image.png](../assets/image_1787748015200_0.png)
 			- $tan^{-1}$ function
-				-
+			  collapsed:: true
+				- the domain of the tan function (tangent function) is the set $\{x : x \in \mathbb{R}\ and\ x \neq (2n+1)\frac{\pi}{2}, n \in Z\}$ and the range is $\mathbb{R}$. it means that tan function is not defined for odd multiples of $\frac{\pi}{2}$. if we restrict the domain of tangent function to $\left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$, then it is one-one and onto with its range as $\mathbb{R}$. actually, tangent function restricted to any of the intervals $\left[ \frac{-3\pi}{2}, \frac{-\pi}{2} \right]$, $\left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$, $\left[ \frac{\pi}{2}, \frac{3\pi}{2} \right]$ etc., is bijective and its range is $\mathbb{R}$. thus $tan^{-1}$ can be defined as a function whose domain is $\mathbb{R}$ and range could be any of the intervals $\left[ \frac{-3\pi}{2}, \frac{-\pi}{2} \right]$, $\left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$, $\left[ \frac{\pi}{2}, \frac{3\pi}{2} \right]$ and so on. these intervals give different branches of the function $tan^{-1}$. the branch with range $\left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$ is called the principal value branch of the function $tan^{-1}$.
+				  we thus have $tan^{-1} : \mathbb{R} \to \left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$
+				- the graphs of the function y = tan x and y = $tan^{-1}$ x
+				- ![image.png](../assets/image_1787802493036_0.png)
+			- $cot^{-1}$ function
+			  collapsed:: true
+				- domain of the cot function (cotangent function) is the set $\{x : x \in \mathbb{R}\ and\ x \neq (n\pi, n \in Z\}$ and range is $\mathbb{R}$. it means that cotangent function is not defined for integral multiples of \pi. if we restrict the domain of cotangent function to (0, \pi), then is bijective with and its range as $\mathbb{R}$. in fact, cotangent function restricted to any of the intervals (-\pi, 0), (0, \pi), (\pi, 2\pi) etc., is bijective and its range is $\mathbb{R}$. thus $cot^{-1}$ can be defined as a function whose domain is the $\mathbb{R}$ and range as any of the intervals (-\pi, 0), (0, \pi), (\pi, 2\pi) etc. these intervals give different branches of the function $cot^{-1}$. the function with range (0, \pi) is called the principal value branch of the function $cot^{-1}$. we thus have
+				  $cot^{-1} : $\mathbb{R}$ \to (0, \pi)$
+				- the graphs of y = cot x and y = $cot^{-1}$ x
+					- ![image.png](../assets/image_1787806298120_0.png)
+			- inverse trigonometric function (principal value branches) with their domains and ranges
+			  collapsed:: true
+				- \begin{aligned}
+				  \sin^{-1} & : & [-1, 1] & \to & \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] \\
+				  \cos^{-1} & : & [-1, 1] & \to & \left[ 0, \pi \right] \\
+				  \cosec^{-1} & : & \mathbb{R}-(-1, 1) & \to & \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] - {0} \\
+				  \sec^{-1} & : & \mathbb{R}-(-1, 1) & \to & \left[ 0, \pi \right] - {\frac{\pi}{2}} \\
+				  \tan^{-1} & : & \mathbb{R} & \to & \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] \\
+				  \cot^{-1} & : & \mathbb{R} & \to & \left[ 0, \pi \right]
+				  \end{aligned}
+			- $sin^{-1}\ x$ should not be confused with $(sin\ x)^{-1}$. in fact $(sin\ x)^{-1} = \frac{1}{sin\ x}$ and similarly for other trigonometric functions
+			- whenever no branch of an inverse trigonometric functions is mentioned, we mean the principal value branch of that function
+			- the value of an inverse trigonometric functions which lies in the range of principal branch is called the principal value of that inverse trigonometric functions
 - properties of inverse trigonometric functions
+	- if $y = sin^{-1} x$, then x = sin y and if x = sin y, then $y = sin^{-1} x$ this is equivalent to 
+	  $sin (sin^{-1} x) = x, x \in [-1, 1]$ and $sin^{-1} (sin x) = x, x \in \left[ \frac{-\pi}{2}, \frac{\pi}{2} \right]$ same is true for other five inverse trigonometric functions as well.
+	- property 1:
+		- $sin^{-1}\frac{1}{x} = cosec^{-1} x, x \geq 1 or x \leq -1$
+		- $cos^{-1}\frac{1}{x} = sec^{-1} x, x \geq 1 or x \leq -1$
+		- $tan^{-1}\frac{1}{x} = cot^{-1} x, x > 0$
+	- property 2:
+		- $sin^{-1}(-x) = -sin^{-1} x, x \in [-1, 1]$
+		- $tan^{-1}(-x) = -tan^{-1} x, x \in \mathbb{R}$
+		- $cosec^{-1}(-x) = -cosec^{-1} x, |x| \geq 1$
+	- property 3:
+		- $cos^{-1}(-x) = \pi - cos^{-1} x, x \in [-1, 1]$
+		- $sec^{-1}(-x) = \pi - sec^{-1} x, |x| \geq 1$
+		- $cot^{-1}(-x) = \pi - cot^{-1} x, x \in \mathbb{R}$
+	- property 4:
+		- $sin^{-1}x + cos^{-1}x = \frac{\pi}{2}, x \in [-1, 1]$
+		- $tan^{-1}x + cot^{-1}x = \frac{\pi}{2}, x \in \mathbb{R}$
+		- $cosec^{-1}x + sec^{-1}x = \frac{\pi}{2}, |x| \geq 1$
+	- property 5:
+		- $tan^{-1}x + tan^{-1}y = tan^{-1}\frac{x + y}{1 - xy}, xy < 1$
+		- $tan^{-1}x - tan^{-1}y = tan^{-1}\frac{x - y}{1 + xy}, xy > -1$
+	- property 6:
+		- $2tan^{-1}x = sin^{-1} \frac{2x}{1 + x^2}, |x| \leq 1$
+		- $2tan^{-1}x = cos^{-1} \frac{1-x^2}{1 + x^2}, |x| \geq 0$
+		- $2tan^{-1}x = tan^{-1} \frac{2x}{1 - x^2}, -1 < x < 1$
