@@ -97,8 +97,55 @@
 		- on a slightly more mature note, fixing a base b > 1, we may look at a logarithm as a function from positive real numbers to all real numbers. this function, called the `logarithmic function` is defined by
 		  $log_b : \mathbb{R^+} \to \mathbb{R}$
 		  $x \to log_b x = y \text{ if }b^y = x$
+			- as before if the base b = 10, we say it is `common logarithms` and if b = e, then we say it is `natural logarithms`. often natural logarithm is denoted by `ln`. log x denotes the logarithm function to base e i.e., ln x will be written simply log x.
+			- ![image.png](../assets/image_1787972916600_0.png)
+			- important observations about logarithm function to any base b > 1:
+				- we cannot make a meaningful definition of logarithm of non-positive numbers and hence the domain of log function is $\mathbb{R^+}$
+				- the range of log function is the set of all real numbers
+				- the point (1, 0) is always on the graph of the log function
+				- the log function is ever increasing, i.e., as we move from left to right the graph raises above.
+				- for x very near to 0, the value of log x can be made lesser than any given real number. in other words in the fourth quadrant the graph approaches y-axis (but never meets it)
+				- the plot of $y = e^x$ and y = ln x, the 2 curvs are the mirror images of each other reflected in the line y = x
+					- ![image.png](../assets/image_1787973327318_0.png)
+			- 2 properties of `log` functions`
+				- there is a standard change of base rule to obtain $log_ap$ in terms of $log_bp$
+				  $log_a\ p = \frac{log_b\ p}{log_b\ a}$
+				- interesting property of the log function is its effect on products
+				  $log_b\ pq = log_b\ p + log_b\ q$
+				  $log_b\ p^n = n\ log_b\ p$ for any positive integer n. in fact this is true for any real number n.
+				- $log_b\ \frac{x}{y} = log_b\ x - log_b\ y$
 		- theorem 5
+			- $\frac{d}{dx} (e^x) = e^x$
+			- $\frac{d}{dx} (log\ x) = \frac{1}{x}$
 - logarithmic differentiation
+	- $y = f(x) = [u(x)]^{v(x)}$
+	  $log\ y = v(x) log\ [u(x)]$
+	  $\frac{1}{y} \frac{dy}{dx} = v(x) \frac{1}{u(x)} u'(x) + v'(x) log\ [u(x)]$
+	  $\frac{dy}{dx} = y \left[ \frac{v(x)}{u(x)} u'(x) + v'(x) log\ [u(x)] \right]$
+	- the main point to be noted in this method is that f(x) and u(x) must always be positive as otherwise  their logarithms are not defined. this process of differentiation is known as `logarithms differentiation`
 - derivatives of functions in parametric forms
+	- sometimes the relation between 2 variables is neither explicit nor implicit, but some link of a 3rd variable with each of the 2 variables, separately, establishes a relation between the first 2 variables. in such a situation, we say that the relation between them is expressed via a 3rd variable. the 3rd variable is called `parameter`. more precisely, a relation expressed between 2 variables x and y in the form x = f(t), y = g(t) is said to be parametric form with t as a parameter.
+	- in order to find derivative of function in such form, we have by chain rule
+	  $\frac{dy}{dt} = \frac{dy}{dx} \frac{dx}{dt}$
+	  or
+	  $\frac{dy}{dx} = \frac{dy}{dt} \frac{dx}{dt}$ (whenever $\frac{dx}{dt} \neq 0$)
+	  thus $\frac{dy}{dx} = \frac{g'(t)}{f'(t)}$ $(as\ \frac{dy}{dt} = g'(t)\text{ and } \frac{dx}{dt} = f'(t))$ (provided $f'(t) \neq 0$)
 - second order derivative
+	- let y = f(x) then $\frac{dy}{dx} = f'(x)$
+	- if f'(x) is differentiable, we may differentiate again w.r.t x. then, the left hand side becomes $\frac{d}{dx} \frac{dy}{dx}$ which is caleed the `second order derivative` of y w.r.t x and is denoted by $\frac{d^2y}{dx^2}$
+	- the second order derivative of f(x) is denoted by f''(x). it is also denoted by $D^2y$ or y'' or $y_2$ if y = f(x)
+	- we remark that higher order derivatives may be defined similarly
 - mean value theorem
+	- 2 fundamental results in calculus
+	- theorem 6 (Rolle's theorem)
+		- f : [a, b] -> $\mathbb{R}$ be continuous on [a, b] and differentiable on (a, b), such that f(a) = f(b), where a and b are some real numbers. then there exists some c in (a, b) such that f'(c) = 0
+		- graphs of a few typical differentiable functions satisfying the hypotheses of Rolle's theorem are given
+			- ![image.png](../assets/image_1787994031264_0.png)
+			- observe what happens to the slope of the tangent to the curve at various points between a and b. in each of the graphs, the slope becomes zero at least at one point. that is precisely the claim of the Rolle's theorem as the slope of the tangent at any point on the graph of y = f(x) is nothing but the derivative of f(x) at that point.
+	- theorem 7 (mean value theorem)
+		- f : [a, b] -> $\mathbb{R}$ be a continuous function on [a, b] and differentiable on (a, b). then there exists some c in (a, b) such that 
+		  $f'(c) = \frac{f(b) - f(a)}{b - a}$
+		- observe that Mean Value Theorem (MVT) is an extension of Rolle's theorem. let us now understand a geometric interpretation of the MVT. the graph of a function y = f(x) is given in figure.
+		- ![image.png](../assets/image_1787994444868_0.png)
+		- we have already interpreted f'(c) as the slope of the tangent to the curve y = f(x) at (c, f(c)). from figure it is clear that $\frac{f(b) - f(a)}{b - a}$ is the slope of the secant drawn between (a, f(a)) and (b, f(b)). the MVT states that there is a point c in (a, b) such that the slope of the tangent at (c, f(c)) is same as the slope of the secant between (a, f(a)) and (b, f(b)). in other words, there is a point c in (a, b) such that the tangent at (c, f(c)) is parallel to the secant between (a, f(a)) and (b, f(b).
+	-
