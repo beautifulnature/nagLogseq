@@ -47,9 +47,9 @@
 - [[application of derivatives]] 21-08
 - [[3 dimensional geometry]] 22-08
 - [[mathematical modeling]] 22-08
-- [[linear programming]] 22-08
 - [[integrals]] 23-08
 - [[application of integrals]] 23-08
+- [[linear programming]] 22-08
 - [[differential equations]] 21-08
 - [[probability]] 22-08
 - [[class-11-12-extras]]
