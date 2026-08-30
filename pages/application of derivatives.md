@@ -77,10 +77,39 @@
 					- every continuous function on a closed interval has a maximum and a minimum value
 		- ![image.png](../assets/image_1788072684525_0.png)
 			- point A, B, C, D on the graph the function changes its nature from decreasing to increasing or vice-versa. these points are called `turning points`. points A, C may be regarded as points of `local minimum value` (or `relative minimum value`) and points B, D may be regarded as points of `local maximum value` (or `relative maximum value`) for the function. the `local maximum value` and `local minimum value` of the function are referred to as `local maxima` and `local minima` of the function
-		- definition 4
+		- definition 4:
+			- f be a real valued function and c be an interior point in the domain of f. then
+				- c is called a point of `local maxima` if there is an h > 0 such that 
+				  f(c) > f(x), for all x in (c -h, c + h)
+				  the value f(c) is called the `local maximum value` of f
+				- c is called a point of `local minima` if there is an h > 0 such that 
+				  f(c) < f(x), for all x in (c -h, c + h)
+				  the value f(c) is called the `local minimum value` of f
+				- geometrically, the above definition states that if x = c is a point of local maxima of f, then the graph of f around c will as shown in fig (a). note that the function f is increasing (i.e., f'(x) > 0) in the interval (c-h, c) and decreasing (i.e., f'(x) < 0) in the interval (c, c + h)
+				- this suggests that f'(c) must be zero.
+				- ![image.png](../assets/image_1788092923683_0.png)
+				- similarly, if c is point of local minima of f, then the graph of f around c will be as shown in fig (b). here f is decreasing (i.e., f'(x) < 0) in the interval (c-h, c) and increasing (i.e., f'(x) > 0) in the interval (c, c + h). this again suggest that f'(c) must be zero.
 		- theorem 2
-		- theorem 3 (first derivative test)
+			- f be a function defined on an open interval I. suppose c \in I be any point. if f has a local maxima or a local minima at x = c, then either f'(c) = 0 or f is not differentiable at c.
+			- remark: the converse of the above theorem need not be true, that is , a point at which the derivative vanishes need not be a point of local maxima or local minima.
+			- note: a point c in the domain of a function f at which either f'(c) = 0 or f is not differentiable is called a `critical point` of f. note that if f is continuous at c and f'(c) = 0, then there exists an h > 0 such that f is differentiable in the interval (c - h, c + h)
+		- theorem 3 (first derivative test): working rule for finding points of local maxima or points of local minima using only the first order derivatives
+			- f be a function defined on an open interval I. f be continuous at a critical point c in I. then
+				- ![image.png](../assets/image_1788096427874_0.png)
+				- if f'(x) changes sign from positive to negative as x increases through c, i.e., if f'(x) > 0 at every point sufficiently close to and to the left of c, and f'(x) < 0 at every point sufficiently close to and to the right of c, then c is a point of `local maxima`
+				- if f'(x) changes sign from negative to positive as x increases through c, i.e., if f'(x) < 0 at every point sufficiently close to and to the left of c, and f'(x) > 0 at every point sufficiently close to and to the right of c, then c is a point of `local minima`
+				- if f'(x) does not change sign as x increases through c, then c is neither a point of local maxima nor a point of local minima. infact, such a point is called `point of inflection` i.e., if f'(x) > 0 at every point sufficiently close to and to the left of c, and f'(x) < 0 at every point sufficiently close to and to the right of c, then c is a point of `local maxima`
+					- ![image.png](../assets/image_1788096388323_0.png){:height 356, :width 345}
+				- note: if c is a point of local maxima of f, then f(c) is a local maximum value of f. if c is a point of local minima of f, then f(c) is a local minimum value of f.
 		- theorem 4 (second derivative test)
+			- f be a function defined on an interval I and c \in I. f be twice differentiable at c. then
+				- x = c is a point of local maxima if f'(c) = 0 and f''(c) < 0
+				  the value f(c) is local maximum value of f
+				- x = c is a point of local minima if f'(c) = 0 and f''(c) > 0
+				  the value f(c) is local minimum value of f
+				- the test fails if f'(c) = 0 and f''(c) = 0
+				  in this case, we go back to the first derivative test and find whether c is a point of local maxima, local minima or a point of inflexion.
+				- note: as f is twice differentiable at c, we mean second order derivative of f exists at c.
 	- maximum and minimum values of a function in a closed interval
 		- theorem 5
 		- theorem 6
