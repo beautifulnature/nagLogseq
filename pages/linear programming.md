@@ -1,2 +1,8 @@
 - ![Class-12-2-Mathematics-Part-II-06_Linear_Programming.pdf](../assets/Class-12-2-Mathematics-Part-II-06_Linear_Programming_1786587268272_0.pdf)
--
+- introduction
+- linear programming problem and its mathematical formulation
+	- mathematical formulation of the problem
+	- graphical method of solving linear programming problems
+	- theorem 1
+	- theorem 2
+- different types of linear programming problems
