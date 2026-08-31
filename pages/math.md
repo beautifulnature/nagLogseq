@@ -44,7 +44,7 @@
 - [[vector algebra]]
 - [[inverse trigonometric functions]]
 - [[continuity and differentiability]]
-- [[application of derivatives]] 21-08
+- [[application of derivatives]]
 - [[3 dimensional geometry]] 22-08
 - [[mathematical modeling]] 22-08
 - [[linear programming]] 22-08

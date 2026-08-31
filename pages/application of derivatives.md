@@ -111,6 +111,19 @@
 				  in this case, we go back to the first derivative test and find whether c is a point of local maxima, local minima or a point of inflexion.
 				- note: as f is twice differentiable at c, we mean second order derivative of f exists at c.
 	- maximum and minimum values of a function in a closed interval
+		- in the domain of function f in closed interval, maximum value of f is called `absolute maximum` value (`global maximum` or `greatest value`) of f on the interval. minimum value of f is called `absolute minimum value` (`global minimum` or `least value`) of f.
+		- ![image.png](../assets/image_1788162141642_0.png)
+			- graph given in figure of a continuous function defined on a closed interval [a, d]. function f has a local minima at x = b and local minimum value is f(b). the function also has a local maxima at x = c and local maximum value is f(c). from the graph, it is evident that f has absolute maximum value f(a) and absolute minimum value f(d). further note that the absolute maximum (minimum) value of f is different from local maximum (minimum) value of f.
 		- theorem 5
+			- f be a continuous function on an interval I = [a, b]. then f has the absolute maximum value and f attains it at lease once in I. also, f has the absolute minimum value and attains it at least once in I.
 		- theorem 6
+			- f be a differentiable function on a closed interval I and let c be any interior point of I. then
+				- f'(c) = 0 if f attains its absolute maximum value at c.
+				- f'(c) = 0 if f attains its absolute minimum value at c.
+		- in view of the above results, we have the following working rule for finding absolute maximum and / or absolute minimum values of a function in a given closed interval [a, b]
+			- working rule
+				- step 1: fin all critical points of f in the interval, i.e., find points x where either f'(x) = 0 or f is not differentiable
+				- step 2: take the end points of the interval
+				- step 3: at all these points (listed in step 1 and 2), calculate the values of f
+				- step 4: identify the maximum and minimum values of f out of the values calculated in step 3. this maximum value will be the absolute maximum (greatest) value of f and the minimum value will be the absolute minimum (least) value of f.
 	-
