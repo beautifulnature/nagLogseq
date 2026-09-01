@@ -60,7 +60,52 @@
 			  this is the Cartesian equation of the line
 			- note: l, m, n are the direction cosines of the line, the equation of the line is $\frac{x - x_1}{l} =\frac{y - y_1}{m} = \frac{z - z_1}{n}$
 	- equation of a line passing through 2 given points
+		- $\overrightarrow{a}$, $\overrightarrow{b}$ 2 position vectors of 2 points $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$ that are lying on a line
+		- ![image.png](../assets/image_1788250174880_0.png)
+		- $\overrightarrow{r}$ be the position vector of an arbitrary point P (x, y, z) then P is a point on the point on the line if and only if $\overrightarrow{AP}$ = $\overrightarrow{r}$ - $\overrightarrow{a}$ and $\overrightarrow{AB}$ = $\overrightarrow{b}$ -$\overrightarrow{a}$ are collinear vectors. therefore, P is on the line if and only if 
+		  $\overrightarrow{r} - \overrightarrow{a} = \lambda ( \overrightarrow{b} - \overrightarrow{a})$
+		  or $\overrightarrow{r} = \overrightarrow{a} + \lambda ( \overrightarrow{b} - \overrightarrow{a}), \lambda \in \mathbb{R}$
+		  this is the vector equation of the line.
+		- derivation of cartesian form from vector form
+			- $\overrightarrow{r} = x \hat{i} + y \hat{j} + z \hat{k}, \overrightarrow{a} = x_1 \hat{i} + y_1 \hat{j} + z_1 \hat{k}, \overrightarrow{b} = x_2 \hat{i} + y_2 \hat{j} + z_2 \hat{k}$
+			  :LOGBOOK:
+			  CLOCK: [2026-09-01 Tue 15:32:51]--[2026-09-01 Tue 15:32:53] =>  00:00:02
+			  :END:
+			  $x \hat{i} + y \hat{j} + z \hat{k} = x_1 \hat{i} + y_1 \hat{j} + z_1 \hat{k} + \lambda [(x_2 - x_1) \hat{i} + (y_2 - y_1) \hat{j} + (z_2 - z_1) \hat{k}$]
+			  equating the like coefficients of $\hat{i}, \hat{j}, \hat{k}$, we get
+			  $x = x_1 + \lambda (x_2 - x_1); y = y_1 + \lambda (y_2 - y_1); z = z_1 + \lambda (z_2 - z_1)$
+			  $\frac{x - x_1}{x_2 - x_1} = \frac{y - y_1} {y_2 - y_1} = \frac{z - z_1}{z_2 - z_1}$
+			  which is the equation of the line in Cartesian form
 - angle between 2 lines
+	- ![image.png](../assets/image_1788257096592_0.png)
+	- $L_1, L_2$ be 2 lines passing through the origin and with direction ratios $a_1, b_1, c_1$ and $a_2, b_2, c_2$. P be a point on $L_1$ and Q be a point on $L_2$. consider the directed lines OP, OQ. \theta be the acute angle between OP and OQ. now recall that the directed line segments OP and OQ are vectors with components $a_1, b_1, c_1$ and $a_2, b_2, c_2$. therefore the angle \theta between them is given by
+	  $$
+	  cos \theta = \begin{vmatrix} \frac{a_1 a_2 + b_1 b_2 + c_1 c_2}{\sqrt{a_1^{2} + b_1^{2} + c_1^{2}} \sqrt{a_2^{2} + b_2^{2} + c_2^{2}}} \end{vmatrix}
+	  $$
+	  the angle between the lines in terms of 
+	  $sin \theta = \sqrt{1 - cos^2 \theta}$
+	  $= \sqrt{1 - \frac{(a_1 a_2 + b_1 b_2 + c_1 c_2)^2}{(a_1^{2} + b_1^{2} + c_1^{2}) (a_2^{2} + b_2^{2} + c_2^{2})}}$
+	  $= \frac{\sqrt{(a_1^{2} + b_1^{2} + c_1^{2}) (a_2^{2} + b_2^{2} + c_2^{2}) - (a_1 a_2 + b_1 b_2 + c_1 c_2)^2}}{\sqrt{(a_1^{2} + b_1^{2} + c_1^{2})} \sqrt{(a_2^{2} + b_2^{2} + c_2^{2})}}$
+	  $= \frac{\sqrt{(a_1 b_2 - a_2 b_1)^{2} + (b_1 c_2 - b_2 c_1)^{2} + (c_1 a_2 - c_2 a_1)^2}}{\sqrt{(a_1^{2} + b_1^{2} + c_1^{2})} \sqrt{(a_2^{2} + b_2^{2} + c_2^{2})}}$
+	- note: in case lines $L_1, L_2$ do not pass through the origin, we may take lines $L_1', L_2'$ which are parallel to $L_1, L_2$ and pass through the origin
+	- if instead of direction ratios for the line $L_1, L_2$, direction cosines, $l_1, m_1, n_1$ for $L_1$, $l_2, m_2, n_2$ for $L_2$ are given
+	  $cos \theta = |l_1 l_2 + m_1 m_2 + n_1 n_2|$ (as $l_1^2 + m_1^2 + n_1^2 = 1 = l_2^2 + m_2^2 + n_2^2$)
+	  and $sin \theta = \sqrt {(l_1 m_2 - l_2 m_1)^2 - (m_1 n_2 - m_2 n_1)^2 + (n_1 l_2 - n_2 l_1)^2}$
+	- 2 lines with direction ratios $a_1, b_1, c_1$ and $a_2, b_2, c_2$ are
+		- perpendicular i.e., if \theta = 90\deg
+			- $a_1 a_2 + b_1 b_2 + c_1 c_2 =0$
+		- parallel i.e., if \theta = 0
+			- $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$
+	- angle between 2 lines when their equations are given. if \theta is acute angle between the lines
+		- $\overrightarrow{r} = \overrightarrow{a_1} + \lambda \overrightarrow{b_1}$ and $\overrightarrow{r} = \overrightarrow{a_2} + µ \overrightarrow{b_2}$
+		  then $cos \theta = \begin{vmatrix} \frac{\overrightarrow{b_1} \overrightarrow{b_2}}{|\overrightarrow{b_1}| |\overrightarrow{b_2}|} \end{vmatrix}$
+		- in Cartesian form, if \theta is the angle between the lines
+		  $\frac{x - x_1}{a_1} = \frac{y - y_1}{b_1} = \frac{z - z_1}{c_1}$
+		  and $\frac{x - x_2}{a_2} = \frac{y - y_2}{b_2} = \frac{z - z_2}{c_2}$
+		  where $a_1, b_1, c_1$ and $a_2, b_2, c_2$ are the direction ratios of the lines then
+		  $$
+		  cos \theta = \begin{vmatrix} \frac{a_1 a_2 + b_1 b_2 + c_1 c_2}{\sqrt{a_1^{2} + b_1^{2} + c_1^{2}} \sqrt{a_2^{2} + b_2^{2} + c_2^{2}}} \end{vmatrix}
+		  $$
 - shortest distance between 2 lines
 	- distance between 2 skew lines
 	- distance between parallel lines
