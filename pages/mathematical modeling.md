@@ -1,4 +1,33 @@
 - ![Class-11-Mathematics-a2_Mathematical_Modelling.pdf](../assets/Class-11-Mathematics-a2_Mathematical_Modelling_1785690280731_0.pdf)
 - introduction
+	- the process of translation of a real-life problem into a mathematical form can given a better representation and solution of certain problems. the process of translation is called Mathematical Modelling.
 - preliminaries
+	- steps involved
+		- step 1: study the real-life problem, and identify the parameters
+		- step 2: formulate the problem mathematically
+		- step 3: solution of the problem. interpreting the mathematical solution to the real situation
+	- a mathematical model is a representation which comprehends a situation
 - what is mathematical modelling
+	- definition: mathematical modelling is an attempt to study some part (or form) of the real-life problem in mathematical terms
+	- conversion of physical situation into mathematics with some suitable conditions is knows as mathematical modelling. mathematical modelling is nothing but a technique and the pedagogy taken from fine arts and not from the basic sciences.
+	- let us now understand the different processes involved in mathematical modelling. 4 steps are involved in this process. as an illustrative example, we consider the modelling done to study the motion of a simple pendulum.
+	- understanding the problem
+	- statement
+	- formulation
+		- identifying the relevant factors
+		- mathematical description
+			- finding the solution
+			- interpretation / validation
+	- example 3
+		- step 1
+		- step 2
+		- step 3
+		- step 4
+	- example 4
+		- step 1: formulation
+			- assumptions
+		- step 2: solution
+		- step 3: interpretation and validation
+	- since a mathematical model is a simplified representation of a real problem, by its very nature, has built-in assumptions and approximations. obviously, the most important question is to decide whether our mode is a good one or not i.e., when the obtained results are interpreted physically whether or not the model gives reasonable answers. if a model is not accurate enough, we try to identify the sources of shortcomings. it may happen that we need a new formulation, new mathematical manipulation and hence a new evaluation. thus mathematical modelling can be a cycle of the modelling process as shown in the flowchart given below
+	- ![image.png](../assets/image_1788432883113_0.png)
+	-

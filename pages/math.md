@@ -45,7 +45,7 @@
 - [[inverse trigonometric functions]]
 - [[continuity and differentiability]]
 - [[application of derivatives]]
-- [[3 dimensional geometry]] 22-08
+- [[3 dimensional geometry]]
 - [[mathematical modeling]] 22-08
 - [[linear programming]] 22-08
 - [[integrals]] 23-08

@@ -283,5 +283,49 @@
 		  \end{vmatrix} = 0
 		  $$
 - angle between 2 planes
+	- ![image.png](../assets/image_1788406971268_0.png)
+	- definition: angle between 2 planes is defined as the angle between their normals. observe that if \theta is an angle between the 2 planes, then so is 180 - \theta. we shall take the actue angle between 2 planes.
+	- vector form
+		- if $n_1, n_2$ are normals to the planes and \theta be the angle between the planes
+		  $\overrightarrow{r} . \overrightarrow{n_1} = d_1$ and $\overrightarrow{r} . \overrightarrow{n_2} = d_2$
+		  then \theta is the angle between the normals to the planes drawn from some common point.
+		  we have, $cos \theta = \begin{vmatrix} \frac{\overrightarrow{n_1} . \overrightarrow{n_2}}{|n_1| |n_2|} \end{vmatrix}$
+		- note: the planes are perpendicular to each other if $\overrightarrow{n_1} . \overrightarrow{n_2} = 0$ and parallel if $\overrightarrow{n_1}$ is parallel to $\overrightarrow{n_2}$
+	- Cartesian form
+		- let \theta be the angle between the planes,
+			- $A_1 x + B_1 y + C_1 z + D_1 = 0, A_2 x + B_2 y + C_2 z + D_2 = 0$
+			- the direction ratios of the normal to the planes are $A_1, B_1, C_1$ and $A_2, B_2, C_2$
+			- therefore $cos \theta = \begin{vmatrix} \frac{A_1 A_2 + B_1 B_2 + C_1 C_2}{\sqrt{A_1^2 + B_1^2 + C_1^2}\sqrt{A_2^2 + B_2^2 + C_2^2}}\end{vmatrix}$
+		- note:
+			- if the planes are at right angles, then \theta = 90\deg and so cos \theta = 0. hence, cos \theta = $A_1 A_2 + B_1 B_2 + C_1 C_2$ = 0
+			- if the planes are parallel, then $\frac{A_1}{A_2} = \frac{B_1}{B_2} = \frac{C_1}{C_2}$
 - distance of a point from a plane
+	- ![image.png](../assets/image_1788407006203_0.png)
+	- vector form
+		- consider a point P with position vector $\overrightarrow{a}$ and a plane $\pi_1$ whose equation is $\overrightarrow{r} . \hat{n} = d$
+		- consider a plane $\pi_2$ through P parallel to the plane $\pi_1$. the unit vector normal to $\pi_2$ is $\hat{n}$. hence, its equation is $(\overrightarrow{r} - \overrightarrow{a}) . \hat{n} = 0$
+		  i.e., $\overrightarrow{r} \hat{n} = \overrightarrow{a} \hat{n}$
+		  thus, the distance ON' of this plane from the origin is $|\overrightarrow{a} \hat{n}|$
+		  therefore, the distance PQ from the plane $\pi_1$ is
+		  i.e., ON - ON' = $|d - \overrightarrow{a} \hat{n}|$
+		  which is the length of the perpendicular from a point to the given plane.
+		- note:
+			- if the equation of the plane $\pi_2$ is in the form $\overrightarrow{r} . \overrightarrow{N} = d$, where $\overrightarrow{N}$ is normal to the plane, then the perpendicular distance is $\frac{|\overrightarrow{a} \overrightarrow{N} - d|}{|\overrightarrow{N}|}$
+			- the length of the perpendicular from origin O to the plane $\overrightarrow{r} . \overrightarrow{N} = d$ is $\frac{|d|}{|\overrightarrow{N}|}$ (since $\overrightarrow{a} = 0$)
+	- Cartesian form
+		- let P(x_1, y_1, z_1) be the given point with position vector $\overrightarrow{a}$ and Ax + By + Cz = D be the Cartesian equation of the given plane. then
+		  $\overrightarrow{a} = x_1 \hat{i} + y_1 \hat{j} + z_1 \hat{k}$
+		  $\overrightarrow{N} = A \hat{i} + B \hat{j} + C \hat{k}$
+		  the perpendicular from P to the plane is $\begin{vmatrix}\frac{(x_1 \hat{i} + y_1 \hat{j} + z_1 \hat{k})(A \hat{i} + B \hat{j} + C \hat{k}) - D|}{\sqrt{A^2 + B^2 + C^2}}\end{vmatrix}$
+		  = $\begin{vmatrix}\frac{A x_1 + B y_1 + C z_1 - D}{\sqrt{A^2 + B^2 + C^2}}\end{vmatrix}$
 - angle between a line and a plane
+	- ![image.png](../assets/image_1788418790609_0.png)
+	- definition: the angle between a line an a plane is the complement of the angle between the line and normal to the plane
+		- vector form:
+			- if the equation of the line is $\overrightarrow{r} = \overrightarrow{a} + \lambda \overrightarrow{b}$ and the equation of the plane is  $\overrightarrow{r} . \hat{n} = d$. then the angle \theta between the line and the normal to the plane is 
+			  $cos \theta = \begin{vmatrix} \frac{\overrightarrow{b}\overrightarrow{n}}{|\overrightarrow{b}|\overrightarrow{n}||}\end{vmatrix}$
+			  so the angle \phi between the line and the plane is given by 90 - \theta, i.e.,
+			  sin(90 - \theta) = cos \theta
+			  $sin \phi = \begin{vmatrix} \frac{\overrightarrow{b}\overrightarrow{n}}{|\overrightarrow{b}|\overrightarrow{n}||}\end{vmatrix}$
+			  $\phi = sin^{-1} \begin{vmatrix} \frac{\overrightarrow{b}\overrightarrow{n}}{|\overrightarrow{b}|\overrightarrow{n}||}\end{vmatrix}$
+-
