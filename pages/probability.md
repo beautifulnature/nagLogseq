@@ -1,5 +1,4 @@
 - ![Class-11-Mathematics-16_Probability.pdf](../assets/Class-11-Mathematics-16_Probability_1785690767601_0.pdf)
-- ![Class-12-2-Mathematics-Part-II-07_Probability.pdf](../assets/Class-12-2-Mathematics-Part-II-07_Probability_1786587337081_0.pdf)
 - introduction
 - random experiments
 	- outcomes and sample space
@@ -21,4 +20,22 @@
 	- probability of equally likely outcomes
 	- probability of the event 'A or B'
 	- probability of event 'not A'
-	-
+- ![Class-12-2-Mathematics-Part-II-07_Probability.pdf](../assets/Class-12-2-Mathematics-Part-II-07_Probability_1786587337081_0.pdf)
+	- introduction
+	- conditional probability
+		- properties of conditional probability
+			- property 1
+			- property 2
+			- property 3
+	- multiplication theorem on probability
+	- independent events
+	- Bayes' theorem
+		- partition of a sample space
+		- theorem of total probability
+	- random variables and its probability distribution
+		- probability distribution of a random variable
+		- mean of a random variable
+		- variance of a random variable
+	- Bernoulli trials and Binomial distribution
+		- Bernoulli trials
+		- Binomial distribution

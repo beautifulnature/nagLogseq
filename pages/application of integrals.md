@@ -1,2 +1,5 @@
 - ![Class-12-2-Mathematics-Part-II-02_Application_of_Integrals.pdf](../assets/Class-12-2-Mathematics-Part-II-02_Application_of_Integrals_1786587036679_0.pdf)
--
+- introduction
+- area under simple curves
+	- the area of the region bounded by a curve and a line
+- area between 2 curves

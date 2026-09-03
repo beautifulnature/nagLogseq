@@ -1,5 +1,4 @@
 - ![Class-11-Mathematics-02_Relations_and_functions.pdf](../assets/Class-11-Mathematics-02_Relations_and_functions_1785691096658_0.pdf)
-- ![Class-12-1-Mathematics-Part-I-01_Relations_and_functions.pdf](../assets/Class-12-1-Mathematics-Part-I-01_Relations_and_functions_1786587975420_0.pdf)
 - Ordered pair
 	- a pair of elements grouped together in a particular order
 - Cartesian products of sets
@@ -76,3 +75,10 @@
 		- quotient of 2 real functions
 			- let f and g be 2 real functions defined from X -> R, where X ⊂ R. the quotient of f by g denoted by \( f / g \) is a function defined by, \( (f / g) (x) = f(x) / g(x)\), provided g(x) \neq 0, x \in X
 		- the function f defined by f(x) = mx + c, x \in R, is called `linear function`, where `m` and `c` are constants.
+- ![Class-12-1-Mathematics-Part-I-01_Relations_and_functions.pdf](../assets/Class-12-1-Mathematics-Part-I-01_Relations_and_functions_1786587975420_0.pdf)
+	- introduction
+	- types of relation
+	- types of functions
+	- composition of functions and invertible function
+	- binary operations
+	-

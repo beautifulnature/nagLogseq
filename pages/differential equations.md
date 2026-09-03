@@ -1,2 +1,13 @@
 - ![Class-12-2-Mathematics-Part-II-03_Differential_Equations.pdf](../assets/Class-12-2-Mathematics-Part-II-03_Differential_Equations_1786587625370_0.pdf)
--
+- introduction
+- basic concepts
+	- order of differential equation
+	- degree of differential equation
+- general and particular solution of differential equation
+- formation of a differential equation whose general solution is given
+	- procedure to form a differential equation that will represent a given family of curves
+- methods of solving first order, first degree differential equations
+	- differential equations with variables separable
+	- homogeneous differential equations
+	- linear differential equations
+	-

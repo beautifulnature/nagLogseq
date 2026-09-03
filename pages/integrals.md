@@ -1,2 +1,20 @@
 - ![Class-12-2-Mathematics-Part-II-01_Integrals.pdf](../assets/Class-12-2-Mathematics-Part-II-01_Integrals_1786586799711_0.pdf)
--
+- introduction
+- integration as an inverse process of differentiation
+	- geometrical interpretation of indefinite integral
+	- some properties of indefinite integral
+	- comparison between differentiation and integration
+- methods of integration
+	- integration by substitution
+	- integration using trigonometric identities
+- integrals of some particular functions
+- integration by partial fractions
+- integration by parts
+- definite integral
+	- definite integral as the limit of a sum
+- fundamental theorem of calculus
+	- area function
+	- first fundamental theorem of integral calculus
+	- second fundamental theorem of integral calculus
+- evaluation of definite integrals by substitution
+- some properties of definite integrals
