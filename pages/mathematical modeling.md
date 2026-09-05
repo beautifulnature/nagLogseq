@@ -47,15 +47,67 @@
 					- b) solution
 					- c) interpretation / validation
 	- example 3
-		- step 1
-		- step 2
+		- a farm house uses at least 800 kg of special food daily. the special food is a mixture of corn and soyabean with the following compositions
+			- |material|nutrients present per kg protein|nutrients present per kg fibre|cost per kg|
+			  |corn|0.09|0.02|Rs 10|
+			  |soyabean|0.6|0.06|Rs 20|
+			- the dietary requirements of the special food stipulate at least 30% protein and at most 5% fibre, determine the daily minimum cost of the food mix.
+			- solution:
+			- step 1: here the objective is to minimise the total daily cost of the food which is made up of corn and soyabean. so the variables (factors) that are to be cosidered are
+				- x = the amount of corn
+				- y = the amount of soyabean
+				- z = the cost
+			- step 2
+				- z = 10 x +20 y
+				- the problem is to minimise z with the following constratints
+				- a) the farm used at least 800 kg food consisting of corn and soyabean
+				  i.e., $x + y \geq 800$
+				- the food should have at least 30% protein dietary requirement in the proportion as given.
+				  $0.09x + 0.6y \geq 0.3 (x + y)$
+				- food should have at most 5% fibre in the proportion given
+				  $0.02 x + 0.06 y \leq 0.05 (x + y)$
+				- we simplify the constraints by grouping all the coefficients of x, y
+				- then the problem can be restated in the following mathematical form
+				- statement: minimize z subject to
+				  $x + y \geq 800$
+				  $0.21 x - 0.3 y \leq 0$
+				  $0.03 x - 0.01 y \geq 0$
+				- this give the formulation of the model
 		- step 3
+			- this can be solved graphically. the shaded region gives the possible solution of the equations. from the graph is is clear that the minimum value is got the point (470.6, 329.4)
+			- this gives the value of z as z = 10 x 470.6 + 20 x 329.4 = 11294
+			- this is the mathematical solution
 		- step 4
+			- the solution can eb interpreted as saying that, "the minimum cost of the special food with corn and soyabean having the required portion of nutrient contents, protein and fibre is Rs 11294 and we obtain this minimum cost if we use 470.6 kg of corn and 329.4 kg of soyabean"
 	- example 4
-		- step 1: formulation
+		- suppose a population control unit wants to find out "how many people will be there in a certain country after 10 years"
+		- step 1:
+			- formulation
+				- we first observe that the population changes with time and it increases with birth and decreases with deaths.
+				- we want to find the population at a particular time. let t denote the time in years. then t takes values 0, 1, 2, ..., t=0 stands for the present time, t = 1 stands for the next year etc. for any time t, let p(t) denote the population in that particular year.
+				- suppose we want to find the population in a particular year, say $t_0 = 2006$. how will we do that. we find the population by Jan 1st 2005. add the number of births in that year and subtract the number of deaths in that year. let B(t) denote the number of births in the one year between t and t+1 and D(t) denote the number of deaths between t and t+1. the we get the relation
+				  P(t+1) = P(t) + B(t) - D(t)
+				- now we make some assumption and definitions
+					- $\frac{B(t)}{P(t)}$ is called the `birth rate` for the time interval t to t+1
+					- $\frac{D(t)}{P(t)}$ is called the `death rate` for the time interval t to t+1
 			- assumptions
+				- the birth rate is the same for all intervals, likewise, the death rate is the same for all intervals. this means that there is a constant b, called the birth rate, and a constant d, called the death rate so that, for all $t \geq 0$
+				  logseq.order-list-type:: number
+				- there is no migration into or out of the population; i.e., the only source of population change is birth and death
+				  logseq.order-list-type:: number
+				  as a result of assumptions 1 and 2, we deduce that, for $t \geq 0$,
+				  P(t +1) = P(t) + B(t) - D(t) = P(t) + bP(t) -dP(t) = (1 + b - d) P(t)
+				- setting t = 0, P(1) = (1 + b -  d) P(0)
+				- setting t = 1, $P(2) = (1 + b -  d) P(1) = (1 + b -  d) (1 + b -  d) P(0) = (1 + b -  d)^2 P(0)$
+				- $P(t) = (1 + b -  d)^t P(0)$
+				- for t = 0, 1, 2, ... the constant 1 + b - d is often abbreviated by r and called the `growth rate` or in mor high-flown languate, the `Malthusian parameter`, in honor of Robert Malthus who first brought this model to popular attention. in terms of r, $P(t)  = P(0) r^t$, t = 0, 1, 2, ...
+				- P(t) is an example of an `exponential function`. any function of the form $cr^t$, where c and r are constants, is an exponential function.
+				- equation gives the mathematical formulation of the problem.
 		- step 2: solution
+			- suppose the current population is 250,000,000 and the rates are b = 0.02 and d = 0.01. what will the population be in 10 years?
+			  $P(10) = (1.01)^{10}(250000000) = 276155531.25$
 		- step 3: interpretation and validation
+			- naturally, this result is absurd, since one can't have 0.25 of a person. so we do some approximation and conclude that the population is 276155531 (approximately). here, we are not getting the exact answer because of the assumptions that we have made in our mathematical model.
 	- since a mathematical model is a simplified representation of a real problem, by its very nature, has built-in assumptions and approximations. obviously, the most important question is to decide whether our mode is a good one or not i.e., when the obtained results are interpreted physically whether or not the model gives reasonable answers. if a model is not accurate enough, we try to identify the sources of shortcomings. it may happen that we need a new formulation, new mathematical manipulation and hence a new evaluation. thus mathematical modelling can be a cycle of the modelling process as shown in the flowchart given below
 	- ![image.png](../assets/image_1788432883113_0.png)
 	-

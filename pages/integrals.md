@@ -1,5 +1,7 @@
 - ![Class-12-2-Mathematics-Part-II-01_Integrals.pdf](../assets/Class-12-2-Mathematics-Part-II-01_Integrals_1786586799711_0.pdf)
 - introduction
+	- differential calculus is centered on the concept of the derivative. the original motivation for the derivative was the problem of defining tangent lines to the graphs of functions and calculating the slope of such lines. integral calculus is motivated by the problem of defining and calculating the area of the region bounded by the graph of the functions.
+	- if a function f is differentiable in an interval I, i.e., its derivative f' exists at each point of I, then a natural question arises that given f' at each point of I, can we determine the function? the functions that could possibly have given function as a derivative are called anti derivatives (or primitive) of the function. further, the formula that gives all these anti derivatives is called the `indefinite integral` of the function and such process of finding antiderivatives is called integration.
 - integration as an inverse process of differentiation
 	- geometrical interpretation of indefinite integral
 	- some properties of indefinite integral

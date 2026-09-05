@@ -46,8 +46,8 @@
 - [[continuity and differentiability]]
 - [[application of derivatives]]
 - [[3 dimensional geometry]]
-- [[mathematical modeling]] 22-08
-- [[linear programming]] 22-08
+- [[mathematical modeling]]
+- [[linear programming]]
 - [[integrals]] 23-08
 - [[application of integrals]] 23-08
 - [[differential equations]] 21-08
