@@ -43,7 +43,29 @@
 		- note: in practice, we normally do not mention the interval over which the various functions are defined. however, in any specific problem one has to keep it in mind.
 	- geometrical interpretation of indefinite integral
 		- let f(x) = 2x then \int f(x) dx = $x^2$ + C. for different values of C, we get different integrals. but these integrals are very similar geometrically.
+		- thus, $y = x^2 + C$, where C is arbitrary constant, represents a family of integrals. by assigning different values to C, we get different members of the family. these together constitute the indefinite integral. in this case, each integral represents a parabola with its axis along y-axis.
+		- ![image.png](../assets/image_1788689707019_0.png)
+		- clearly, for C = 0, we obtain $y = x^2$, a parabola with its vertex on the origin. the curve $y = x^2 + 1$ for C = 1 is obtained by shifting the parabola $y = x^2$ on unit along y-axis in the positive direction. for C = -1, $y = x^2 - 1$ is obtained by shifting the parabola $y = x^2$ one unit along y-axis in the negative direction. thus, for each positive value of C, each parabola of the family has its vertex on the positive side of the y-axis and for negative values of C, each has its vertex along the negative side of the y-axis.
+		-
 	- some properties of indefinite integral
+		- property 1:
+			- the process of differentiation and integration are inverses of each other in the sense of the following results:
+			- $\frac{d}{dx}\int f(x)dx = f(x)$
+			- and $\int f'(x) dx = f(x) + C$, where C is any arbitrary constant called constant of integration
+		- property 2:
+			- 2 indefinite integrals with the same derivative lead to the same family of curves and so they are equivalent
+			- proof:
+				- let f and g be 2 functions such that
+				- $\frac{d}{dx}\int f(x)dx = \frac{d}{dx}\int g(x)dx$
+				- or $\frac{d}{dx}[\int f(x)dx - \int g(x)dx] = 0$
+				- hence $\int f(x)dx - \int g(x)dx = C$, where C is any real number
+				- or $\int f(x)dx = \int g(x)dx + C$
+				- so the families of curves $\{ f(x) dx + C_1, C_1 \in R\}$ and $\{ g(x) dx + C_2, C_2 \in R\}$ are identical.
+				  id:: 6a9d72d8-0742-459f-8e14-04c7d793e0c9
+				- hence, in this sense, $\int f(x)dx$, $\int g(x)dx$ are equivalent.
+			- note: the equivalence of the families $\{ f(x) dx + C_1, C_1 \in R\}$ and $\{ g(x) dx + C_2, C_2 \in R\}$ is customarily expressed by writing $\int f(x)dx = \int g(x)dx$, without mentioning parameter
+		- property 3:
+			-
 	- comparison between differentiation and integration
 - methods of integration
 	- integration by substitution
