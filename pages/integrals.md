@@ -156,8 +156,21 @@
 			- observe that while finding the integral of the second function, we did not add any constant of integration. adding a constant to the integral of the second function is superfluous while applying the method of integration by parts.
 			- usually, if any function is a power of x or a polynomial in x, then we take it as the first function. however, in cases where other function is inverse trigonometric function or logarithmic function, then we take them as first function.
 	- integration of type $\int e^x [f(x) + f'(x)] dx$
+		- we have $\int e^x [f(x) + f'(x)] dx = \int e^x f(x) dx + \int e^x f'(x) dx$
+		  $= I_1 + \int e^x f'(x) dx$, where $I_1 = \int e^x f(x) dx$
+		- taking f(x) and $e^x$ as the first function and second function, in $I_1$ and integrating by parts, $I_1 = f(x) e^x - \int f'(x) e^x dx + C$
+		- $I = e^x  f(x) - \int f'(x) e^x dx + \int e^x f'(x) dx + C = e^x  f(x)  + C$
+		- thus, $\int e^x [f(x) + f'(x)] dx = e^x  f(x)  + C$
 	- integral of some more types
+		- some special types of standard integrals based on the technique of integration by parts
+			- $\int\sqrt{x^2 - a^2}$ dx
+			- $\int\sqrt{x^2 + a^2}$ dx
+			- $\int\sqrt{a^2 - x^2}$ dx
 - definite integral
+	- definite integral has a unique value. a definite integral is denoted by $\int_a^b f(x) dx$, where a is called the lower limit and b is called the upper limit of the integral.
+	- the definite integral is introduced
+		- either as the limit of a sum
+		- or if it has an antiderivative F in the interval [a, b]. then its value is the difference between the values of F at end points, i.e., F(b) - F(a)
 	- definite integral as the limit of a sum
 - fundamental theorem of calculus
 	- area function

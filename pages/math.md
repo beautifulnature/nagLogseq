@@ -40,16 +40,40 @@
   CLOCK: [2026-08-15 Sat 13:16:58]--[2026-08-15 Sat 13:16:58] =>  00:00:00
   :END:
 - DONE [[matrices]]
-- [[determinants]]
-- [[vector algebra]]
-- [[inverse trigonometric functions]]
-- [[continuity and differentiability]]
-- [[application of derivatives]]
-- [[3 dimensional geometry]]
-- [[mathematical modeling]]
-- [[linear programming]]
-- [[integrals]] 23-08
-- [[application of integrals]] 23-08
+- DONE [[determinants]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:28:53]--[2026-09-08 Tue 13:28:53] =>  00:00:00
+  :END:
+- DONE [[vector algebra]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:28:56]--[2026-09-08 Tue 13:28:57] =>  00:00:01
+  :END:
+- DONE [[inverse trigonometric functions]]
+- DONE [[continuity and differentiability]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:29:06]--[2026-09-08 Tue 13:29:06] =>  00:00:00
+  :END:
+- DONE [[application of derivatives]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:29:11]--[2026-09-08 Tue 13:29:12] =>  00:00:01
+  :END:
+- DONE [[3 dimensional geometry]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:29:13]--[2026-09-08 Tue 13:29:14] =>  00:00:01
+  :END:
+- DONE [[mathematical modeling]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:29:16]--[2026-09-08 Tue 13:29:17] =>  00:00:01
+  :END:
+- DONE [[linear programming]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:29:18]--[2026-09-08 Tue 13:29:19] =>  00:00:01
+  :END:
+- DONE [[integrals]]
+- DONE [[application of integrals]]
+  :LOGBOOK:
+  CLOCK: [2026-09-08 Tue 13:52:20]--[2026-09-08 Tue 13:52:20] =>  00:00:00
+  :END:
 - [[differential equations]] 21-08
 - [[probability]] 22-08
 - [[class-11-12-extras]]
