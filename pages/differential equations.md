@@ -10,4 +10,5 @@
 	- differential equations with variables separable
 	- homogeneous differential equations
 	- linear differential equations
+	- ee
 	-
