@@ -74,7 +74,10 @@
   :LOGBOOK:
   CLOCK: [2026-09-08 Tue 13:52:20]--[2026-09-08 Tue 13:52:20] =>  00:00:00
   :END:
-- [[differential equations]] 21-08
+- DONE [[differential equations]]
+  :LOGBOOK:
+  CLOCK: [2026-09-09 Wed 16:37:03]--[2026-09-09 Wed 16:37:04] =>  00:00:01
+  :END:
 - [[probability]] 22-08
 - [[class-11-12-extras]]
 - calculus
