@@ -2,7 +2,7 @@
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:45:59]--[2026-07-28 Tue 16:46:00] =>  00:00:01
   :END:
-- LATER [[relations and functions]]
+- DONE [[relations and functions]]
   :LOGBOOK:
   CLOCK: [2026-07-28 Tue 16:46:11]--[2026-07-28 Tue 16:46:11] =>  00:00:00
   CLOCK: [2026-08-15 Sat 13:17:06]--[2026-08-15 Sat 13:17:07] =>  00:00:01

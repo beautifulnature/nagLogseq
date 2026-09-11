@@ -81,4 +81,3 @@
 	- types of functions
 	- composition of functions and invertible function
 	- binary operations
-	-
