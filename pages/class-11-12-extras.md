@@ -3,4 +3,3 @@
 - ![Class-12-2-Mathematics-Part-II-sm_Supplementary_Material.pdf](../assets/Class-12-2-Mathematics-Part-II-sm_Supplementary_Material_1786587862444_0.pdf)
 - ![Class-12-1-Mathematics-Part-I-a1_Appendix-1_Proofs_in_Mathematics.pdf](../assets/Class-12-1-Mathematics-Part-I-a1_Appendix-1_Proofs_in_Mathematics_1786588485475_0.pdf)
 - ![Class-12-1-Mathematics-Part-I-a2_Appendix-2_Mathematical_Modelling.pdf](../assets/Class-12-1-Mathematics-Part-I-a2_Appendix-2_Mathematical_Modelling_1786588494797_0.pdf)
--

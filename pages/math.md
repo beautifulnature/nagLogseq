@@ -78,8 +78,11 @@
   :LOGBOOK:
   CLOCK: [2026-09-09 Wed 16:37:03]--[2026-09-09 Wed 16:37:04] =>  00:00:01
   :END:
-- [[probability]] 22-08
-- [[class-11-12-extras]]
+- DONE [[probability]]
+  :LOGBOOK:
+  CLOCK: [2026-09-12 Sat 16:35:33]--[2026-09-12 Sat 16:35:33] =>  00:00:00
+  :END:
+- [[class-11-12-extras]] 12-09
 - calculus
 	- youtube
 		- https://www.youtube.com/watch?v=MO-AExWdl4Q&t=6337s

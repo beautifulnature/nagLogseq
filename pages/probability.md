@@ -33,9 +33,25 @@
 		- partition of a sample space
 		- theorem of total probability
 	- random variables and its probability distribution
+	  :LOGBOOK:
+	  CLOCK: [2026-09-12 Sat 15:36:41]--[2026-09-12 Sat 15:36:42] =>  00:00:01
+	  CLOCK: [2026-09-12 Sat 16:01:59]--[2026-09-12 Sat 16:02:00] =>  00:00:01
+	  :END:
 		- probability distribution of a random variable
 		- mean of a random variable
+		  :LOGBOOK:
+		  CLOCK: [2026-09-12 Sat 16:04:52]--[2026-09-12 Sat 16:04:52] =>  00:00:00
+		  :END:
 		- variance of a random variable
+		  :LOGBOOK:
+		  CLOCK: [2026-09-12 Sat 16:12:12]--[2026-09-12 Sat 16:12:13] =>  00:00:01
+		  :END:
 	- Bernoulli trials and Binomial distribution
+	  :LOGBOOK:
+	  CLOCK: [2026-09-12 Sat 16:19:54]--[2026-09-12 Sat 16:19:55] =>  00:00:01
+	  :END:
 		- Bernoulli trials
 		- Binomial distribution
+		  :LOGBOOK:
+		  CLOCK: [2026-09-12 Sat 16:35:14]--[2026-09-12 Sat 16:35:15] =>  00:00:01
+		  :END:
