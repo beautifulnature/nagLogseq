@@ -82,7 +82,7 @@
   :LOGBOOK:
   CLOCK: [2026-09-12 Sat 16:35:33]--[2026-09-12 Sat 16:35:33] =>  00:00:00
   :END:
-- [[class-11-12-extras]] 12-09
+- DONE [[class-11-12-extras]]
 - calculus
 	- youtube
 		- https://www.youtube.com/watch?v=MO-AExWdl4Q&t=6337s
